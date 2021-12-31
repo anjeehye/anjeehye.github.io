@@ -8,17 +8,3 @@ URL_DEFAULT = "/anjeehye/"
 URL_STORIES = URL_DEFAULT + "stories/"
 URL_ABOUT = URL_DEFAULT + "about/"
 URL_PORTFOLIO = URL_DEFAULT + "portfolio/"
-
-const homeType = () => {
-    if(window.location.pathname === URL_DEFAULT){
-      const options = {
-        stringsElement: "#typed-strings",
-        typeSpeed: 60,
-        smartBackspace: false,
-        loop: true,
-        backDelay: 2500,
-        backSpeed: 10
-      }
-      let type = new Typed('#typed', options);
-    }
-  }

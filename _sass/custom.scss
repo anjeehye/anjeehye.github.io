@@ -1,4 +1,5 @@
 $background-color-translucent: #fdfdfdad;
+$brand-color: #333436; //#2a7ae2 !default;
 
 body {
     flex-direction: row;
@@ -75,6 +76,16 @@ body:before {
     .wrapper, .page {
         height: 100%;
     }
+    a {
+        color: $text-color;
+        text-decoration: underline;
+        &:visited {
+            color: $text-color;
+        }
+        &:hover {
+            color: #4b647e;
+        }
+    }
 }
 .site-footer {
     border-top: none;
@@ -101,6 +112,10 @@ body:before {
 /// STORIES ///
 ///////////////
 ul.post-list {
+    padding: 1rem;
+    background-color: $background-color-translucent;
+}
+article.post {
     padding: 1rem;
     background-color: $background-color-translucent;
 }

@@ -25,7 +25,6 @@ body:before {
 // widths of header/sidebar and main content region
 // 16 rem / margin-left: 18 rem; margin-right: 2rem;
 // remove footer - no  need
-
 .site-header {
     border: none;
     width: 16rem;
@@ -50,6 +49,7 @@ body:before {
     .site-nav, .site-title, .page-link {
         display: block;
         width: 100%;
+        //font-weight: 800;
         @include media-query($on-palm) {
             width: inherit;
         }
@@ -60,6 +60,7 @@ body:before {
         } 
     }
 }
+// PAGE CONTENT
 .page-content {
     margin-right: 2rem;
     margin-left: 18rem;
@@ -70,7 +71,10 @@ body:before {
     @include media-query($on-palm) {
         width: 100vw;
         margin: 10rem 0 0 0;
-    } 
+    }
+    .wrapper, .page {
+        height: 100%;
+    }
 }
 .site-footer {
     border-top: none;
@@ -79,7 +83,19 @@ body:before {
     }
 }
 
-
+////////////
+/// HOME ///
+////////////
+#home-text {
+    font-size: large;
+    position: fixed;
+    top: 65%;
+    right: 20%;
+    font-style: italic;
+    @include media-query($on-palm) {
+        right: inherit;
+    }
+}
 
 ///////////////
 /// STORIES ///
@@ -90,7 +106,10 @@ ul.post-list {
 }
 
 
-// About
+/////////////
+/// ABOUT ///
+/////////////
 #jeehye-audio {
     font-size: $small-font-size;
 }
+

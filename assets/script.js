@@ -8,3 +8,20 @@ URL_DEFAULT = "/anjeehye/"
 URL_STORIES = URL_DEFAULT + "stories/"
 URL_ABOUT = URL_DEFAULT + "about/"
 URL_PORTFOLIO = URL_DEFAULT + "portfolio/"
+
+// testing AOS
+AOS.init();
+// testing Masonry and imagesLoaded
+let pfMasonryGrid = () => {
+  let projectBox = document.querySelector('.stories');
+  if(projectBox) {
+    imagesLoaded(projectBox, function() {
+      let masonryGrid = new Masonry('.stories', {
+        itemSelector: '.post-list',
+      });
+    });
+  };
+};
+pfMasonryGrid();
+// testing Swup
+const swup = new Swup();

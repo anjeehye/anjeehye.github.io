@@ -9,8 +9,6 @@ URL_STORIES = URL_DEFAULT + "stories/"
 URL_ABOUT = URL_DEFAULT + "about/"
 URL_PORTFOLIO = URL_DEFAULT + "portfolio/"
 
-// testing AOS
-AOS.init();
 // testing Masonry and imagesLoaded
 let pfMasonryGrid = () => {
   let projectBox = document.querySelector('.stories');
@@ -23,5 +21,15 @@ let pfMasonryGrid = () => {
   };
 };
 pfMasonryGrid();
-// testing Swup
+
+const activeFunctions = () => {
+  pfMasonryGrid();
+};
+
+// Swup
 const swup = new Swup();
+swup.on('contentReplaced', activeFunctions);
+// AOS
+AOS.init();
+
+

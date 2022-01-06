@@ -12,9 +12,12 @@ body:before {
     width: 100%;
     height: 100%;
     z-index: -10;
+    //background: url("https://lh3.googleusercontent.com/pw/ACtC-3fMCx_68JZw-9nMunNZekgYepXIvxq2IGT3cLIzlSuabf-vmIk4vT2olhc63HRV5gMXKgHel9kSQjqkur4tvcJc2ycZ8ecXPbI_ZuASK3_spCAlwE_xlM8khCLq0S83_bGNOcaD93ynxWANCHFou6HL=w1058-h628-no") no-repeat center center; //repulse bay
+    background-size: cover;
     background: url("https://images.unsplash.com/photo-1604251833079-8655bea7a58d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2535&q=80") no-repeat center top;
     //background-size: cover;
     opacity: .9;
+    //filter: saturate(1.2) contrast(0.8) brightness(1.1);
 }
 ::-webkit-scrollbar {
     width: 0px;
@@ -98,14 +101,18 @@ body:before {
 ////////////
 /// HOME ///
 ////////////
-#home-text {
+#typewriter-text {
     font-size: large;
-    position: fixed;
+    position: absolute;
     top: 65%;
     right: 20%;
+    text-align: center;
     font-style: italic;
+    width: 24em;
+    height: 2em;
     @include media-query($on-palm) {
         right: inherit;
+        width: inherit;
     }
 }
 
@@ -129,6 +136,9 @@ pre, code {
 /// ABOUT ///
 /////////////
 .about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     button {
         font-family: inherit;
         background-color: transparent;
@@ -136,15 +146,38 @@ pre, code {
         transition: .1s ease-in;
         &:hover {
             animation: bounce-up .3s;;
-            color: $brand-color;
+            //color: $brand-color;
             cursor: pointer;
-            transform: translateY(-2px);
-            
+            transform: translateY(-2px);   
+            text-shadow: 2px 2px 1px $grey-color;  
         }
     }
 }
 #jeehye-audio {
     font-size: $small-font-size;
+}
+#description {
+    background-color: $background-color-translucent;
+    padding: 1rem;
+    ul {
+        list-style: none;
+        margin: 1rem 0;
+    }
+    span {
+        display: inline-block;
+    }
+    span:hover {
+        //color: $brand-color;
+        //text-shadow: 2px 2px 1px #e58596;
+        text-shadow: 0 0 5px $brand-color;//#c37171;
+        transition: .2s ease-out;
+        cursor: cell;
+        //animation: bounce-up .3s;;
+        //transform: translateY(-2px);
+    }
+}
+#contact {
+    margin: 1rem 0;
 }
 
 
@@ -172,4 +205,9 @@ html.is-animating .transition-fade {
         -webkit-transform: translateY(-2px);
         transform: translateY(-2px);
     }
+}
+// white glow on black texts right on top of the background image
+#typewriter-text, header, h1 {
+    //text-shadow: 0 0 1px white, 0 0 2px white, 0 0 3px white;
+    //font-weight: bold;
 }

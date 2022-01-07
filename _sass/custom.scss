@@ -1,4 +1,4 @@
-$background-color-translucent: #fdfdfdad;
+$background-color-translucent: #fdfdfd93;
 $brand-color: #5d7096; //#2a7ae2 !default;
 
 body {
@@ -177,11 +177,17 @@ pre, code {
     }
     span {
         display: inline-block;
+        font-weight: bold;
+        margin: 2px 0;
+        padding: 0 5px;
+        font-style: italic;
+        text-decoration: underline;
+        
     }
     span:hover {
         //color: $brand-color;
         //text-shadow: 2px 2px 1px #e58596;
-        text-shadow: 0 0 5px $brand-color;//#c37171;
+        text-shadow: 0 0 5px white, 0 0 3px white, 0 0 2px white, 0 0 1px white;//#c37171;
         transition: .2s ease-out;
         cursor: cell;
         //animation: bounce-up .3s;;
@@ -190,6 +196,25 @@ pre, code {
 }
 #contact {
     margin: 1rem 0;
+}
+.mailto-message {
+    position: absolute;
+    display: none;
+    width: auto;
+    white-space: nowrap;
+    font-size: .7rem;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    padding: 2px 6px;
+    border-radius: 2px;
+    &:after {
+        content: '';
+    }
+}
+.mailto-link:hover .mailto-message,
+.mailto-link:focus .mailto-message,
+.mailto-link:focus-within .mailto-message {
+    display: block;
 }
 
 

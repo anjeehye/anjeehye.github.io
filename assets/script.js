@@ -49,6 +49,7 @@ typewriter_start();
 
 const activeFunctions = () => {
   typewriter_start();
+  copyEmail();
 };
 
 // Swup
@@ -59,3 +60,38 @@ AOS.init({
   delay: 100,
 });
 
+let copyEmail = () => {
+  let mailto = document.querySelector('a[href^=mailto]');
+  console.log(mailto);
+  if(mailto) {
+    mailto.classList.add('mailto-link');
+
+    let messageCopy = 'Click to copy email address';
+    let messageSuccess = 'Email address copied to clipboard';
+    mailto.insertAdjacentHTML('beforeend', '<span class="mailto-message"></span>');
+    document.querySelector('.mailto-message').insertAdjacentHTML('beforeend', messageCopy);
+
+    mailto.addEventListener("click", (e) => {
+      e.preventDefault(); // Disable default action (yuk!)
+      // Click - get href, remove mailto, save in a variable
+      let href = mailto.getAttribute("href");
+      let email = href.replace('mailto:', '');
+      copyToClipboard(email);
+      document.querySelector('.mailto-message').innerHTML = messageSuccess;
+      setTimeout(function() {
+        document.querySelector('.mailto-message').innerHTML = messageCopy;
+      }, 2000);
+
+      // From Stack Overflow - copies the email variable to clipboard
+      function copyToClipboard(text) {
+          var dummy = document.createElement("input");
+          document.body.appendChild(dummy);
+          dummy.setAttribute('value', text);
+          dummy.select();
+          document.execCommand('copy');
+          document.body.removeChild(dummy);
+      }
+    });
+  }
+}
+copyEmail();

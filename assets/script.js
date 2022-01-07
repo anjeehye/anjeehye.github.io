@@ -20,7 +20,7 @@ let pfMasonryGrid = () => {
     });
   };
 };
-pfMasonryGrid();
+//pfMasonryGrid();
 
 // Home text typewriter effect
 
@@ -48,7 +48,6 @@ const typewriter_start = () => {
 typewriter_start();
 
 const activeFunctions = () => {
-  pfMasonryGrid();
   typewriter_start();
 };
 

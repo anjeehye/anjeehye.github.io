@@ -28,11 +28,11 @@ body:before {
 }
 
 // widths of header/sidebar and main content region
-// 16 rem / margin-left: 18 rem; margin-right: 2rem;
+// 14 rem / margin-left: 16 rem; margin-right: 2rem;
 // remove footer - no  need
 .site-header {
     border: none;
-    width: 16rem;
+    width: 14rem;
     position: fixed;
     height: 100%;
     .wrapper {
@@ -45,7 +45,7 @@ body:before {
         }
     }
     @include media-query($on-laptop) {
-        width: 14rem;
+        width: 12rem;
     }
     @include media-query($on-palm) {
         width: 100vw;
@@ -68,10 +68,10 @@ body:before {
 // PAGE CONTENT
 .page-content {
     margin-right: 2rem;
-    margin-left: 18rem;
+    margin-left: 16rem;
     @include media-query($on-laptop) {
         margin-right: 2rem;
-        margin-left: 16rem;
+        margin-left: 14rem;
     }
     @include media-query($on-palm) {
         width: 100vw;
@@ -120,12 +120,24 @@ body:before {
 /// STORIES ///
 ///////////////
 ul.post-list {
-    padding: 1rem;
-    background-color: $background-color-translucent;
+    //padding: 1rem;
+    li {
+        background-color: $background-color-translucent;
+        padding: 1rem;
+    }
 }
-article.post {
-    padding: 1rem;
+.post-header {
+    text-align: center;
+}
+.post-content {
+    font-family: 'Ubuntu Mono', monospace;
+    padding: 2rem 3rem;
     background-color: $background-color-translucent;
+    //border: 2px solid $background-color-translucent;
+    border-radius: 15px;
+    @include media-query($on-palm) {
+        padding: 2rem .5rem;
+    } 
 }
 pre, code {
     background-color: $background-color;

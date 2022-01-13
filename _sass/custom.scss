@@ -141,10 +141,8 @@ ul.post-list {
     }
     a.post-link {
         transition: .2s ease-in-out;
-
         background-color: $background-color-translucent;
         text-decoration: none;
-        width: 100%;
         height: 100%;
         padding: 1rem;
         &:hover {

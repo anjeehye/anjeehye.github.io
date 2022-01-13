@@ -47,9 +47,13 @@ const typewriter_start = () => {
 };
 typewriter_start();
 
+
+// IDNEITFY FUNCTIONS THAT NEEDS TO BE RUN EVERY TIME A PAGE IS CLICKED
+
 const activeFunctions = () => {
   typewriter_start();
   copyEmail();
+  navBarHighlight();
 };
 
 // Swup
@@ -95,3 +99,27 @@ let copyEmail = () => {
   }
 }
 copyEmail();
+
+/* HIGHLIGHT CURRENT NAV BAR MENU */
+const navBarHighlight = () => {
+  let loc = window.location.pathname;
+  let locArray = ["35mm", "about", "stories"];
+  let navBarLinks = document.querySelector('.site-nav').querySelectorAll("a");
+
+  locArray.forEach((currLoc, currIndex) => {
+    if(loc != URL_DEFAULT) {
+      if(loc.includes(currLoc)) {
+        navBarLinks.forEach((menu, index) => {
+          if(index == currIndex) {
+            menu.classList.add('current');
+          } else {
+            menu.classList.remove('current');
+          }
+        });
+      }
+    } else {
+      navBarLinks.forEach(menu => menu.classList.remove('current'));
+    }
+  });
+}
+navBarHighlight();

@@ -91,6 +91,7 @@ nav {
 }
 // PAGE CONTENT
 .page-content {
+    transition: .3s ease-in-out;
     margin-right: 2rem;
     margin-left: 16rem;
     @include media-query($on-laptop) {

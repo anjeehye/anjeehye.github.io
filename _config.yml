@@ -56,4 +56,4 @@ plugins:
 collections:
   35mm:
     output: true
-    permalink: /35mm/:path
+    permalink: /_35mm/:path

@@ -1,0 +1,20 @@
+---
+layout: 35mm
+title: 35mm
+permalink: /35mm/
+---
+
+# ☾ Portfolio Building in Progress ✬
+<ul class="photo-list">
+  {% assign photos = site.data.photos 
+    | sort: "sort" 
+    | where: "display", true
+    %}
+  {% for photo in photos %}
+    <li class="photo-item aos-jeehye">
+      <a class="post-link" disabled>
+        <img alt="{{ photo.alt }}" src="{{ photo.link }}">
+      </a>
+    </li>
+  {% endfor %}
+</ul>

@@ -27,6 +27,9 @@ body:before {
 @-moz-document url-prefix() { /* Disable scrollbar Firefox */
     html{ scrollbar-width: none; }
 }
+nav {
+    z-index: 100;
+}
 
 // widths of header/sidebar and main content region
 // 14 rem / margin-left: 16 rem; margin-right: 2rem;
@@ -54,13 +57,13 @@ body:before {
     } 
     .site-title {
         font-weight: 800;
-        transition: .2 ease-in-out;
+        transition: .2s ease-in-out;
         &:hover {
             text-decoration: none;
             font-style: italic;
         }
     }
-    .site-nav, .site-title, .page-link {
+    .site-nav, .site-title, .page-link, {
         display: block;
         width: 100%;
         //font-weight: 800;
@@ -68,10 +71,17 @@ body:before {
             width: inherit;
         }
     }
+    .tag-nav {
+        transition: all 1s;
+        margin-left: .3rem;
+        color: $text-color;
+    }
     .site-nav {
+        line-height: 1.5rem;
         a {
+            display: block;
             position: relative;
-            transition: 1s ease-in;
+            transition: .2s ease-in;
             width: fit-content;
         }
         @include media-query($on-palm) {
@@ -84,8 +94,8 @@ body:before {
     margin-right: 2rem;
     margin-left: 16rem;
     @include media-query($on-laptop) {
-        margin-right: 2rem;
-        margin-left: 14rem;
+        //margin-right: 2rem;
+        //margin-left: 14rem;
     }
     @include media-query($on-palm) {
         width: 100vw;
@@ -244,9 +254,51 @@ pre, code {
 }
 
 
+////////////
+/// 35mm ///
+////////////
+ul.photo-list {
+    margin: 0;
+    li.photo-item {
+        list-style: none;
+        width: 50%;
+        height: auto;
+        a {
+            margin: .5rem;
+        }
+        @include media-query($on-palm) {
+            width: 100%;
+        } 
+    }
+}
+
+
 ///////////////
 /// EFFECTS ///
 ///////////////
+.hidden {
+    //display: none;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+@keyframes bounce-up {
+    0% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+    70% {
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+    }
+    100% {
+        -webkit-transform: translateY(-2px);
+        transform: translateY(-2px);
+    }
+}
+.translucent-background {
+    background-color: $background-color-translucent;
+}
 .transition-fade {
     transition: 0.4s;
     opacity: 1;
@@ -302,4 +354,14 @@ html.is-animating .transition-fade {
     a.current:after {
         width: 100%
     }
+}
+.aos-jeehye {
+    opacity: 0;
+    transition-property: opacity, transform;
+    transform: translate(0, 50px);
+    transition: all 1000ms ease-out;
+}
+.is-visible {
+ opacity: 1;
+ transform: none;
 }

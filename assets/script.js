@@ -9,72 +9,41 @@ URL_STORIES = URL_DEFAULT + "stories/"
 URL_ABOUT = URL_DEFAULT + "about/"
 URL_PORTFOLIO = URL_DEFAULT + "portfolio/"
 
-// testing Masonry and imagesLoaded
-let pfMasonryGrid = () => {
-  let projectBox = document.querySelector('.stories');
-  if(projectBox) {
-    imagesLoaded(projectBox, function() {
-      let masonryGrid = new Masonry('.stories', {
-        itemSelector: '.post-list',
-      });
-    });
-  };
-};
-//pfMasonryGrid();
-
 // Home text typewriter effect
-
 const typewriter_start = () => {
   const home_text = document.querySelector('#typewriter-text');
-
+  
   const typewriter = new Typewriter(home_text, {
     loop: false,
     delay: 75,
   });
-
+  
   typewriter
-    .pauseFor(500)
-    .typeString('Nothing')
-    .pauseFor(300)
-    .typeString(' so gentle')
-    .pauseFor(100)
-    .typeString(' as')
-    .pauseFor(50)
-    .typeString(' real strength.')
-    //.deleteChars(10)
-    //.pauseFor(1000)
-    .start();
+  .pauseFor(500)
+  .typeString('Nothing')
+  .pauseFor(300)
+  .typeString(' so gentle')
+  .pauseFor(100)
+  .typeString(' as')
+  .pauseFor(50)
+  .typeString(' real strength.')
+  //.deleteChars(10)
+  //.pauseFor(1000)
+  .start();
 };
 typewriter_start();
 
-
-// IDNEITFY FUNCTIONS THAT NEEDS TO BE RUN EVERY TIME A PAGE IS CLICKED
-
-const activeFunctions = () => {
-  typewriter_start();
-  copyEmail();
-  navBarHighlight();
-};
-
-// Swup
-const swup = new Swup();
-swup.on('contentReplaced', activeFunctions);
-// AOS
-AOS.init({
-  delay: 100,
-});
-
+/* Copy email function for about page */
 let copyEmail = () => {
   let mailto = document.querySelector('a[href^=mailto]');
-  console.log(mailto);
   if(mailto) {
     mailto.classList.add('mailto-link');
-
+    
     let messageCopy = 'Click to copy email address';
     let messageSuccess = 'Email address copied to clipboard';
     mailto.insertAdjacentHTML('beforeend', '<span class="mailto-message"></span>');
     document.querySelector('.mailto-message').insertAdjacentHTML('beforeend', messageCopy);
-
+    
     mailto.addEventListener("click", (e) => {
       e.preventDefault(); // Disable default action (yuk!)
       // Click - get href, remove mailto, save in a variable
@@ -85,15 +54,15 @@ let copyEmail = () => {
       setTimeout(function() {
         document.querySelector('.mailto-message').innerHTML = messageCopy;
       }, 2000);
-
+      
       // From Stack Overflow - copies the email variable to clipboard
       function copyToClipboard(text) {
-          var dummy = document.createElement("input");
-          document.body.appendChild(dummy);
-          dummy.setAttribute('value', text);
-          dummy.select();
-          document.execCommand('copy');
-          document.body.removeChild(dummy);
+        var dummy = document.createElement("input");
+        document.body.appendChild(dummy);
+        dummy.setAttribute('value', text);
+        dummy.select();
+        document.execCommand('copy');
+        document.body.removeChild(dummy);
       }
     });
   }
@@ -101,25 +70,102 @@ let copyEmail = () => {
 copyEmail();
 
 /* HIGHLIGHT CURRENT NAV BAR MENU */
-const navBarHighlight = () => {
+const navBarHighlight = () => { /* clicked item */
   let loc = window.location.pathname;
-  let locArray = ["35mm", "about", "stories"];
   let navBarLinks = document.querySelector('.site-nav').querySelectorAll("a");
+  
+  navBarLinks.forEach(link => {
+    currLink = link.innerText.replace('#', '');
 
-  locArray.forEach((currLoc, currIndex) => {
+    // if current url has it, attach current
     if(loc != URL_DEFAULT) {
-      if(loc.includes(currLoc)) {
-        navBarLinks.forEach((menu, index) => {
-          if(index == currIndex) {
-            menu.classList.add('current');
-          } else {
-            menu.classList.remove('current');
-          }
-        });
+      let currLoc = loc.toLowerCase();
+      if(currLoc.includes(currLink.toLowerCase())) {
+        link.classList.add('current');
       }
-    } else {
-      navBarLinks.forEach(menu => menu.classList.remove('current'));
+      else {
+        link.classList.remove('current');
+      }
     }
+    else {
+      navBarLinks.forEach(link => link.classList.remove('current'));
+    };
   });
 }
 navBarHighlight();
+
+/* MASONRY */
+let photoMasonryGrid = () => {
+  let photoList = document.querySelector('.photo-list');
+  if(photoList) {
+    imagesLoaded(photoList, function() {
+      let masonryGrid = new Masonry(photoList, {
+        itemSelector: '.photo-item',
+        columnWidth: '.photo-item'
+      });
+    });
+  };
+};
+photoMasonryGrid();
+
+/* SHOW TAG-NAV ONLY WHEN IN 35MM */
+/* WHEN AT 35MM PAGE, CHANGE .PAGE-CONTENT BACKGROUND COLOR */
+const effectsFor35mm = () => { 
+  let loc = window.location.pathname;
+  tagNav = document.querySelector(".tag-nav");
+  pageWrapper = document.querySelector(".page-content");
+  if(loc.includes("35mm")) { // if in 35mm page
+      tagNav.classList.remove('hidden');
+      pageWrapper.classList.add('translucent-background');
+    }
+    else {
+      tagNav.classList.add('hidden');
+      pageWrapper.classList.remove('translucent-background');
+    }
+}
+effectsFor35mm();
+
+// IDNEITFY FUNCTIONS THAT NEEDS TO BE RUN EVERY TIME A PAGE IS CLICKED
+const activeFunctions = () => {
+  typewriter_start();
+  copyEmail();
+  navBarHighlight();
+  photoMasonryGrid();
+  effectsFor35mm();
+  loop();
+};
+
+// Swup
+const swup = new Swup();
+swup.on('contentReplaced', activeFunctions);
+
+/* My AOS - copied from previous website & the internet */
+const loop = () => {
+  let scroll = window.requestAnimationFrame ||
+    // IE Fallback
+    function(callback){ window.setTimeout(callback, 1000/60)};
+  let elementsToShow = document.querySelectorAll('.aos-jeehye');
+  elementsToShow.forEach(function (element) {
+    if (isElementInViewport(element)) {
+      element.classList.add('is-visible');
+    } else {
+      element.classList.remove('is-visible');
+    }
+  });
+  scroll(loop);
+}
+loop();
+// Helper function from: http://stackoverflow.com/a/7557433/274826
+function isElementInViewport(el) {
+  let rect = el.getBoundingClientRect();
+  return (
+    (rect.top <= 0
+      && rect.bottom >= 0)
+    ||
+    (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+    ||
+    (rect.top >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+  );
+}

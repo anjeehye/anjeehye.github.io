@@ -14,33 +14,27 @@ layout: default
   {%- if site.posts.size > 0 -%}
   <!--
     <h2 class="post-list-heading">{{ page.list_title | default: "Stories" }}</h2>
-  -->
-  <ul class="post-list" data-aos="fade-up" data-aos-duration="1000">
+  -->  
+  <ul class="post-list">
     {%- for post in site.posts -%}
-    <li>
-      <a class="post-link" href="{{ post.url | relative_url }}">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">
-          {{ post.date | date: date_format }}
-          <span class="category-list">
-            |
-            {% for category in post.categories %}
-              {% if forloop.last == false %}
-              <span>{{ category }} • </span>
-              {% else %}
-              <span>{{ category }} </span>
-              {% endif %}
-            {% endfor %}
+      <li class="jeehye-aos">
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          <span class="post-meta">
+            {{ post.date | date: date_format }}
+            <span class="category-list">
+              |
+              {{post.categories | join: ' • '}}
+            </span>
           </span>
-        </span>
-        <h3>
+          <h3>
             {{ post.title | escape }}
-        </h3>
-        {%- if site.show_excerpts -%}
-        {{ post.excerpt }}
-        {%- endif -%}
-      </a>
-    </li>
+          </h3>
+          {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+          {%- endif -%}
+        </a>
+      </li>
     {%- endfor -%}
   </ul>
   

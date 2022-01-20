@@ -1,7 +1,0 @@
----
-layout: 35mm
-title: 35mm
-permalink: /35mm/
----
-
-# Coming soon ☾

@@ -9,6 +9,21 @@ URL_STORIES = URL_DEFAULT + "stories/"
 URL_ABOUT = URL_DEFAULT + "about/"
 URL_PORTFOLIO = URL_DEFAULT + "portfolio/"
 
+// IDNEITFY FUNCTIONS THAT NEEDS TO BE RUN EVERY TIME A PAGE IS CLICKED
+const activeFunctions = () => {
+  typewriter_start();
+  copyEmail();
+  navBarHighlight();
+  photoMasonryGrid();
+  effectsFor35mm();
+  loop();
+  jeehyeAudio();
+};
+
+// Swup
+const swup = new Swup();
+swup.on('contentReplaced', activeFunctions);
+
 // Home text typewriter effect
 const typewriter_start = () => {
   const home_text = document.querySelector('#typewriter-text');
@@ -125,20 +140,6 @@ const effectsFor35mm = () => {
 }
 effectsFor35mm();
 
-// IDNEITFY FUNCTIONS THAT NEEDS TO BE RUN EVERY TIME A PAGE IS CLICKED
-const activeFunctions = () => {
-  typewriter_start();
-  copyEmail();
-  navBarHighlight();
-  photoMasonryGrid();
-  effectsFor35mm();
-  loop();
-};
-
-// Swup
-const swup = new Swup();
-swup.on('contentReplaced', activeFunctions);
-
 /* My AOS - copied from previous website & the internet */
 const loop = () => {
   let scroll = window.requestAnimationFrame ||
@@ -169,3 +170,15 @@ function isElementInViewport(el) {
       rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
   );
 }
+
+let jeehyeAudio = () => {
+  let audio = document.createElement('audio');
+  audio.setAttribute('src', '/anjeehye/assets/jeehye.mp3');
+  speakerIcon = document.querySelector('#speakerIcon');
+  if(speakerIcon) {
+    speakerIcon.addEventListener("click", () => {
+      audio.play();
+    })
+  }
+};
+jeehyeAudio();

@@ -1,6 +1,6 @@
 ---
 layout: 35mm
-tagname: Hong Kong
+tagname: HongKong
 tagurl: hongkong
 ---
 

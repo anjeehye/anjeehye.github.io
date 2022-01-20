@@ -1,7 +1,6 @@
 
 <nav class="tag-nav">
-    {% for tag in site.data.main.photo_tags %}
-    <a href="{{site.baseurl}}/35mm/{{tag.name}}" class="tag-nav">#{{tag.name}}</a>
-        <!-- {{ page.url }}{{tag.name}} -->
+    {% for tag in site.35mm %}
+    <a href="{{site.baseurl}}{{tag.url}}" class="tag-nav">#{{tag.tagname}}</a>
     {% endfor %}
 </nav>

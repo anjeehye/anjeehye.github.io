@@ -9,10 +9,10 @@ permalink: /35mm/
   {% assign photos = site.data.photos 
     | sort: "sort" 
     | where: "display", true
-    %}
+  %}
   {% for photo in photos %}
     <li class="photo-item aos-jeehye">
-      <a class="post-link" disabled>
+      <a class="post-link">
         <img alt="{{ photo.alt }}" src="{{ photo.link }}">
       </a>
     </li>

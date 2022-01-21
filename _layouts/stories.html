@@ -17,7 +17,7 @@ layout: default
   -->  
   <ul class="post-list">
     {%- for post in site.posts -%}
-      <li class="jeehye-aos">
+      <li class="post jeehye-aos">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <p class="post-meta">
           {{ post.date | date: date_format }}

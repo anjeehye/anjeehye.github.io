@@ -4,7 +4,7 @@ tagname: Berlin
 tagurl: berlin
 ---
 
-<div class="page 35mm hongkong">
+<div class="page 35mm berlin">
     <h2>#Berlin</h2>
         <ul class="photo-list">
             {% assign photos = site.data.photos

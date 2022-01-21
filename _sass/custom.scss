@@ -277,8 +277,8 @@ pre, code {
 ////////////
 ul.photo-list {
     margin: 0;
+    list-style: none;
     li.photo-item {
-        list-style: none;
         width: 50%;
         height: auto;
         a {
@@ -288,6 +288,19 @@ ul.photo-list {
             width: 100%;
         } 
     }
+}
+.modal-overlay {
+    display: none;
+    background: $background-color-translucent;
+    width: 80%;
+    height: 80%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 1000;
+    cursor: zoom-out;
 }
 
 
@@ -299,6 +312,9 @@ ul.photo-list {
     height: 0;
     opacity: 0;
     overflow: hidden;
+}
+.hidden { 
+    display: none;;
 }
 @keyframes bounce-up {
     0% {

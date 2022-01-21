@@ -59,3 +59,5 @@ collections:
     permalink: /35mm/:path
 
 show_excerpts: true
+
+google_analytics: UA-113190533-2

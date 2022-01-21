@@ -11,10 +11,10 @@ URL_PORTFOLIO = URL_DEFAULT + "portfolio/"
 
 // IDNEITFY FUNCTIONS THAT NEEDS TO BE RUN EVERY TIME A PAGE IS CLICKED
 const activeFunctions = () => {
+  photoMasonryGrid();
   typewriter_start();
   copyEmail();
   navBarHighlight();
-  photoMasonryGrid();
   effectsFor35mm();
   loop();
   jeehyeAudio();
@@ -116,10 +116,11 @@ let photoMasonryGrid = () => {
     imagesLoaded(photoList, function() {
       let masonryGrid = new Masonry(photoList, {
         itemSelector: '.photo-item',
-        columnWidth: '.photo-item'
+        percentPosition: true
       });
     });
   };
+  
 };
 photoMasonryGrid();
 

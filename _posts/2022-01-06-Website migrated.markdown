@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Website migrated to Github Pages"
+title:  "My website migrated!"
 date:   2022-01-06 20:59:04 +0100
-categories: jekyll update
+categories: "jekyll update"
+excerpt: "...from wordpress to Gitpub Pages"
 ---
 # My website moved!
 

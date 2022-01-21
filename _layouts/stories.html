@@ -18,21 +18,24 @@ layout: default
   <ul class="post-list">
     {%- for post in site.posts -%}
       <li class="jeehye-aos">
-        <a class="post-link" href="{{ post.url | relative_url }}">
-          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          <span class="post-meta">
-            {{ post.date | date: date_format }}
-            <span class="category-list">
-              |
-              {{post.categories | join: ' • '}}
-            </span>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <p class="post-meta">
+          {{ post.date | date: date_format }}
+          <span class="category-list">
+            |
+            {{post.categories | join: ' • '}}
           </span>
+        </p>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+
           <h3>
             {{ post.title | escape }}
           </h3>
-          {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-          {%- endif -%}
+          <p class="post-excerpt">
+            {%- if site.show_excerpts -%}
+            {{ post.excerpt }}
+            {%- endif -%}
+          </p>
         </a>
       </li>
     {%- endfor -%}

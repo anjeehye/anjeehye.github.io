@@ -130,11 +130,11 @@ const effectsFor35mm = () => {
   tagNav = document.querySelector(".tag-nav");
   pageWrapper = document.querySelector(".page-content");
   if(loc.includes("35mm")) { // if in 35mm page
-      tagNav.classList.remove('hidden');
+      tagNav.classList.remove('hidden-nav');
       pageWrapper.classList.add('translucent-background');
     }
     else {
-      tagNav.classList.add('hidden');
+      tagNav.classList.add('hidden-nav');
       pageWrapper.classList.remove('translucent-background');
     }
 }

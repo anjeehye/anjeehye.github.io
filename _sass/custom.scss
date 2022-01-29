@@ -399,3 +399,15 @@ html.is-animating .transition-fade {
  opacity: 1;
  transform: none;
 }
+
+/* COMMENTS */
+#comment-policy {
+    display: none;
+}
+#disqus_thread {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: $base-font-size;
+    #conversation {
+        color: red;
+    }
+}

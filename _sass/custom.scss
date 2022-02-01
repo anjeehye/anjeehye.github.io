@@ -130,12 +130,12 @@ nav {
     position: absolute;
     top: 65%;
     right: 20%;
-    text-align: center;
+    text-align: right;
     font-style: italic;
     width: 24em;
     height: 2em;
     @include media-query($on-palm) {
-        right: inherit;
+        //right: inherit;
         width: inherit;
     }
 }

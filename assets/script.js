@@ -32,7 +32,6 @@ const resizeFunctions = () => {
 // redo masonry grid when dom is resized
 window.onresize = function() {
   resizeFunctions();
-  console.log("resized!")
 };
 
 // Swup

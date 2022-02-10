@@ -64,3 +64,5 @@ google_analytics: G-1G5PSX7JZF
 
 disqus:
   shortname: anjeehye
+
+permalink: /stories/:slug

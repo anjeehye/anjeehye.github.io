@@ -1,4 +1,5 @@
 $background-color-translucent: #fdfdfd93;
+$background-color-translucent-light: rgba(255,255,255,.3);
 $border-color-translucent: rgba(255,255,255,.5);
 $brand-color: #5d7096; //#2a7ae2 !default;
 
@@ -29,6 +30,25 @@ body:before {
 nav {
     z-index: 100;
 }
+.wrapper {
+  max-width: $content-width;
+}
+blockquote {
+    border-left: 4px solid $grey-color;
+}
+.img-center {
+    display: block;
+    margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight {
+    margin-bottom: 1.5rem;
+}
+h2 {
+    text-align: center;
+}
 
 // widths of header/sidebar and main content region
 // 14 rem / margin-left: 16 rem; margin-right: 2rem;
@@ -39,7 +59,7 @@ nav {
     position: fixed;
     height: 100%;
     .wrapper {
-        max-width: 100vw;
+        //max-width: 100%;
         top: 45%;
         position: fixed;
         @include media-query($on-palm) {
@@ -47,7 +67,7 @@ nav {
             position: relative;
         }
     }
-    @include media-query($on-laptop) {
+    @include media-query($on-tablet) {
         width: 12rem;
     }
     @include media-query($on-palm) {
@@ -93,10 +113,6 @@ nav {
     transition: .3s ease-in-out;
     margin-right: 2rem;
     margin-left: 16rem;
-    @include media-query($on-laptop) {
-        //margin-right: 2rem;
-        //margin-left: 14rem;
-    }
     @include media-query($on-palm) {
         width: 100vw;
         margin: 10rem 0 0 0;
@@ -144,25 +160,43 @@ nav {
 /// STORIES ///
 ///////////////
 ul.post-list {
-    
     //padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
     li {
         // set widths etc. of each post card
-        height: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        margin: 0 calc(10%/6) 1.5rem;
+        @include media-query($on-tablet) {
+            width: 45%;
+        }
+        @include media-query($on-palm) {
+            width: 100%;
+            margin: inherit;
+        } 
     }
     a.post-link {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
         transition: .2s ease-in-out;
-        background-color: $background-color-translucent;
-        border: 2px solid $border-color-translucent;
+        background-color: $background-color-translucent-light;
+        border: 2px solid $background-color-translucent-light;
+        justify-content: center;
         text-decoration: none;
-        
+        min-height: 200px;
+        @include media-query($on-palm) {
+            margin: 0;
+        } 
         padding: 1rem;
         &:hover {
             color: inherit;
             background-color: rgba(255,255,255,.8);
         }
         h3 {
-            font-size: $base-font-size * 1.2;
+            font-size: $base-font-size * 1.1;
             margin: .5rem 0;
         }
     }
@@ -170,12 +204,21 @@ ul.post-list {
         font-size: $small-font-size;
         margin-bottom: .5rem;
     }
+    .post-thumbnail img {
+        margin: auto;
+        display: block;
+        width: 80%;
+        height: 180px;
+        object-fit: cover;
+        padding: .5rem;
+    }
 }
 .post-meta {
-    font-size: $small-font-size;
+    font-size: $small-font-size*.9;
     color: $text-color;
-    padding: 0 1rem;
-    margin-bottom: .5rem;
+    //padding: 0 1rem;
+    margin-bottom: 0;
+    opacity: .5;
 }  
 .post-header {
     text-align: center;
@@ -191,7 +234,28 @@ ul.post-list {
     border-radius: 15px;
     @include media-query($on-palm) {
         padding: 2rem .5rem;
-    } 
+    }
+    img {
+        max-height: 80vh;
+        margin-bottom: .5rem;
+    }
+    table {
+        //max-width: 600px;
+        width: inherit;
+    }
+    h3 {
+        display: inline;
+        background-repeat: no-repeat;
+        background-image: -webkit-gradient(linear,left top,left bottom,from(#b8c8d6),to(#b8c8d6));
+        background-image: linear-gradient(180deg,#b8c8d6,#b8c8d6);
+        background-position-y: 100%;
+        --underline-width-scale: calc(12 / 8);
+        background-position-x: 100%;
+        background-size: 100% 40%;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        font-weight: 700;
+    }
 }
 pre, code {
     background-color: $background-color;
@@ -225,6 +289,7 @@ pre, code {
 #description {
     background-color: $background-color-translucent;
     padding: 1rem;
+    max-width: $content-width * .8;
     ul {
         list-style: none;
         margin: 1rem 0;
@@ -291,14 +356,14 @@ ul.photo-list {
 }
 .modal-overlay {
     display: none;
-    background: $background-color-translucent;
+    background: black;
+    opacity: .9;
     width: 80%;
-    height: 80%;
+    height: 90%;
     position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-
     z-index: 1000;
     cursor: zoom-out;
 }
@@ -410,4 +475,35 @@ html.is-animating .transition-fade {
     #conversation {
         color: red;
     }
+}
+.img-three-row {
+    display: inline-block;
+    width: 30%;
+    @include media-query($on-palm) {
+        width: inherit;
+    } 
+}
+.img-two-row {
+    display: inline-block;
+    width: 45%;
+    @include media-query($on-palm) {
+        width: inherit;
+    } 
+}
+.img-small {
+    max-width: 300px;
+}
+.photo-gallery-four {
+    display: inline-block;
+    width: 23%;
+    @include media-query($on-palm) {
+        width: inherit;
+    }   
+}
+figcaption {
+    margin-bottom: 1rem;
+    color: $brand-color;
+}
+.img-size-medium {
+    max-width: 400px;
 }

@@ -1,0 +1,105 @@
+---
+layout: post
+title:  "따스한 베를린의 여름날"
+date:   2020-09-25 21:41 +0100
+categories: "berlin"
+excerpt: "한달 벌어 한달 사는 대학원생도 행복한 여름날"
+thumbnail: /anjeehye/assets/images/post-berlinSummer1.jpeg
+slug: "berlin-summer"
+---
+
+여기 베를린 사람들은 여름날에 뭐하냐면요,
+
+![image]({{site.baseurl}}/assets/images/post-berlinSummer1.jpeg){:class="img-responsive img-center"}
+<figcaption align="center">Schlachtensee</figcaption>
+
+호수로 달려가요 일단.<br>
+주말, 주중 상관 없이요.<br>
+네, 다섯시면 다들 퇴근해서 호수로 달려 가나봐요.<br>
+그도 그럴게, 사람들이 한이 좀 있어요.<br>
+어둡고 우울하고 쓸쓸한 겨울을 막 이겨낸 터라, 한이 서려 있지요.<br>
+
+한국 겨울과는 비교도 안되게 울적하죠.
+
+<br>
+
+한국사는 이가 코로나인데 마스크 안쓴다고 기겁 하더군요.<br>
+맞아요.. 하지만 코로나를 대하는 멘탈 차이가 좀 있어요.<br>
+음.. 대강 야외(환기 잘되는 곳)에선 좀 자유를 즐기자,<br>
+멘탈이 건강해야 몸도 건강하다. 이런거에요.<br>
+자연을 참 사랑하거든요, 독일 사람들은.<br>
+
+두쪽 다 일리 있어요. 싸우지만 않았으면 좋겠어요.
+
+<br>
+
+![image]({{site.baseurl}}/assets/images/post-berlinSummer2.jpeg){:class="img-responsive img-center img-size-medium"}
+
+태양 뜨거운 날,
+
+차가운 강물에서 수영하고 마시는 시원한 맥주 얼마나 꿀맛이게요.
+
+<br>
+
+![image]({{site.baseurl}}/assets/images/post-berlinSummer3.jpeg){:class="img-responsive img-center"}
+
+
+여기도 호수네요.<br>
+코닥 일회용 방수카메라 처음 써봤는데 너무 구려요.<br>
+다 흔들렸지 뭐에요. 흑흑
+
+<br>
+
+![image]({{site.baseurl}}/assets/images/post-berlinSummer4.jpeg){:class="img-responsive img-center img-size-medium"}
+<figcaption align="center">Tegeler See</figcaption>
+
+친구들이랑 자전거타고 근교 여행도 갔어요.
+어디로 갔냐고요? 호수요.
+가방에 딱 수영복, 맥주, 샌드위치 싸들고요.
+
+<br><br>
+
+아, 호수 말고 공원도 많이 가요.
+
+
+![image]({{site.baseurl}}/assets/images/post-berlinSummer5.jpeg){:class="img-responsive img-center"}
+
+<figcaption align="center">Tempelhofer Feld</figcaption>
+
+따스한 날, 탁 트인 하늘, 노을 아래서 맥주 들이키면 어떻게요?<br>
+아 이게 삶의 낙이구나 싶어요. 시간이 천천히 흘러가요.
+<br>
+기분 좋게 느릿 느릿.
+
+<br>
+<br>
+
+![image]({{site.baseurl}}/assets/images/post-berlinSummer6.jpeg){:class="img-responsive img-center img-size-medium"}
+
+<br>
+
+인라인도 타요. 유후!<br>
+Tempelhofer Feld 공원은 예전에 공항이었데요.<br>
+그래서 바닥이 부드러운 아스팔트에요.<br>
+인라인 타기 최고에요.<br>
+인라인, 롤러 스케이트 타는 사람들 지-인짜 많아요.<br>
+<br>
+안탄지 15년은 됐지만 이 실력 어디 안가네요. 하하.
+
+<br>
+
+![image]({{site.baseurl}}/assets/images/post-berlinSummer7.jpeg){:class="img-responsive img-center img-size-medium"}
+<figcaption align="center">Volkspark Friedrichshain</figcaption>
+
+![image]({{site.baseurl}}/assets/images/post-berlinSummer8.jpeg){:class="img-responsive img-center img-size-medium"}
+<figcaption align="center">Spreewald</figcaption>
+
+![image]({{site.baseurl}}/assets/images/post-berlinSummer9.jpeg){:class="img-responsive img-center img-size-medium"}
+<figcaption align="center">Plötzensee</figcaption>
+
+한달 벌어 한달 사는 대학원생도 행복한 여름날 이었어요.
+<br>
+코로나 때문에 공원, 호숫가만 주구장창 갔어요.<br>
+근데 이것도 감사해요.<br>
+내가 자연을 이렇게 좋아하는지 처음 알게됐거든요. 🦦🌞
+<br>

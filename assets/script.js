@@ -9,6 +9,12 @@ URL_STORIES = URL_DEFAULT + "stories/"
 URL_ABOUT = URL_DEFAULT + "about/"
 URL_PORTFOLIO = URL_DEFAULT + "portfolio/"
 
+document.addEventListener('swup:contentReplaced', (event) => {
+  mainBox = document.querySelector('.page-content');
+  mainBox.scrollTo(0,0);
+  window.scrollTo(0,0);
+});
+
 // IDNEITFY FUNCTIONS THAT NEEDS TO BE RUN EVERY TIME A PAGE IS CLICKED
 const activeFunctions = () => {
   photoMasonryGrid();
@@ -18,6 +24,15 @@ const activeFunctions = () => {
   effectsFor35mm();
   loop();
   jeehyeAudio();
+};
+const resizeFunctions = () => {
+  photoMasonryGrid();
+}
+
+// redo masonry grid when dom is resized
+window.onresize = function() {
+  resizeFunctions();
+  console.log("resized!")
 };
 
 // Swup

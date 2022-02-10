@@ -17,17 +17,22 @@ layout: default
   -->  
   <ul class="post-list">
     {%- for post in site.posts -%}
-      <li class="post jeehye-aos">
+      <li class="post aos-jeehye">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <p class="post-meta">
-          {{ post.date | date: date_format }}
-          <span class="category-list">
-            |
-            {{post.categories | join: ' • '}}
-          </span>
-        </p>
-        <a class="post-link" href="{{ post.url | relative_url }}">
 
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          <p class="post-meta">
+            {{ post.date | date: date_format }}
+            <span class="category-list">
+              |
+              {{post.categories | join: ' • '}}
+            </span>
+          </p>
+          {%- if post.thumbnail -%}
+            <div class="post-thumbnail">
+              <img src={{post.thumbnail}}>
+            </div>
+          {%- endif -%}
           <h3>
             {{ post.title | escape }}
           </h3>

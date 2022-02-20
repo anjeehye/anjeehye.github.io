@@ -470,6 +470,10 @@ html.is-animating .transition-fade {
 #comment-policy {
     display: none;
 }
+.post-content .post-message p {
+    background-color: $background-color-translucent;
+    padding: 1rem;
+}
 #disqus_thread {
     font-family: 'Ubuntu Mono', monospace;
     font-size: $base-font-size;

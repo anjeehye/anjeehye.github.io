@@ -63,6 +63,6 @@ show_excerpts: true
 google_analytics: G-1G5PSX7JZF
 
 disqus:
-  shortname: anjeehye
+  shortname: an-jeehye
 
 permalink: /stories/:slug

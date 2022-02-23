@@ -2,6 +2,9 @@ $background-color-translucent: #fdfdfd93;
 $background-color-translucent-light: rgba(255,255,255,.3);
 $border-color-translucent: rgba(255,255,255,.5);
 $brand-color: #5d7096; //#2a7ae2 !default;
+$font-family-accent: 'Black Han Sans', sans-serif;
+// font-family: 'Black Han Sans', sans-serif;
+// font-family: 'IBM Plex Sans KR', sans-serif;
 
 body {
     flex-direction: row;
@@ -75,7 +78,7 @@ h2 {
         height: inherit;
     } 
     .site-title {
-        font-weight: 800;
+        font-family: $font-family-accent;
         transition: .2s ease-in-out;
         &:hover {
             text-decoration: none;
@@ -111,7 +114,7 @@ h2 {
 // PAGE CONTENT
 .page-content {
     transition: .3s ease-in-out;
-    margin-right: 2rem;
+    margin-right: 6rem;
     margin-left: 16rem;
     @include media-query($on-palm) {
         width: 100vw;
@@ -142,12 +145,11 @@ h2 {
 /// HOME ///
 ////////////
 #typewriter-text {
-    font-size: large;
+    font-size: x-large;
     position: absolute;
     top: 65%;
     right: 20%;
     text-align: right;
-    font-style: italic;
     width: 24em;
     height: 2em;
     @include media-query($on-palm) {
@@ -178,12 +180,13 @@ ul.post-list {
         } 
     }
     a.post-link {
-        display: flex;
+        // display: flex;
         flex-direction: column;
         height: 100%;
         transition: .2s ease-in-out;
-        background-color: $background-color-translucent;
-        border: 2px solid $background-color-translucent;
+        background: rgba(255,255,255,.8);;
+        // background-color: $background-color-translucent;
+        // border: 2px solid $background-color-translucent;
         justify-content: center;
         text-decoration: none;
         min-height: 200px;
@@ -194,11 +197,17 @@ ul.post-list {
         padding: 1rem;
         &:hover {
             color: inherit;
-            background-color: rgba(255,255,255,.8);
+            background-color: white;
+            transform: scale(1.02);
         }
         h3 {
             font-size: $base-font-size * 1.1;
             margin: .5rem 0;
+        }
+        .post-link-content {
+            top: 50%;
+            position: relative;
+            transform: translate(0, -53%);
         }
     }
     .post-excerpt {
@@ -215,24 +224,35 @@ ul.post-list {
     }
 }
 .post-meta {
-    font-size: $small-font-size*.9;
+    font-size: $small-font-size;
     color: $text-color;
     //padding: 0 1rem;
     margin-bottom: 0;
-    opacity: .5;
+    // opacity: .5;
+    border-bottom: 1px solid $text-color;
 }  
+article.post {
+    background-color: rgba(255,255,255,.8);
+    padding: 1rem;
+}
 .post-header {
-    text-align: center;
+    text-align: left;
+    margin-bottom: 10px;
     .post-title {
-        font-size: $base-font-size * 2.2;
+        font-weight: 400;
+        // font-size: $base-font-size * 2.2;
+        font-family: $font-family-accent;
+        margin: 1.5rem 0 0 0;
     }
 }
 .post-content {
-    font-family: 'Ubuntu Mono', monospace;
+    // font-family: 'Ubuntu Mono', monospace;
     padding: 2rem 3rem;
-    background-color: $background-color-translucent;
-    border: 2px solid $border-color-translucent;
-    border-radius: 15px;
+    // background-color: rgba(255,255,255,.8);
+    // border: 2px solid $border-color-translucent;
+    // border-radius: 15px;
+    border: 1px solid grey;
+    margin-bottom: 0;
     @include media-query($on-palm) {
         padding: 2rem .5rem;
     }
@@ -276,7 +296,7 @@ pre, code {
         border: none;
         transition: .1s ease-in;
         &:hover {
-            animation: bounce-up .3s;;
+            animation: bounce-up .3s;
             //color: $brand-color;
             cursor: pointer;
             transform: translateY(-2px);   
@@ -288,9 +308,8 @@ pre, code {
     font-size: $small-font-size;
 }
 #description {
-    background-color: $background-color-translucent;
+    background-color: rgba(255,255,255,.8);
     padding: 1rem;
-    max-width: $content-width * .8;
     ul {
         list-style: none;
         margin: 1rem 0;
@@ -311,7 +330,7 @@ pre, code {
         transition: .2s ease-out;
         cursor: cell;
         //animation: bounce-up .3s;;
-        //transform: translateY(-2px);
+        //transform: translateY(-2px);        
     }
 }
 #contact {
@@ -423,8 +442,8 @@ html.is-animating .transition-fade {
 }
 // white glow on black texts right on top of the background image
 #typewriter-text, header, h1 {
-    text-shadow: 0 0 1px white, 0 0 2px white;
-    -webkit-text-stroke: .5px $text-color;
+    // text-shadow: 0 0 1px white, 0 0 2px white;
+    // -webkit-text-stroke: .5px $text-color;
     //font-weight: bold;
 }
 
@@ -501,15 +520,4 @@ figcaption {
 /* COMMENTS */
 #comment-policy {
     display: none;
-}
-.post-content .post-message p {
-    background-color: $background-color-translucent;
-    padding: 1rem;
-}
-#disqus_thread {
-    font-family: 'Ubuntu Mono', monospace;
-    font-size: $base-font-size;
-    #conversation {
-        color: red;
-    }
 }

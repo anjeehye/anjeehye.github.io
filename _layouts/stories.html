@@ -17,21 +17,22 @@ layout: default
   -->  
   <ul class="post-list">
     {%- for post in site.posts -%}
-      <li class="post aos-jeehye">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-
-        <a class="post-link" href="{{ post.url | relative_url }}">
-          <p class="post-meta">
-            {{ post.date | date: date_format }}
-            <span class="category-list">
-              |
-              {{post.categories | join: ' • '}}
-            </span>
-          </p>
+    <li class="post aos-jeehye">
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      
+      <a class="post-link" href="{{ post.url | relative_url }}">
+        <p class="post-meta">
+          {{ post.date | date: date_format }}
+          <span class="category-list">
+            |
+            {{post.categories | join: ' • '}}
+          </span>
+        </p>
+        <div class="post-link-content">
           {%- if post.thumbnail -%}
-            <div class="post-thumbnail">
-              <img src={{post.thumbnail}}>
-            </div>
+          <div class="post-thumbnail">
+            <img src={{post.thumbnail}}>
+          </div>
           {%- endif -%}
           <h3>
             {{ post.title | escape }}
@@ -41,8 +42,10 @@ layout: default
             {{ post.excerpt }}
             {%- endif -%}
           </p>
-        </a>
-      </li>
+        </div>
+        
+      </a>
+    </li>
     {%- endfor -%}
   </ul>
   

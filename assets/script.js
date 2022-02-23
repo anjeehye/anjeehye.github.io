@@ -24,6 +24,7 @@ const activeFunctions = () => {
   effectsFor35mm();
   loop();
   jeehyeAudio();
+  styleComments();
 };
 const resizeFunctions = () => {
   photoMasonryGrid();
@@ -211,3 +212,16 @@ let jeehyeAudio = () => {
   }
 };
 jeehyeAudio();
+
+/* STYLE COMMENTS */
+let styleComments = () => {
+  commentBox = document.querySelector('#disqus_thread')
+  commentBox.style.fontFamily = 'Ubuntu Mono'
+
+  commentContents = document.querySelectorAll('.post-message p');
+  commentContents.forEach(content => {
+    content.style.backgroundColor="white";
+    content.style.padding = "1rem";
+  });
+};
+styleComments();

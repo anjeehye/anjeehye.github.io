@@ -185,7 +185,7 @@ ul.post-list {
         height: 100%;
         transition: .2s ease-in-out;
         background: rgba(255,255,255,.8);;
-        justify-content: space-around;
+        justify-content: space-between;
         text-decoration: none;
         min-height: 200px;
         @include media-query($on-palm) {

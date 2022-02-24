@@ -439,11 +439,8 @@ html.is-animating .transition-fade {
     }
 }
 // white glow on black texts right on top of the background image
-#typewriter-text, header, h1 {
+#typewriter-text {
     font-family: monospace;
-    // text-shadow: 0 0 1px white, 0 0 2px white;
-    // -webkit-text-stroke: .5px $text-color;
-    //font-weight: bold;
 }
 
 .underline-effect { // UNDERLINE EFFECT

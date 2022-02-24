@@ -180,14 +180,12 @@ ul.post-list {
         } 
     }
     a.post-link {
-        // display: flex;
+        display: flex;
         flex-direction: column;
         height: 100%;
         transition: .2s ease-in-out;
         background: rgba(255,255,255,.8);;
-        // background-color: $background-color-translucent;
-        // border: 2px solid $background-color-translucent;
-        justify-content: center;
+        justify-content: space-around;
         text-decoration: none;
         min-height: 200px;
         @include media-query($on-palm) {
@@ -204,10 +202,9 @@ ul.post-list {
             font-size: $base-font-size * 1.1;
             margin: .5rem 0;
         }
-        .post-link-content {
-            top: 50%;
-            position: relative;
-            transform: translate(0, -53%);
+        .post-link-empty {
+            width: 100%;
+            height: 1px;
         }
     }
     .post-excerpt {
@@ -255,6 +252,7 @@ article.post {
     margin-bottom: 0;
     @include media-query($on-palm) {
         padding: 2rem .5rem;
+        border: none;
     }
     img {
         max-height: 80vh;

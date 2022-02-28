@@ -1,4 +1,6 @@
 ### Hi there 👋
+I'm Jeehye. I study neuroscience and I shoot 35mm.
+Find out more about me on my [website](https://anjeehye.github.io/anjeehye) 👀🚀♥️🐳
 
 <!--
 **anjeehye/anjeehye** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.

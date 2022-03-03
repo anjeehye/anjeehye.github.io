@@ -216,12 +216,14 @@ jeehyeAudio();
 /* STYLE COMMENTS */
 let styleComments = () => {
   commentBox = document.querySelector('#disqus_thread')
-  commentBox.style.fontFamily = 'Ubuntu Mono'
+  if commentBox {
+    commentBox.style.fontFamily = 'Ubuntu Mono'
 
-  commentContents = document.querySelectorAll('.post-message p');
-  commentContents.forEach(content => {
-    content.style.backgroundColor="white";
-    content.style.padding = "1rem";
-  });
+    commentContents = document.querySelectorAll('.post-message p');
+    commentContents.forEach(content => {
+      content.style.backgroundColor="white";
+      content.style.padding = "1rem";
+    });
+  }
 };
 styleComments();

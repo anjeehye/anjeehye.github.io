@@ -216,7 +216,7 @@ jeehyeAudio();
 /* STYLE COMMENTS */
 let styleComments = () => {
   commentBox = document.querySelector('#disqus_thread')
-  if commentBox {
+  if(commentBox) {
     commentBox.style.fontFamily = 'Ubuntu Mono'
 
     commentContents = document.querySelectorAll('.post-message p');

@@ -232,17 +232,29 @@ let disqusForSwup = () => {
   let disqusComments = document.querySelector('#disqus_thread');
   if(disqusComments) {
 
-    var disqus_config = function () {
-      this.page.url = window.location.href;
-      this.page.identifier = $('#disqus_thread').attr('data-id');
-    };
+    DISQUS.reset({
+      reload: true,
+      config: function () {  
+        this.page.identifier = $('#disqus_thread').attr('data-id');
+        this.page.url = window.location.href;
+      }
+    });
+    
 
-    (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://'+ 'an-jeehye' +'.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
+    // var disqus_config = function () {
+    //   this.page.url = window.location.href;
+    //   this.page.identifier = $('#disqus_thread').attr('data-id');
+    // };
+
+    // (function() {
+    //   var d = document, s = d.createElement('script');
+    //   s.src = 'https://'+ 'an-jeehye' +'.disqus.com/embed.js';
+    //   s.setAttribute('data-timestamp', +new Date());
+    //   (d.head || d.body).appendChild(s);
+    // })();
+
+
+
     // var disqus_config = function () {
     //   this.page.url = '{{ page.url | absolute_url }}';
     //   this.page.identifier = '{{ page.url | absolute_url }}';

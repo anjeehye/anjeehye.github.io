@@ -230,7 +230,7 @@ let styleComments = () => {
 styleComments();
 
 let disqusForSwup = () => {
-  let disqusComments = querySelector('#disqus_thread');
+  let disqusComments = document.querySelector('#disqus_thread');
   if(disqusComments) {
     var disqus_config = function () {
       this.page.url = '{{ page.url | absolute_url }}';
@@ -247,3 +247,4 @@ let disqusForSwup = () => {
     })();
   }
 };
+disqusForSwup();

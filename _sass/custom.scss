@@ -365,11 +365,6 @@ ul.photo-list {
     li.photo-item {
         width: 50%;
         height: auto;
-        transition: transform .2s ease-out;
-        &:hover {
-            // animation: photo-bounce .3s;
-            transform: scale(1.01);
-        }
         a {
             display: block;
             margin: .5rem;
@@ -507,7 +502,7 @@ html.is-animating .transition-fade {
     opacity: 0;
     transition-property: opacity, transform;
     transform: translate(0, 50px);
-    transition: all 1000ms ease-out;
+    transition: transform 1s ease-out, opacity 1s ease-out;
 }
 .is-visible {
  opacity: 1;

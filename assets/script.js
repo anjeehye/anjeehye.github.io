@@ -26,6 +26,7 @@ const activeFunctions = () => {
   jeehyeAudio();
   styleComments();
   disqusForSwup();
+  modalPreview();
 };
 const resizeFunctions = () => {
   photoMasonryGrid();
@@ -253,8 +254,6 @@ let disqusForSwup = () => {
       (d.head || d.body).appendChild(s);
     })();
 
-
-
     // var disqus_config = function () {
     //   this.page.url = '{{ page.url | absolute_url }}';
     //   this.page.identifier = '{{ page.url | absolute_url }}';
@@ -272,3 +271,25 @@ let disqusForSwup = () => {
 };
 disqusForSwup();
 
+let modalPreview = () => {
+  const modalTrigger = document.querySelectorAll('.modal-link');
+  const modalOverlay = document.querySelector('.modal-overlay');
+
+  modalTrigger.forEach(trigger => {
+    trigger.addEventListener("click", (e) => {
+      image = trigger.getElementsByTagName('img')[0];
+      // Modal image
+      let modalImage = new Image;
+      modalImage.src = image.src;
+      // Overlay
+      modalOverlay.classList.remove('hidden');
+      modalOverlay.appendChild(modalImage);
+
+      modalOverlay.addEventListener("click", (e) => {
+        modalOverlay.innerHTML = "";
+        modalOverlay.classList.add("hidden");
+      });
+    });
+  })
+};
+modalPreview();

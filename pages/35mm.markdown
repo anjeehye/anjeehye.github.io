@@ -12,7 +12,7 @@ permalink: /35mm/
   %}
   {% for photo in photos %}
     <li class="photo-item aos-jeehye">
-      <a class="post-link">
+      <a class="modal-link">
         <img alt="{{ photo.alt }}" src="{{ photo.link }}">
       </a>
     </li>

@@ -11,8 +11,8 @@ tagurl: korea
         | where: "display", true
     %}
     {% for photo in photos %}
-    <li class="photo-item jeehye-aos">
-        <a class="post-link" disabled>
+    <li class="photo-item aos-jeehye">
+        <a class="modal-link">
         <img alt="{{ photo.alt }}" src="{{ photo.link }}">
         </a>
     </li>

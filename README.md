@@ -2,7 +2,7 @@
 
 I'm **Jeehye**. I study _neuroscience_ and I shoot _35mm_.
 
-Find out more about me on my [website](https://anjeehye.github.io/anjeehye)! 👀🚀♥️🐳
+Find out more about me on my [website](https://anjeehye.github.io/)! 👀🚀♥️🐳
 
 <!--
 **anjeehye/anjeehye** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.

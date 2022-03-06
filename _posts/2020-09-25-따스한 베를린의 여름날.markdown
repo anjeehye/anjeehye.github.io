@@ -4,7 +4,7 @@ title:  "따스한 베를린의 여름날"
 date:   2020-09-25 21:41 +0100
 categories: "berlin"
 excerpt: "한달 벌어 한달 사는 대학원생도 행복한 여름날"
-thumbnail: /anjeehye/assets/images/post-berlinSummer1.jpeg
+thumbnail: /assets/images/post-berlinSummer1.jpeg
 slug: "berlin-summer"
 ---
 

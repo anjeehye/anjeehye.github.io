@@ -22,7 +22,7 @@ title: JEEHYE AN
 email: anjeehye1@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Hi, I'm Jeehye. I study the mind and brain.
-baseurl: "/anjeehye" # the subpath of your site, e.g. /blog
+# baseurl: "/anjeehye" # the subpath of your site, e.g. /blog
 url: "http://anjeehye.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  anjeehye

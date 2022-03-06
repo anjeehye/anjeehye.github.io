@@ -203,7 +203,7 @@ function isElementInViewport(el) {
 
 let jeehyeAudio = () => {
   let audio = document.createElement('audio');
-  audio.setAttribute('src', '/anjeehye/assets/jeehye.mp3');
+  audio.setAttribute('src', '/assets/jeehye.mp3');
   speakerIcon = document.querySelector('#speakerIcon');
   if(speakerIcon) {
     speakerIcon.addEventListener("click", () => {

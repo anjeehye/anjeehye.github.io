@@ -4,7 +4,7 @@ title:  "다낭"
 date:   2019-05-01 15:15 +0100
 categories: "globetrotting"
 excerpt: "나 어디를 갔다 온거지??"
-thumbnail: /anjeehye/assets/images/post-danangkylie2.jpeg
+thumbnail: /assets/images/post-danangkylie2.jpeg
 slug: "danang"
 ---
 

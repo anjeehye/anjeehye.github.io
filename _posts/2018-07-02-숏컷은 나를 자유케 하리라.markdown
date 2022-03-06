@@ -4,7 +4,7 @@ title:  "숏컷은 나를 자유케 하리라"
 date:   2018-07-02 10:25 +0100
 categories: "amoomal"
 excerpt: "과연? 두둥"
-thumbnail: /anjeehye/assets/images/shortcut.jpeg
+thumbnail: /assets/images/shortcut.jpeg
 slug: "jeehye-is-a-free-elf"
 ---
 ![image]({{site.baseurl}}/assets/images/shortcut.jpeg){:class="img-responsive img-center"}

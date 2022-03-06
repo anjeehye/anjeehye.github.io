@@ -4,7 +4,7 @@ title:  "Post-congregation emotionalism"
 date:   2018-12-15 20:32 +0100
 categories: "Milepost"
 excerpt: "Is it the beer, or is it me."
-thumbnail: /anjeehye/assets/images/thumbnail-congregation.jpeg
+thumbnail: /assets/images/thumbnail-congregation.jpeg
 ---
 
 I might be sort of getting the point of ceremonial occasions. Those that demand you to dress in painfully conventional dresses and sit on an incommodious chair for 4 hours so you could walk across the stage for 10 seconds while your parents desperately (and unsuccessfully) try to take a photo of you from across the gigantic hall. I’ve no longer been an undergraduate since 6 months back. But actually attending the congregation ceremony makes me all sentimental and stuff. 

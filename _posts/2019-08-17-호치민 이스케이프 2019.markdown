@@ -4,7 +4,7 @@ title:  "호치민 이스케이프 2019"
 date:   2019-08-17 12:47 +0100
 categories: "globetrotting"
 excerpt: "어디든 가고 싶었다.  비행기표가 저렴했다. 와 버렸다! 또 혼자!"
-thumbnail: /anjeehye/assets/images/post-hochiminhBahnmi2.jpeg
+thumbnail: /assets/images/post-hochiminhBahnmi2.jpeg
 slug: "hochiminh-escape-2019"
 ---
 

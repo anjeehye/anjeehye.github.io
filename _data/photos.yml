@@ -96,6 +96,12 @@
   sort: 1200.6
   link: "https://lh3.googleusercontent.com/pw/AM-JKLUY_swK8V95HhfmNWfYP_GXPFRkLe_Fii2ZujmHIDBM_ueKyjwzXa823j93S1m6sNHtgMoZCPuYmmdK06gc8d_6EKBs7Vj9-HzlLv8hjnH7gupVdR1vcTHAMzzliYxrmVg0Vsdp1neNq0Hrse6_bgLP=w1000-h671-no?authuser=0"
   display: true
+- title: "Me"
+  alt: "Me"
+  sort: 1200.7
+  tags: ["HongKong", "Jeehye"]
+  link : "https://lh3.googleusercontent.com/pw/AM-JKLVwFYWwU7zd1kxJ1YlpMCjlXT3HfY5ksF4rffvUzSeMliN0IqLq6mX__ehKARVkAXt1CQ3eFfTBkH6UDL5E2E5CxSkLuqKCMtoz97_rFesK8OEPitLF5a_F49Yp4-VPBLrZVLzvVUeGd7ScuBj-fVbj=w1910-h1528-no?authuser=0"
+  display: true
 - title: "Star ferry, a view from a ship"
   alt: "Star ferry, view from a ride"
   sort: 1201
@@ -140,12 +146,6 @@
   tags: "Korea"
   link: "https://lh3.googleusercontent.com/pw/AM-JKLUg70VUjXKn7cCs1ROglZLCoT8YY5KogTGb2udVuDg08t3dtJCSbyRfTe-lhMJE8FQJeH6OcqZ4dcU3Xhs2846P3T31G90CCYW7idolRIzLe7mNEBp5ZhzBAAc8iK99IO-J-LPwlEuSapdPh8bwyRF7=w1000-h800-no?authuser=0"
   display: true
-- title: "Me, Korea, Red striped shirt"
-  alt: "Me, Korea, in a red striped shirt"
-  sort: 2100
-  tags: ["Korea", "Jeehye", "Portrait"]
-  link: "https://lh3.googleusercontent.com/pw/AM-JKLWfhZEzhzVHssyIyeQPmDOI7yEQRHDIujPEl_DDyaFkVzrzoLM6LTfEpIZ11zCV80HHGdGZeNqm35WxzO-iuQTYpU2MgJt35_mIbg1CmUmzQ9QsLQroM8vDzUWXuu3irl2zfrbLgFnB0ns35K0s69lc=w1000-h663-no?authuser=0"
-  display: true
 - title:  "Eunil in Euljiro I think"
   alt: "Eunil in Eulrijo I think"
   sort:  2100.1
@@ -164,27 +164,33 @@
   tags: "Korea"
   link: "https://lh3.googleusercontent.com/pw/AM-JKLUGH05j2QvlTOqBGAKXAQSAXosDiC_wc0ZnkLxo3mcs_5ImmGTATU8yCaHP7mPi8nMFIKhb71FtO-HvNbhIM1zGZjUHZAICZ2oKdFml04NT6eY4Jcw3qoegxKSXot37Bx7VUEn9lltV4v_SvCFFS7uZ=s1000-no?authuser=0"
   display: true
+- title: "Me, Korea, Red striped shirt"
+  alt: "Me, Korea, in a red striped shirt"
+  sort: 2200
+  tags: ["Korea", "Jeehye", "Portrait"]
+  link: "https://lh3.googleusercontent.com/pw/AM-JKLWfhZEzhzVHssyIyeQPmDOI7yEQRHDIujPEl_DDyaFkVzrzoLM6LTfEpIZ11zCV80HHGdGZeNqm35WxzO-iuQTYpU2MgJt35_mIbg1CmUmzQ9QsLQroM8vDzUWXuu3irl2zfrbLgFnB0ns35K0s69lc=w1000-h663-no?authuser=0"
+  display: true
 - title: "Jessie and I, my birthday"
   alt: "Jessie and I. My birthday."
-  sort: 2100.4
+  sort: 2201
   tags: ["Korea", "Jeehye", "Portrait"]
   link: "https://lh3.googleusercontent.com/pw/AM-JKLVjuxULapaS9_dJnaabkdDVxrbo-llDhJqrnzfVxKf86KUEL0boa_q82xu43a4K93xEWuGEXWKufn10jHvlQrGk_18X8vS8QUlwc701MWKAZbvlEVtTKFrYIu5kfgAOHItc8zLa_YJhjoolYfFDK7JM=w1000-h671-no?authuser=0"
   display: false
 - title: "Jessie and Kylie, my birthday"
   alt: "Jessie and Kylie. My birthday."
-  sort: 2100.5
+  sort: 2202
   tags: "Korea"
   link: "https://lh3.googleusercontent.com/pw/AM-JKLXRkw1ZkQJmCzgGvqlocLKkrs4JDothO_MZNa5tf7KEP2QSxTXSCc8XjP4AO_O_eJYWoxHgUahjr52eihwHLUji-jzc_zud5Rk3cqPtrN6iW5zT0g397iSl429H0XljRi7LDixyVfSntRGTqoXB1YvU=w1000-h671-no?authuser=0"
   display: true
 - title: "Kylie and I, christmas"
   alt: "Kylie and I wearing funny Christmas glasses"
-  sort: 2100.6
+  sort: 2203
   tags: ["Korea", "Jeehye", "Portrait"]
   link: "https://lh3.googleusercontent.com/pw/AM-JKLWMqWwFK7XGSejNNYbDAJlpNEzLBe1EZM230sGzRxjCd7SLWB6-v84PcVANhwv4jc_jkfYv130gL51C_dG-OGYAZxeA05cYDXGuPy9t0cF8ZuTIT-zlIg_Cqv2tnzTpc8YB1ZAnO5oqMLLgKVxdmqJU=w1000-h663-no?authuser=0"
   display: false
 - title: "LP bar"
   alt: "LP bar"
-  sort: 2101
+  sort: 2204
   tags: "Korea"
   link: "https://lh3.googleusercontent.com/pw/AM-JKLWv1j1GDTMiucdPqOXZ-jsJGuOvKcgPmkXMNrd48K5OY1hn6pmwIy902YRoyVsEmhf_Hm7Xx956JXLktIGIVX9N-HmNUm4cOP-xfmPKbE64IfmzyfD4tcZv9_4OQSdc0znbEcyar6aXxljPEQRMY0ii=s1000-no?authuser=0"
   display: true

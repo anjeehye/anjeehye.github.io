@@ -13,7 +13,8 @@ tagurl: hongkong
     {% for photo in photos %}
     <li class="photo-item aos-jeehye">
         <a class="modal-link">
-        <img alt="{{ photo.alt }}" src="{{ photo.link }}">
+            <img alt="{{ photo.alt }}" src="{{ photo.link }}">
+            <p>#{{photo.tags | join: ' #'}}</p>
         </a>
     </li>
     {% endfor %}

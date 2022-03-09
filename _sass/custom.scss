@@ -369,6 +369,10 @@ ul.photo-list {
             display: block;
             margin: .5rem;
             cursor: zoom-in;
+            text-decoration: none;
+        }
+        p {
+            display: none;
         }
         @include media-query($on-palm) {
             width: 100%;
@@ -380,6 +384,7 @@ ul.photo-list {
     opacity: 1;
     background-color: rgba(0,0,0,0.9);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 10rem;
@@ -393,9 +398,15 @@ ul.photo-list {
     cursor: zoom-out;
     img {
         display: block;
-        margin: 3rem;
         max-width: 90%;
         max-height: 90%;
+    }
+    p {
+        font-family: monospace;
+        padding: 0;
+        margin: 0;
+        color: rgba(255,255,255,.6);
+        text-align: center;
     }
 }
 

@@ -277,13 +277,20 @@ let modalPreview = () => {
 
   modalTrigger.forEach(trigger => {
     trigger.addEventListener("click", (e) => {
-      image = trigger.getElementsByTagName('img')[0];
+      let image = trigger.getElementsByTagName('img')[0];
+      let tags = trigger.getElementsByTagName('p')[0];
+      console.log("1",tags);
+
       // Modal image
       let modalImage = new Image;
       modalImage.src = image.src;
+      let modalTags = tags.cloneNode(true);
+      console.log(modalTags);
+
       // Overlay
       modalOverlay.classList.remove('hidden');
       modalOverlay.appendChild(modalImage);
+      modalOverlay.appendChild(modalTags);
 
       modalOverlay.addEventListener("click", (e) => {
         modalOverlay.innerHTML = "";

@@ -8,6 +8,7 @@ URL_DEFAULT = "/anjeehye/"
 URL_STORIES = URL_DEFAULT + "stories/"
 URL_ABOUT = URL_DEFAULT + "about/"
 URL_PORTFOLIO = URL_DEFAULT + "portfolio/"
+VERTICAL_HEADER = false
 
 document.addEventListener('swup:contentReplaced', (event) => {
   mainBox = document.querySelector('.page-content');
@@ -116,26 +117,26 @@ copyEmail();
 
 /* HIGHLIGHT CURRENT NAV BAR MENU */
 const navBarHighlight = () => { /* clicked item */
-  let loc = window.location.pathname;
-  let navBarLinks = document.querySelector('.site-nav').querySelectorAll("a");
-  
-  navBarLinks.forEach(link => {
-    currLink = link.innerText.replace('#', '');
+let loc = window.location.pathname;
+let navBarLinks = document.querySelector('.site-nav').querySelectorAll("a");
 
-    // if current url has it, attach current
-    if(loc != URL_DEFAULT) {
-      let currLoc = loc.toLowerCase();
-      if(currLoc.includes(currLink.toLowerCase())) {
-        link.classList.add('current');
-      }
-      else {
-        link.classList.remove('current');
-      }
+navBarLinks.forEach(link => {
+  currLink = link.innerText.replace('#', '');
+  
+  // if current url has it, attach current
+  if(loc != URL_DEFAULT) {
+    let currLoc = loc.toLowerCase();
+    if(currLoc.includes(currLink.toLowerCase())) {
+      link.classList.add('current');
     }
     else {
-      navBarLinks.forEach(link => link.classList.remove('current'));
-    };
-  });
+      link.classList.remove('current');
+    }
+  }
+  else {
+    navBarLinks.forEach(link => link.classList.remove('current'));
+  };
+});
 }
 navBarHighlight();
 
@@ -158,24 +159,30 @@ photoMasonryGrid();
 /* WHEN AT 35MM PAGE, CHANGE .PAGE-CONTENT BACKGROUND COLOR */
 const effectsFor35mm = () => { 
   let loc = window.location.pathname;
-  tagNav = document.querySelector(".tag-nav");
-  pageWrapper = document.querySelector(".page-content");
-  if(loc.includes("35mm")) { // if in 35mm page
+  if(VERTICAL_HEADER){
+    tagNav = document.querySelector(".tag-nav");
+    if(loc.includes("35mm")) { // if in 35mm page
       tagNav.classList.remove('hidden-nav');
-      pageWrapper.classList.add('translucent-background');
     }
     else {
       tagNav.classList.add('hidden-nav');
-      pageWrapper.classList.remove('translucent-background');
     }
+  }
+  pageWrapper = document.querySelector(".page-content");
+  if(loc.includes("35mm")) { // if in 35mm page
+    pageWrapper.classList.add('translucent-background');
+  }
+  else {
+    pageWrapper.classList.remove('translucent-background');
+  }
 }
 effectsFor35mm();
 
 /* My AOS - copied from previous website & the internet */
 const loop = () => {
   let scroll = window.requestAnimationFrame ||
-    // IE Fallback
-    function(callback){ window.setTimeout(callback, 1000/60)};
+  // IE Fallback
+  function(callback){ window.setTimeout(callback, 1000/60)};
   let elementsToShow = document.querySelectorAll('.aos-jeehye');
   elementsToShow.forEach(function (element) {
     if (isElementInViewport(element)) {
@@ -193,110 +200,110 @@ function isElementInViewport(el) {
   return (
     (rect.top <= 0
       && rect.bottom >= 0)
-    ||
-    (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+      ||
+      (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
       rect.top <= (window.innerHeight || document.documentElement.clientHeight))
-    ||
-    (rect.top >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
-  );
-}
-
-let jeehyeAudio = () => {
-  let audio = document.createElement('audio');
-  audio.setAttribute('src', '/assets/jeehye.mp3');
-  speakerIcon = document.querySelector('#speakerIcon');
-  if(speakerIcon) {
-    speakerIcon.addEventListener("click", () => {
-      audio.play();
-    })
-  }
-};
-jeehyeAudio();
-
-/* STYLE COMMENTS */
-let styleComments = () => {
-  commentBox = document.querySelector('#disqus_thread')
-  if(commentBox) {
-    commentBox.style.fontFamily = 'Ubuntu Mono'
-
-    commentContents = document.querySelectorAll('.post-message p');
-    commentContents.forEach(content => {
-      content.style.backgroundColor="white";
-      content.style.padding = "1rem";
-    });
-  }
-};
-styleComments();
-
-let disqusForSwup = () => {
-  let disqusComments = document.querySelector('#disqus_thread');
-  if(disqusComments) {
-
-    // DISQUS.reset({
-    //   reload: true,
-    //   config: function () {  
-    //     this.page.identifier = $('#disqus_thread').attr('data-id');
-    //     this.page.url = window.location.href;
-    //   }
-    // });
-    
-
-    var disqus_config = function () {
-      this.page.url = window.location.href;
-      this.page.identifier = $('#disqus_thread').attr('data-id');
-    };
-
-    (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://'+ 'an-jeehye' +'.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-
-    // var disqus_config = function () {
-    //   this.page.url = '{{ page.url | absolute_url }}';
-    //   this.page.identifier = '{{ page.url | absolute_url }}';
-    // };
-  
-    // (function() {
-    //   var d = document, s = d.createElement('script');
-  
-    //   s.src = 'https://{{ site.disqus.shortname }}.disqus.com/embed.js';
-  
-    //   s.setAttribute('data-timestamp', +new Date());
-    //   (d.head || d.body).appendChild(s);
-    // })();
-  }
-};
-disqusForSwup();
-
-let modalPreview = () => {
-  const modalTrigger = document.querySelectorAll('.modal-link');
-  const modalOverlay = document.querySelector('.modal-overlay');
-
-  modalTrigger.forEach(trigger => {
-    trigger.addEventListener("click", (e) => {
-      let image = trigger.getElementsByTagName('img')[0];
-      let tags = trigger.getElementsByTagName('p')[0];
-      console.log("1",tags);
-
-      // Modal image
-      let modalImage = new Image;
-      modalImage.src = image.src;
-      let modalTags = tags.cloneNode(true);
-      console.log(modalTags);
-
-      // Overlay
-      modalOverlay.classList.remove('hidden');
-      modalOverlay.appendChild(modalImage);
-      modalOverlay.appendChild(modalTags);
-
-      modalOverlay.addEventListener("click", (e) => {
-        modalOverlay.innerHTML = "";
-        modalOverlay.classList.add("hidden");
-      });
-    });
-  })
-};
-modalPreview();
+      ||
+      (rect.top >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+        );
+      }
+      
+      let jeehyeAudio = () => {
+        let audio = document.createElement('audio');
+        audio.setAttribute('src', '/assets/jeehye.mp3');
+        speakerIcon = document.querySelector('#speakerIcon');
+        if(speakerIcon) {
+          speakerIcon.addEventListener("click", () => {
+            audio.play();
+          })
+        }
+      };
+      jeehyeAudio();
+      
+      /* STYLE COMMENTS */
+      let styleComments = () => {
+        commentBox = document.querySelector('#disqus_thread')
+        if(commentBox) {
+          commentBox.style.fontFamily = 'Ubuntu Mono'
+          
+          commentContents = document.querySelectorAll('.post-message p');
+          commentContents.forEach(content => {
+            content.style.backgroundColor="white";
+            content.style.padding = "1rem";
+          });
+        }
+      };
+      styleComments();
+      
+      let disqusForSwup = () => {
+        let disqusComments = document.querySelector('#disqus_thread');
+        if(disqusComments) {
+          
+          // DISQUS.reset({
+          //   reload: true,
+          //   config: function () {  
+          //     this.page.identifier = $('#disqus_thread').attr('data-id');
+          //     this.page.url = window.location.href;
+          //   }
+          // });
+          
+          
+          var disqus_config = function () {
+            this.page.url = window.location.href;
+            this.page.identifier = $('#disqus_thread').attr('data-id');
+          };
+          
+          (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://'+ 'an-jeehye' +'.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+          
+          // var disqus_config = function () {
+          //   this.page.url = '{{ page.url | absolute_url }}';
+          //   this.page.identifier = '{{ page.url | absolute_url }}';
+          // };
+          
+          // (function() {
+          //   var d = document, s = d.createElement('script');
+          
+          //   s.src = 'https://{{ site.disqus.shortname }}.disqus.com/embed.js';
+          
+          //   s.setAttribute('data-timestamp', +new Date());
+          //   (d.head || d.body).appendChild(s);
+          // })();
+        }
+      };
+      disqusForSwup();
+      
+      let modalPreview = () => {
+        const modalTrigger = document.querySelectorAll('.modal-link');
+        const modalOverlay = document.querySelector('.modal-overlay');
+        
+        modalTrigger.forEach(trigger => {
+          trigger.addEventListener("click", (e) => {
+            let image = trigger.getElementsByTagName('img')[0];
+            let tags = trigger.getElementsByTagName('p')[0];
+            console.log("1",tags);
+            
+            // Modal image
+            let modalImage = new Image;
+            modalImage.src = image.src;
+            let modalTags = tags.cloneNode(true);
+            console.log(modalTags);
+            
+            // Overlay
+            modalOverlay.classList.remove('hidden');
+            modalOverlay.appendChild(modalImage);
+            modalOverlay.appendChild(modalTags);
+            
+            modalOverlay.addEventListener("click", (e) => {
+              modalOverlay.innerHTML = "";
+              modalOverlay.classList.add("hidden");
+            });
+          });
+        })
+      };
+      modalPreview();

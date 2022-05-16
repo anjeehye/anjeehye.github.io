@@ -69,3 +69,5 @@ disqus:
   shortname: an-jeehye
 
 permalink: /stories/:slug
+
+vertical_header: false

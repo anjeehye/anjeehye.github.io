@@ -15,6 +15,10 @@ tagurl: berlin
         <a class="modal-link">
             <img alt="{{ photo.alt }}" src="{{ photo.link }}">
             <p>#{{photo.tags | join: ' #'}}</p>
+            {% for tag in photo.tags %}
+                <p>{{tag}}</p>
+                <!-- if tag within photo_tags, link to page -->
+            {% endfor %}
         </a>
     </li>
     {% endfor %}

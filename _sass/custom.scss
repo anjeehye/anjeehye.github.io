@@ -164,7 +164,7 @@ h2 {
         align-items: center;
     }
     transition: .3s ease-in-out;
-
+    
     @include media-query($on-palm) {
         width: 100vw;
         margin: 10rem 0 0 0;
@@ -195,7 +195,9 @@ h2 {
 /// HOME ///
 ////////////
 #typewriter-text {
+    font-family: $mono-font-family;
     font-size: x-large;
+    font: monospace;
     position: absolute;
     top: 65%;
     right: 20%;
@@ -434,21 +436,21 @@ pre, code {
 
 #myPhoto {
     //display: none;
-   background-image: url('https://lh3.googleusercontent.com/pw/AM-JKLV7vqVh6u-277985WCCX3aVpsT4E9FFdoA-VP206Ra3buz4vVFXfctiQnUYFKJ7_IHOBxGB4j3-WUhypHT5kCmt-ueZc1QvMpfkvFbJNbDKNMhHyfPk1QFhoKrsmgifJpwitxFqYomqy7SZ_i3Kzz-9=w1100-h1262-no?authuser=0');
-   background-repeat: no-repeat;
-   background-size: contain;
-   background-position: center;
-   transition: .2s ease-out;
-   height: 100%;
-   width: 100%;
-   border: none;
-   @media (max-width:767px){ // mobile
-     height: 60vh;
-   }
-   &:hover {
-   background-image: url('https://lh3.googleusercontent.com/pw/AM-JKLXH_ij3DwbvrLXn76AMQCisgol24P0OQDuKtv83DkFZq8yoKqUM50yCX7CwbfN19emb0b0LBmae3aalJGjDeynCEa8-b7vWcN7s6hzXc4xBl-7oZ6NA3puqcsceZ75LQ7x-vcnvH1nZZU22CuqML-t7=w1100-h1262-no?authuser=0');
-   }
-  }
+    background-image: url('https://lh3.googleusercontent.com/pw/AM-JKLV7vqVh6u-277985WCCX3aVpsT4E9FFdoA-VP206Ra3buz4vVFXfctiQnUYFKJ7_IHOBxGB4j3-WUhypHT5kCmt-ueZc1QvMpfkvFbJNbDKNMhHyfPk1QFhoKrsmgifJpwitxFqYomqy7SZ_i3Kzz-9=w1100-h1262-no?authuser=0');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: .2s ease-out;
+    height: 100%;
+    width: 100%;
+    border: none;
+    @media (max-width:767px){ // mobile
+        height: 60vh;
+    }
+    &:hover {
+        background-image: url('https://lh3.googleusercontent.com/pw/AM-JKLXH_ij3DwbvrLXn76AMQCisgol24P0OQDuKtv83DkFZq8yoKqUM50yCX7CwbfN19emb0b0LBmae3aalJGjDeynCEa8-b7vWcN7s6hzXc4xBl-7oZ6NA3puqcsceZ75LQ7x-vcnvH1nZZU22CuqML-t7=w1100-h1262-no?authuser=0');
+    }
+}
 
 
 ////////////
@@ -497,7 +499,7 @@ ul.photo-list {
         max-height: 90%;
     }
     p {
-        font-family: monospace;
+        font-family: $mono-font-family;
         padding: 0;
         margin: 0;
         color: rgba(255,255,255,.6);
@@ -559,95 +561,92 @@ html.is-animating .transition-fade {
     opacity: 0;
 }
 // @keyframes bounce-up {
-    //     0% {
-        //         -webkit-transform: translateY(0px);
-        //         transform: translateY(0px);
-        //     }
-        //     70% {
-            //         -webkit-transform: translateY(-3px);
-            //         transform: translateY(-3px);
-            //     }
-            //     100% {
-                //         -webkit-transform: translateY(-2px);
-                //         transform: translateY(-2px);
-                //     }
-                // }
-                // white glow on black texts right on top of the background image
-                #typewriter-text {
-                    font-family: monospace;
-                }
-                
-                .underline-effect { // UNDERLINE EFFECT
-                    transition: .2s ease-in-out;
-                    a:after {
-                        position: absolute;
-                        bottom: .2em; left: 0; right: 0;
-                        margin: auto;
-                        width: 0%;
-                        content: '';
-                        color: transparent;
-                        background: #212529;
-                        height: .05em;
-                        text-decoration: none;
-                    }
-                    a:after {
-                        transition: .2s ease-in-out;
-                    }
-                    a:hover, a.current {
-                        text-decoration: none;
-                        font-style: italic;
-                    }
-                    a:hover:after {
-                        width: 100%;
-                    }
-                    a.current:after {
-                        width: 100%
-                    }
-                }
-                .aos-jeehye {
-                    opacity: 0;
-                    transition-property: opacity, transform;
-                    transform: translate(0, 50px);
-                    transition: transform 1s ease-out, opacity 1s ease-out;
-                }
-                .is-visible {
-                    opacity: 1;
-                    transform: none;
-                }
-                .img-three-row {
-                    display: inline-block;
-                    width: 30%;
-                    @include media-query($on-palm) {
-                        width: inherit;
-                    } 
-                }
-                .img-two-row {
-                    display: inline-block;
-                    width: 45%;
-                    @include media-query($on-palm) {
-                        width: inherit;
-                    } 
-                }
-                .img-small {
-                    max-width: 300px;
-                }
-                .photo-gallery-four {
-                    display: inline-block;
-                    width: 23%;
-                    @include media-query($on-palm) {
-                        width: inherit;
-                    }   
-                }
-                figcaption {
-                    margin-bottom: 1rem;
-                    color: $brand-color;
-                }
-                .img-size-medium {
-                    max-width: 400px;
-                }
-                
-                
-                /* COMMENTS */
-                #comment-policy {
-                    display: none;
-                }
+//     0% {
+//         -webkit-transform: translateY(0px);
+//         transform: translateY(0px);
+//     }
+//     70% {
+//         -webkit-transform: translateY(-3px);
+//         transform: translateY(-3px);
+//     }
+//     100% {
+//         -webkit-transform: translateY(-2px);
+//         transform: translateY(-2px);
+//     }
+// }
+// white glow on black texts right on top of the background image
+
+.underline-effect { // UNDERLINE EFFECT
+    transition: .2s ease-in-out;
+    a:after {
+        position: absolute;
+        bottom: .2em; left: 0; right: 0;
+        margin: auto;
+        width: 0%;
+        content: '';
+        color: transparent;
+        background: #212529;
+        height: .05em;
+        text-decoration: none;
+    }
+    a:after {
+        transition: .2s ease-in-out;
+    }
+    a:hover, a.current {
+        text-decoration: none;
+        font-style: italic;
+    }
+    a:hover:after {
+        width: 100%;
+    }
+    a.current:after {
+        width: 100%
+    }
+}
+.aos-jeehye {
+    opacity: 0;
+    transition-property: opacity, transform;
+    transform: translate(0, 50px);
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+.is-visible {
+    opacity: 1;
+    transform: none;
+}
+.img-three-row {
+    display: inline-block;
+    width: 30%;
+    @include media-query($on-palm) {
+        width: inherit;
+    } 
+}
+.img-two-row {
+    display: inline-block;
+    width: 45%;
+    @include media-query($on-palm) {
+        width: inherit;
+    } 
+}
+.img-small {
+    max-width: 300px;
+}
+.photo-gallery-four {
+    display: inline-block;
+    width: 23%;
+    @include media-query($on-palm) {
+        width: inherit;
+    }   
+}
+figcaption {
+    margin-bottom: 1rem;
+    color: $brand-color;
+}
+.img-size-medium {
+    max-width: 400px;
+}
+
+
+/* COMMENTS */
+#comment-policy {
+    display: none;
+}

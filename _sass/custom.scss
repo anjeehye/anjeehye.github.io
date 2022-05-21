@@ -63,7 +63,8 @@ h2 {
 .site-header {
     border: none;
     .site-title {
-        font-family: $font-family-accent;
+        font-family: $base-font-family;
+        font-weight: 900;
         transition: .2s ease-in-out;
         &:hover {
             text-decoration: none;

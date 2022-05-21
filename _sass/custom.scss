@@ -8,6 +8,7 @@ $vertical-header: false;
 // font-family: 'IBM Plex Sans KR', sans-serif;
 
 body {
+    font-family: $mono-font-family;
     @if $vertical-header {
         flex-direction: row;
     }
@@ -67,6 +68,13 @@ h2 {
         &:hover {
             text-decoration: none;
             font-style: italic;
+        }
+    }
+    .trigger {
+        height: 54px;
+        align-items: center;
+        @include media-query($on-palm) {
+            height: inherit;
         }
     }
     .site-nav {
@@ -319,6 +327,9 @@ article.post {
 }
 pre, code {
     background-color: $background-color;
+}
+.post-link, .post-content, .post-meta {
+    font-family: $base-font-family;
 }
 
 

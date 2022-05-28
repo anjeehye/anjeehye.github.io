@@ -4,7 +4,7 @@ title: 35mm
 permalink: /35mm/
 ---
 
-# Photo uploading in progress ⏳
+### Photo uploading in progress ⏳
 <ul class="photo-list">
   {% assign photos = site.data.photos 
     | sort: "sort" 

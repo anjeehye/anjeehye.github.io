@@ -8,6 +8,7 @@ $vertical-header: false;
 // font-family: 'IBM Plex Sans KR', sans-serif;
 
 body {
+    // color: $text-color;
     font-family: $mono-font-family;
     @if $vertical-header {
         flex-direction: row;
@@ -60,9 +61,12 @@ h2 {
 // widths of header/sidebar and main content region
 // 14 rem / margin-left: 16 rem; margin-right: 2rem;
 // remove footer - no  need
+
 .site-header {
     border: none;
     .site-title {
+        line-height: 1;
+        font-size: 2.5rem;
         font-family: $base-font-family;
         font-weight: 900;
         transition: .2s ease-in-out;
@@ -79,10 +83,13 @@ h2 {
         }
     }
     .site-nav {
-        line-height: 1.5rem;
+        font-size: 1.5rem;
         @include media-query($on-palm) {
             background-color: $background-color-translucent;
         } 
+    }
+    .wrapper:after {
+        display: none;
     }
     @if $vertical-header {
         width: 14rem;
@@ -150,6 +157,9 @@ h2 {
             margin: .5rem 1rem ;
             padding: 0;
             max-width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
     }
 }
@@ -161,6 +171,7 @@ h2 {
         margin-left: 16rem;
     }
     @else if $vertical-header == false {
+        margin: 4rem 0 0 0;
         align-items: center;
     }
     transition: .3s ease-in-out;
@@ -196,7 +207,7 @@ h2 {
 ////////////
 #typewriter-text {
     font-family: $mono-font-family;
-    font-size: x-large;
+    // font-size: $base-font-size;
     font: monospace;
     position: absolute;
     top: 65%;
@@ -231,15 +242,43 @@ ul.post-list {
             margin: inherit;
         } 
     }
+    @if $vertical-header == false {
+        justify-content: flex-end;
+        li {
+            // height: 100%;
+            width: 40%;
+            // min-width: 30%;
+            // max-width: 40%;
+            margin: 1rem;
+        }
+        li:nth-child(even) {
+            margin-top: 4rem;
+        }
+        li:nth-child(odd) {
+            margin-bottom: 4rem;
+        }
+        @include media-query($on-palm) {
+            li {
+                width: 100%;
+            } 
+            li:nth-child(even) {
+                margin-top: 1rem;
+            }
+            li:nth-child(odd) {
+                margin-bottom: 1rem;
+            }
+        }
+    }
     a.post-link {
         display: flex;
         flex-direction: column;
         height: 100%;
         transition: .2s ease-in-out;
-        background: rgba(255,255,255,.8);;
+        background: $background-color-translucent;// rgba(255,255,255,.8);
+        border: 1.5px solid $text-color;
         justify-content: space-between;
         text-decoration: none;
-        min-height: 200px;
+        // min-height: 200px;
         @include media-query($on-palm) {
             margin: 0;
             min-height: initial;
@@ -247,11 +286,12 @@ ul.post-list {
         padding: 1rem;
         &:hover {
             color: inherit;
-            background-color: white;
+            background-color: rgba(255,255,255,.9);
             transform: scale(1.02);
         }
         h3 {
-            font-size: $base-font-size * 1.1;
+            font-size: $base-font-size * 1.2;
+            font-weight: 800;
             margin: .5rem 0;
         }
         .post-link-empty {
@@ -261,6 +301,7 @@ ul.post-list {
     }
     .post-excerpt {
         font-size: $small-font-size;
+        // opacity: .8;
         margin-bottom: .5rem;
     }
     .post-thumbnail img {
@@ -283,24 +324,26 @@ ul.post-list {
 article.post {
     background-color: rgba(255,255,255,.8);
     padding: 1rem;
+    font-size: $reading-font-size;
+    border: 1.5px solid $text-color;
 }
 .post-header {
     text-align: left;
     margin-bottom: 10px;
     .post-title {
-        font-weight: 400;
-        // font-size: $base-font-size * 2.2;
-        font-family: $font-family-accent;
-        margin: 1.5rem 0 0 0;
+        font-size: $base-font-size * 2.2;
+        // font-family: $font-family-accent;
+        margin: 1.5rem 0 1rem 0;
+        // font-size: $base-font-size * 1.2;
+        font-weight: 800;
     }
 }
 .post-content {
-    // font-family: 'Ubuntu Mono', monospace;
     padding: 2rem 3rem;
     // background-color: rgba(255,255,255,.8);
     // border: 2px solid $border-color-translucent;
     // border-radius: 15px;
-    border: 1px solid grey;
+    border: 1px solid $text-color;
     margin-bottom: 0;
     @include media-query($on-palm) {
         padding: 2rem .5rem;
@@ -331,10 +374,12 @@ article.post {
 pre, code {
     background-color: $background-color;
 }
-.post-link, .post-content, .post-meta {
-    font-family: $base-font-family;
+// article.post, .post-content {
+//     font-family: $sans-serif-font-family;
+// }
+.post-content p, .post-content li, .post-content ul {
+    font-family: $reading-font-family;
 }
-
 
 /////////////
 /// ABOUT ///
@@ -344,6 +389,7 @@ pre, code {
     justify-content: center;
     flex-direction: row;
     button {
+        font-size: $small-font-size;
         font-family: inherit;
         background-color: transparent;
         border: none;
@@ -361,8 +407,9 @@ pre, code {
     font-size: $small-font-size;
 }
 #description {
-    background-color: rgba(255,255,255,.8);
+    background-color: $background-color-translucent;
     padding: 1rem;
+    margin: 2rem 0;
     max-width: 40rem;
     ul {
         list-style: none;
@@ -410,25 +457,25 @@ pre, code {
     display: block;
 }
 @if $vertical-header {
-    .about-right-col {
+    .about-photo-col {
         display: none;
     }
 }
 @else if $vertical-header == false {
-    .about-right-col {
+    .about-photo-col {
         width: 35%;
     }
-    .about-left-col {
-        width: 60%;
-    }
+    // .about-left-col {
+    //     width: 60%;
+    // }
     @include media-query($on-palm) {
-        .about-right-col, .about-left-col {
+        .about-photo-col, .about-text-col {
             width: 100%;
         }
         .about {
             flex-direction: column;
         }
-        .about-right-col {
+        .about-photo-col {
             align-self: flex-start;
         }
     } 

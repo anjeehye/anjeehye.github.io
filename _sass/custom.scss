@@ -137,6 +137,8 @@ h2 {
         
     }
     @else if $vertical-header == false {
+        position: fixed;
+        z-index: 999;
         color: red;
         width: 100%;
         .site-nav {

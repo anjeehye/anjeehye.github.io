@@ -81,8 +81,12 @@ h2 {
         @include media-query($on-palm) {
             height: inherit;
         }
+        a {
+            z-index: 1000;
+        }
     }
     .site-nav {
+        z-index: 999;
         font-size: 1.5rem;
         @include media-query($on-palm) {
             background-color: $background-color-translucent;
@@ -162,6 +166,44 @@ h2 {
             display: flex;
             justify-content: space-between;
             align-items: center;
+        }
+        .tag-nav {
+            z-index: 10;
+            margin-top: 1rem;
+            transition: all .2s;
+            display: flex;
+            position: fixed;
+            left: 0;
+            width: 100%;
+            justify-content: center;
+            color: $text-color;
+            a {
+                color: white;
+                background-color: black;
+                // background-color: white;
+                line-height: 1.5rem;
+                margin: .2rem .3rem;
+                padding: .2rem .7rem;
+                // border-radius: 1rem;
+                opacity: .7;
+                // box-shadow: 0 0 5px white, 0 0 3px $brand-color, 0 0 2px $brand-color, 0 0 1px white;
+                &:hover {
+                    text-decoration: none;
+                    font-style: italic;
+                    opacity: 1;
+                }
+                &.current {
+                    border: black 2px solid;
+                    color: black;
+                    background-color: white;
+                    // color: white;
+                    // background-color: $brand-color;
+                    opacity: 1;
+                }
+            }
+            @include media-query($on-palm) {
+                top: 2rem;
+            }
         }
     }
 }
@@ -505,6 +547,9 @@ pre, code {
 ////////////
 /// 35mm ///
 ////////////
+.photos-35mm {
+    margin-top: 5rem;
+}
 ul.photo-list {
     margin: 0;
     list-style: none;

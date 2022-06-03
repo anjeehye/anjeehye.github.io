@@ -6,7 +6,7 @@
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 
     {%- if page_paths -%}
-      <nav class="site-nav underline-effect">
+      <nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -16,16 +16,20 @@
           </span>
         </label>
 
-        <div class="trigger">
+        <div class="trigger underline-effect">
           {%- for path in page_paths -%}
             {%- assign my_page = site.pages | where: "path", path | first -%}
             {%- if my_page.title -%}
               <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-              {% if my_page.title == "35mm" and site.vertical_header == true %}
+              <!-- {% if my_page.title == "35mm" %}
                 {%- include tag-nav.html -%}
-              {% endif %}
+              {% endif %} -->
             {%- endif -%}
           {%- endfor -%}
+        </div>
+
+        <div class="secondary-navs">
+          {%- include tag-nav.html -%}
         </div>
       </nav>
     {%- endif -%}

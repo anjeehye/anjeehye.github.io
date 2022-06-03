@@ -159,7 +159,7 @@ photoMasonryGrid();
 /* WHEN AT 35MM PAGE, CHANGE .PAGE-CONTENT BACKGROUND COLOR */
 const effectsFor35mm = () => { 
   let loc = window.location.pathname;
-  if(VERTICAL_HEADER){
+  if(true){ //VERTICAL_HEADER
     tagNav = document.querySelector(".tag-nav");
     if(loc.includes("35mm")) { // if in 35mm page
       tagNav.classList.remove('hidden-nav');

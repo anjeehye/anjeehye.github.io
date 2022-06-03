@@ -4,7 +4,7 @@ tagname: Berlin
 tagurl: berlin
 ---
 
-<h2>#Berlin</h2>
+<!-- <h2>#Berlin</h2> -->
 <ul class="photo-list berlin">
     {% assign photos = site.data.photos
         | where: "tags", "Berlin"

@@ -553,7 +553,7 @@ ul.photo-list {
     margin: 0;
     list-style: none;
     li.photo-item {
-        width: 50%;
+        width: calc(100%/3);
         height: auto;
         a {
             display: block;

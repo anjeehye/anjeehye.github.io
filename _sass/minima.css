@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "DungGeunMo";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "EliceDigitalBaeum_Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EliceDigitalBaeum_Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
 /**
  * Reset some basic elements
  */
@@ -12,7 +24,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: 400 16px/1.5 "IBM Plex Sans KR", sans-serif;
+  font: 400 20px/1.5 "DungGeunMo", monospace;
   color: #111;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%;
@@ -58,7 +70,7 @@ figure > img {
 }
 
 figcaption {
-  font-size: 12.8px;
+  font-size: 15px;
 }
 
 /**
@@ -108,7 +120,7 @@ blockquote {
   color: #828282;
   border-left: 4px solid #e8e8e8;
   padding-left: 15px;
-  font-size: 18px;
+  font-size: 22.5px;
   letter-spacing: -1px;
   font-style: italic;
 }
@@ -121,7 +133,7 @@ blockquote > :last-child {
  */
 pre,
 code {
-  font-size: 15px;
+  font-size: 18.75px;
   border: 1px solid #e8e8e8;
   border-radius: 3px;
   background-color: #eef;
@@ -145,7 +157,7 @@ pre > code {
  * Wrapper
  */
 .wrapper {
-  max-width: calc(1000px - (30px * 2));
+  max-width: calc(1200px - (30px * 2));
   margin-right: auto;
   margin-left: auto;
   padding-right: 30px;
@@ -153,7 +165,7 @@ pre > code {
 }
 @media screen and (max-width: 1200px) {
   .wrapper {
-    max-width: calc(1000px - (30px));
+    max-width: calc(1200px - (30px));
     padding-right: 15px;
     padding-left: 15px;
   }
@@ -216,9 +228,9 @@ table td {
 }
 
 .site-title {
-  font-size: 26px;
+  font-size: 32.5px;
   font-weight: 300;
-  line-height: 54px;
+  line-height: 67.5px;
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left;
@@ -229,7 +241,7 @@ table td {
 
 .site-nav {
   float: right;
-  line-height: 54px;
+  line-height: 67.5px;
 }
 .site-nav .nav-trigger {
   display: none;
@@ -301,7 +313,7 @@ table td {
 }
 
 .footer-heading {
-  font-size: 18px;
+  font-size: 22.5px;
   margin-bottom: 15px;
 }
 
@@ -312,7 +324,7 @@ table td {
 }
 
 .footer-col-wrapper {
-  font-size: 15px;
+  font-size: 18.75px;
   color: #828282;
   margin-left: -15px;
 }
@@ -360,11 +372,11 @@ table td {
 }
 
 .page-heading {
-  font-size: 32px;
+  font-size: 40px;
 }
 
 .post-list-heading {
-  font-size: 28px;
+  font-size: 35px;
 }
 
 .post-list {
@@ -376,13 +388,13 @@ table td {
 }
 
 .post-meta {
-  font-size: 12.8px;
+  font-size: 15px;
   color: #828282;
 }
 
 .post-link {
   display: block;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 /**
@@ -393,13 +405,13 @@ table td {
 }
 
 .post-title {
-  font-size: 42px;
+  font-size: 52.5px;
   letter-spacing: -1px;
   line-height: 1;
 }
 @media screen and (max-width: 1200px) {
   .post-title {
-    font-size: 36px;
+    font-size: 45px;
   }
 }
 
@@ -407,27 +419,27 @@ table td {
   margin-bottom: 30px;
 }
 .post-content h2 {
-  font-size: 32px;
+  font-size: 40px;
 }
 @media screen and (max-width: 1200px) {
   .post-content h2 {
-    font-size: 28px;
+    font-size: 35px;
   }
 }
 .post-content h3 {
-  font-size: 26px;
+  font-size: 32.5px;
 }
 @media screen and (max-width: 1200px) {
   .post-content h3 {
-    font-size: 22px;
+    font-size: 27.5px;
   }
 }
 .post-content h4 {
-  font-size: 20px;
+  font-size: 25px;
 }
 @media screen and (max-width: 1200px) {
   .post-content h4 {
-    font-size: 18px;
+    font-size: 22.5px;
   }
 }
 

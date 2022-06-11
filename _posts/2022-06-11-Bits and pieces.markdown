@@ -25,7 +25,7 @@ post-mexicodive-ray.gif){:class="img-responsive"}
 Back passionately in love capturing the bits and pieces of me and you.
 
 ![image]({{site.baseurl}}/assets/images/
-post-grcic.jpg){:class="img-responsive img-small"}
+post-grcicExhibit.jpg){:class="img-responsive img-small"}
 <figcaption>Konstantic Grcic NEW NORMALS @ Haus Am Waldsee</figcaption>
 
 <br>

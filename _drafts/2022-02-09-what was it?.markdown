@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Yoga progression"
-date:   2022-02-09 15:20 +0100
+date:   2022-02-09 15:20 +0200
 categories: amoomal
 ---
 

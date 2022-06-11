@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  "My website migrated!"
-date:   2022-01-06 20:59:04 +0100
+date:   2022-01-06 20:59:04 +0200
 categories: "jekyll update"
 excerpt: "...from wordpress to Gitpub Pages"
 ---
 # My website moved!
 
-My website moved from wordpress-based site to Github Pages (here).
+My website moved from wordpress-based site to Github Pages.
 
 I moved because:
 * small issues kept on popping up with wordpress. I am a self-taught fake developer. Things got a bit confusing :p 
@@ -17,5 +17,3 @@ I moved because:
 Having lots of fun designing the website! ♥️
 
 Migration is still in progress. I still need to move my posts, 35mm portfolio, and tweak design and functionality here and there. 
-
-[anjeehye.xyz]: https://anjeehye.xyz

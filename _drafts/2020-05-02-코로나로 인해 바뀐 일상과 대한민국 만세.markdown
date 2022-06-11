@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "코로나로 인해 바뀐 일상과 대한민국 만세"
-date:   2020-05-02 17:53 +0100
+date:   2020-05-02 17:53 +0200
 categories: "globetrotting"
 excerpt: "그동안 우리 마찰도 많았지만 지금 이 순간만큼은 사랑해, 대한민국."
 thumbnail: /assets/images/post-berlincovid12.png

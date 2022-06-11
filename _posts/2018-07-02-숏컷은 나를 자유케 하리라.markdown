@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "숏컷은 나를 자유케 하리라"
-date:   2018-07-02 10:25 +0100
+date:   2018-07-02 10:25 +0200
 categories: "amoomal"
 excerpt: "과연? 두둥"
 thumbnail: /assets/images/shortcut.jpeg

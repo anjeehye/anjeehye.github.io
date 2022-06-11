@@ -403,8 +403,8 @@ article.post {
     h3 {
         display: inline;
         background-repeat: no-repeat;
-        background-image: -webkit-gradient(linear,left top,left bottom,from(#b8c8d6),to(#b8c8d6));
-        background-image: linear-gradient(180deg,#b8c8d6,#b8c8d6);
+        // background-image: -webkit-gradient(linear,left top,left bottom,from(#b8c8d6),to(#b8c8d6));
+        // background-image: linear-gradient(180deg,#b8c8d6,#b8c8d6);
         background-position-y: 100%;
         --underline-width-scale: calc(12 / 8);
         background-position-x: 100%;
@@ -736,7 +736,7 @@ figcaption {
     color: $brand-color;
 }
 .img-size-medium {
-    max-width: 400px;
+    max-width: 450px;
 }
 
 

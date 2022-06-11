@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Lo and Behold, Reveries of the Connected World (2016)"
-date:   2019-04-14 01:08 +0100
+date:   2019-04-14 01:08 +0200
 categories: "notes"
 excerpt: "Two mavericks from our age."
 slug: "lo-and-behold"

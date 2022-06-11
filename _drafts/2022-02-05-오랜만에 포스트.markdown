@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "오랜만의 public 일기"
-date:   2022-02-05 23:23 +0100
+date:   2022-02-05 23:23 +0200
 categories: "amoomal"
 excerpt: ""
 slug: "long-time-no-see"

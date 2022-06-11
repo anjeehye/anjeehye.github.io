@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "다낭"
-date:   2019-05-01 15:15 +0100
+date:   2019-05-01 15:15 +0200
 categories: "globetrotting"
 excerpt: "나 어디를 갔다 온거지??"
 thumbnail: /assets/images/post-danangkylie2.jpeg

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "베를린 적응 일기 - 오늘 어제 그제 엊그제"
-date:   2019-09-06 13:17 +0100
+date:   2019-09-06 13:17 +0200
 categories: "berlin"
 excerpt: "동네 바, 불빛축제, 홈파티, 바질. "
 slug: "jeehye-settling-in-berlin"

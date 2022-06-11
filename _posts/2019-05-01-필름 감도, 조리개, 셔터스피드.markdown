@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "필름 감도, 조리개, 셔터스피드"
-date:   2019-05-01 15:15 +0100
+date:   2019-05-01 15:15 +0200
 categories: "notes"
 excerpt: "내가 보기에도 좀 잘 정리 해놓은 사진 공부 노트."
 slug: "photography-101"

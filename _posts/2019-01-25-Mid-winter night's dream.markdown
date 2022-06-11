@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Mid-winter night's summer dream (@ Chiang Mai)"
-date:   2019-01-25 09:27 +0100
+date:   2019-01-25 09:27 +0200
 categories: "Globetrotting"
 excerpt: "I hope they're not reading this."
 slug: "mid-winter-nights-summer-dream"

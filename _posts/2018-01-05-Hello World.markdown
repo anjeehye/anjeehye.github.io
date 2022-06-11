@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Hello World"
-date:   2018-01-05 +0100
+date:   2018-01-05 +0200
 categories: "Milepost"
 excerpt: "I built this website. An anecdote of how and why."
 ---

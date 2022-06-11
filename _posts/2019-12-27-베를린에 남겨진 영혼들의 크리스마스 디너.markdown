@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "베를린에 남겨진 영혼들의 크리스마스 디너"
-date:   2019-12-27 23:13 +0100
+date:   2019-12-27 23:13 +0200
 categories: "berlin"
 excerpt: "크리스마스를 기념하지 않는 이들, 베를린에 남은 이들을 위한 크리스마스 디너를 벌렸다."
 thumbnail: /assets/images/post-xmasdinner3.jpeg

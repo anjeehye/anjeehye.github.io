@@ -3,7 +3,7 @@ layout: post
 title: "Bits and pieces"
 date: 2022-06-11 20:37:04 +0200
 categories: "notes"
-excerpt: "...from 2022.06"
+excerpt: "things I love and don't know whether I do"
 slug: "bits-and-pieces-06-2022"
 ---
 

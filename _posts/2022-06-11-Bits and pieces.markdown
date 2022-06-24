@@ -10,7 +10,7 @@ slug: "bits-and-pieces-06-2022"
 한참 얼빠져 있다가 꿈틀 거리기 시작. <br>
 미술 음악 책 영화 햇살 바람 바다, 가득 !
 
-### Love
+### Admiration
 Once again fell in love with the ocean 💙
 
 ![image]({{site.baseurl}}/assets/images/

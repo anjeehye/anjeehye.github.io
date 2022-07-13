@@ -369,6 +369,8 @@ article.post {
     padding: 1rem;
     font-size: $reading-font-size;
     border: 1.5px solid $text-color;
+    max-width: 800px;
+    margin: auto;
 }
 .post-header {
     text-align: left;

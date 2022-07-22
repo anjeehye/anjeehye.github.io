@@ -402,19 +402,23 @@ article.post {
         //max-width: 600px;
         width: inherit;
     }
-    h3 {
-        display: inline;
-        background-repeat: no-repeat;
-        // background-image: -webkit-gradient(linear,left top,left bottom,from(#b8c8d6),to(#b8c8d6));
-        // background-image: linear-gradient(180deg,#b8c8d6,#b8c8d6);
-        background-position-y: 100%;
-        --underline-width-scale: calc(12 / 8);
-        background-position-x: 100%;
-        background-size: 100% 40%;
-        margin-top: 1.5rem;
-        margin-bottom: 2rem;
-        font-weight: 700;
+    h3,h4 {
+        // display: inline;
+        margin: 0;
     }
+    // h3, h4 {
+    //     display: inline;
+    //     background-repeat: no-repeat;
+    //     // background-image: -webkit-gradient(linear,left top,left bottom,from(#b8c8d6),to(#b8c8d6));
+    //     // background-image: linear-gradient(180deg,#b8c8d6,#b8c8d6);
+    //     background-position-y: 100%;
+    //     --underline-width-scale: calc(12 / 8);
+    //     background-position-x: 100%;
+    //     background-size: 100% 40%;
+    //     margin-top: 1.5rem;
+    //     margin-bottom: 2rem;
+    //     font-weight: 700;
+    // }
 }
 pre, code {
     background-color: $background-color;

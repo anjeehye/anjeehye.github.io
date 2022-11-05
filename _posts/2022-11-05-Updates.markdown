@@ -3,7 +3,7 @@ layout: post
 title: "이 웹사이트, 내가 원하는 것의 딜레마."
 date: 2022-11-05 23:00:00 +0100
 categories: "notes"
-excerpt: "오직 나에 의한, 나에 대한, 진짜 나를 비추는 공간."
+excerpt: "나의 공간!"
 slug: "this-website-and-i"
 ---
 

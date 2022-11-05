@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "더 좋은 세상을 위한 작은 실천들"
-date:   2020-11-19 19:56 +0200
+date:   2020-11-19 19:56 +0100
 categories: "notes"
 excerpt: "작고 귀여운 실천 몇 개"
 slug: "being-better"

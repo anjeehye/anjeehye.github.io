@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "노래와 노스텔지아"
-date:   2018-04-16 19:30 +0200
+date:   2018-04-16 19:30 +0100
 categories: "amoomal"
 excerpt: "우연히 고등학교때 만든 플레이리스트를 들었는데.."
 slug: "music-and-nostalgia"

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "My website migrated!"
-date:   2022-01-06 20:59:04 +0200
+date:   2022-01-06 20:59:04 +0100
 categories: "jekyll update"
 excerpt: "...from wordpress to Gitpub Pages"
 ---

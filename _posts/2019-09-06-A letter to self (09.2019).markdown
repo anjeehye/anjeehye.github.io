@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A letter to self (09.2019)"
-date:   2019-09-06 13:17 +0200
+date:   2019-09-06 13:17 +0100
 categories: "milepost"
 excerpt: "A letter to self (that is openly available for the entire online population)"
 slug: "a-letter-to-self-2019"

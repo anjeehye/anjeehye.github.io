@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "유난히 길었던 8월의 몇 조각"
-date:   2018-09-15 14:20 +0200
+date:   2018-09-15 14:20 +0100
 categories: "Milepost"
 excerpt: "이런 한달을 자주 마주한다면 참 좋겠는데."
 slug: "beloved-2018-08"

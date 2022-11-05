@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "역시 인생은 계획대로 흘러가지 않아"
-date:   2018-08-01 22:46 +0200
+date:   2018-08-01 22:46 +0100
 categories: "amoomal"
 excerpt: "계획은 불안감을 진정시키는 용도"
 slug: "no-planner"

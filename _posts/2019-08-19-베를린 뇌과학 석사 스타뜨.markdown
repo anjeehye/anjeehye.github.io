@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "베를린 뇌과학 석사 스타뜨"
-date:   2019-08-19 23:23 +0200
+date:   2019-08-19 23:23 +0100
 categories: "berlin globetrotting"
 excerpt: "2년을 난 또 사서 고생할 예정이다. 이번엔 베를린 어딘가에서. (~˘▾˘)~"
 slug: "berlin-neuroscience-master-start"

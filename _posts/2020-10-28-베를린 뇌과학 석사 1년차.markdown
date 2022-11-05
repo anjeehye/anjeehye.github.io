@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "베를린 뇌과학 석사 1년차"
-date:   2020-10-28 21:41 +0200
+date:   2020-10-28 21:41 +0100
 categories: "Milepost"
 excerpt: "Half way there, 반 왔다! (아마도)"
 slug: "berlin-neuroscience-matsers-1-year"

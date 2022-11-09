@@ -22,7 +22,7 @@ post-mexicodive-ray.gif){:class="img-responsive"}
 <br>
 
 ### 35mm 
-Back passionately in love capturing the bits and pieces of me and you.
+Back passionately in love capturing the bits and pieces.
 
 ![image]({{site.baseurl}}/assets/images/
 post-grcicExhibit.jpg){:class="img-responsive img-small"}
@@ -31,7 +31,7 @@ post-grcicExhibit.jpg){:class="img-responsive img-small"}
 <br>
 
 ### Home?
-I became a plant mom. And maybe I'm developing an attachment to my home. What is happening 💔
+I became a plant mom. And maybe I'm developing an attachment to my home. What is happening 👀
 
 ![image]({{site.baseurl}}/assets/images/
 post-202206home.jpg){:class="img-responsive img-size-medium"}

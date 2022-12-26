@@ -1,4 +1,23 @@
 # Berlin
+- title: "Self portrait 2022 2"
+  alt: "Self portrait 2022 2"
+  sort: 789.1
+  tags: ["Jeehye", "self-portrait"]
+  link: "https://lh3.googleusercontent.com/pw/AL9nZEXpblzRMfU96m7vXzTLvfSELJ9QK8qNpF_WZ8CEB8DnSZa0yk6LwwjY6uiPZgrE3llDsdozX1HJxvvDilI3s3n6_BBin35yetv3OpZm3sKg1bLOj7Qwe4Tv47rTRy-hkx_X_ssHq0heOU6cAwduw2KA=w1294-h1528-no?authuser=0"
+  display: true
+- title: "Self portrait 2022 1"
+  alt: "Self portrait 2022 1"
+  sort: 789.2
+  tags: ["Jeehye", "self-portrait"]
+  link: "https://lh3.googleusercontent.com/pw/AL9nZEXTHnHQy913Xa3fQ75l89RFhf3dpCTxeZ3v0l2s9UkkeIRHNLARN4ieaKUkH9svt45dsLesIqAiw_TiB4PJgKSQI_bIYyECcFrTIelmK7VcpjN2zZP4KAYCAyTUCJgRDArgyypTRFDQlkYNveUs1Sgg=w1318-h1528-no?authuser=0"
+  display: true
+- title: "Self portrait 2022 3"
+  alt: "Self portrait 2022 3"
+  sort: 789.3
+  tags: ["Jeehye", "self-portrait"]
+  link: "https://lh3.googleusercontent.com/pw/AL9nZEU4MlsJFmgsMxWn-6rOdEcOsz65eBOsvtFPWitVYYuTEPkwM6_V_HGEdmRHLFYh3EWD10pfISWn4_A3nNW0m21M9cNYASrP5qoDlw0WyB1TLQkVXvg7f-ouRlhYjHynQ4gMUSGPZM_aD4qdlWuOT5X9=w1298-h1528-no?authuser=0"
+  display: true
+
 - title: "Decin retreat - the grand view"
   alt: "Decin retreat - the grand view"
   sort: 790
@@ -22,7 +41,7 @@
   sort: 793
   tags: ["retreat", "Jeehye"]
   link: "https://lh3.googleusercontent.com/pw/AL9nZEU20JzPHQT94s0ucqqz2f7JFQfk6j1VxBnLx9zWQX5PhRKtw_EPFWpoCnYp-OtPI8hIEp44priFLO4gpZGCKSrCI90TEpExvWobTicOHoVrBJijBF8dgcT5Tx9uWnmGzZwziGptMhAZtKejX3_AdDI9=w2242-h1528-no?authuser=0"
-  display: true
+  display: false
 - title: "Demi's b-day party: girls"
   alt: "Demi's b-day party: girls"
   sort: 881

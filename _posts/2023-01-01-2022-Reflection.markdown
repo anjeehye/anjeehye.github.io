@@ -1,0 +1,33 @@
+---
+layout: post
+title: "2022 on Film"
+date: 2023-01-01 13:00:00 +0900
+categories: "notes"
+excerpt: "in a video"
+slug: "2022-on-film"
+---
+
+<iframe
+    width="50%"
+    height="100%"
+    style="aspect-ratio:9/16; margin:1rem auto; display:block"
+    src="https://www.youtube.com/embed/QAmNQnj8ggM"
+    frameborder="0"
+    allow="encrypted-media"
+    allowfullscreen
+>
+</iframe>
+
+A collection of scraps of moments taken with film from the past year. These are tiny snippets of the seemingly infinite series of the moments we live through. Each of these snippets feels so dear to me. Now I wonder, what is it about them? When do I choose to take out my metalic clumpy film camera rather than my iPhone? 
+
+The moments I choose to leave physical impressions of by exposing and burning strips of film, inaccessible and hidden till developed and scanned days or weeks later. Then stored within the plastic sheets of a binder. 
+
+Maybe it's the existence a tangible physical proof of their authenticity. Or the rarity in contrast to the everpresent smartphone photos. Or maybe there is something special about these specific moments. The moments that spur me to take out my camera out of my bag/pocket. There definitely is something about them, yet I lack words to aptly describe. 
+
+<!-- Why do I keep shooting film? -->
+
+Or maybe it's just the vintage, retro, grainy aesthetics. Yea, probably, at least partly. 
+
+<br>
+
+⭐️ **New Year's Resolution** : Stop scanning negatives using my old, second-hand, crappy EPSON scanner. Leave it to the experts (or get a better scanner).

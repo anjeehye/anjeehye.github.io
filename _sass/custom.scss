@@ -576,6 +576,30 @@ ul.photo-list {
         } 
     }
 }
+ul.video-list {
+    margin: 0;
+    list-style: none;
+    li.video-item {
+        width: 50%;
+        max-height: 80vh;
+        // display: inline-flex;
+        // height: 50vh;
+        // margin: 1rem;
+        div.video-embed {
+            margin: 1rem;
+            max-width: 100%;
+            // border: solid black;
+            // border-width: 5px 10px;
+            iframe {
+                border: solid black;
+                border-width: 5px 10px;
+            }
+        }
+        div.video-info {
+            margin: 1rem;
+        }
+    }
+}
 .modal-overlay {
     transition: opacity 1s ease-in-out;
     opacity: 1;

@@ -1,6 +1,8 @@
 
 <nav class="tag-nav">
     {% for tag in site.35mm %}
-    <a href="{{site.baseurl}}{{tag.url}}" class="tag-nav">#{{tag.tagname}}</a>
+        {% if tag.tagname != "35mm_video" %}
+            <a href="{{site.baseurl}}{{tag.url}}" class="tag-nav">#{{tag.tagname}}</a>
+        {% endif %}
     {% endfor %}
 </nav>

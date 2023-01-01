@@ -143,10 +143,19 @@ navBarHighlight();
 /* MASONRY */
 let photoMasonryGrid = () => {
   let photoList = document.querySelector('.photo-list');
+  let videoList = document.querySelector('.video-list');
   if(photoList) {
     imagesLoaded(photoList, function() {
       let masonryGrid = new Masonry(photoList, {
         itemSelector: '.photo-item',
+        percentPosition: true
+      });
+    });
+  };
+  if(videoList) {
+    imagesLoaded(videoList, function() {
+      let masonryGrid = new Masonry(videoList, {
+        itemSelector: '.video-item',
         percentPosition: true
       });
     });

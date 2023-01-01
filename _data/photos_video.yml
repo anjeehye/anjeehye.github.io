@@ -1,0 +1,28 @@
+- title: "Post-thesis retreat 2022"
+  alt: "Post-thesis retreat 2022"
+  dates: "2022/10"
+  sort: 4
+  aspect-ratio: 9/16
+  link: "https://youtube.com/embed/y4QMh8F4oNQ"
+  display: true
+- title: "Demi's bday 2022"
+  alt: "Demi's bday 2022"
+  dates: "2022/06"
+  sort: 3
+  aspect-ratio: 4/5
+  link: "https://www.youtube.com/embed/lS7KlgFTd9U"
+  display: true
+- title: "I moved to Berlin"
+  alt: "I moved to Berlin"
+  dates: "2019/10 - 2020/04"
+  sort: 2
+  aspect-ratio: 1.33
+  link: "https://youtube.com/embed/BbieK9RbOOM"
+  display: true
+- title: "The week before Berlin"
+  alt: "The week before Berlin"
+  dates: "2019/09"
+  sort: 1
+  aspect-ratio: 1
+  link: "https://www.youtube.com/embed/WYipAAnfxsY"
+  display: true

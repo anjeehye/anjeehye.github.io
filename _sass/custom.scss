@@ -393,6 +393,9 @@ article.post {
     @include media-query($on-palm) {
         padding: 2rem .5rem;
         border: none;
+        iframe {
+            width: 100%;
+        }
     }
     img {
         // max-height: 80vh;

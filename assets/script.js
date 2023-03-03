@@ -19,6 +19,7 @@ document.addEventListener('swup:contentReplaced', (event) => {
 // IDNEITFY FUNCTIONS THAT NEEDS TO BE RUN EVERY TIME A PAGE IS CLICKED
 const activeFunctions = () => {
   photoMasonryGrid();
+  postMasonryGrid();
   typewriter_start();
   copyEmail();
   navBarHighlight();
@@ -28,9 +29,11 @@ const activeFunctions = () => {
   styleComments();
   disqusForSwup();
   modalPreview();
+  scrambleText(scramble_phrases, '.scramble-text-about', 1200)
 };
 const resizeFunctions = () => {
   photoMasonryGrid();
+  postMasonryGrid();
 }
 
 // redo masonry grid when dom is resized
@@ -48,7 +51,7 @@ const typewriter_start = () => {
   
   const typewriter = new Typewriter(home_text, {
     loop: false,
-    delay: 75,
+    delay: 50,
   });
   
   typewriter
@@ -59,17 +62,17 @@ const typewriter_start = () => {
   .pauseFor(100)
   .typeString(" I'm Jeehye.")
   .pauseFor(1000)
-  .deleteAll()
+  .deleteAll(20)
   .pauseFor(400)
   .typeString("I study")
   .pauseFor(60)
   .typeString(" mind & brain.")
   .pauseFor(1000)
-  .deleteAll()
+  .deleteAll(20)
   .pauseFor(400)
   .typeString("I shoot <a href='./35mm'>35mm</a> film.")
   .pauseFor(1000)
-  .deleteAll()
+  .deleteAll(20)
   .pauseFor(80)
   .typeString("For more,")
   .pauseFor(120)
@@ -147,8 +150,9 @@ let photoMasonryGrid = () => {
   if(photoList) {
     imagesLoaded(photoList, function() {
       let masonryGrid = new Masonry(photoList, {
+        columnWidth: '.photo-item',
         itemSelector: '.photo-item',
-        percentPosition: true
+        percentPosition: true,
       });
     });
   };
@@ -160,7 +164,6 @@ let photoMasonryGrid = () => {
       });
     });
   };
-  
 };
 photoMasonryGrid();
 
@@ -186,6 +189,20 @@ const effectsFor35mm = () => {
   }
 }
 effectsFor35mm();
+
+let postMasonryGrid = () => {
+  let postList = document.querySelector('.post-list');
+  if(postList) {
+    imagesLoaded(postList, function() {
+      let masonryGrid = new Masonry(postList, {
+        columnWidth: '.post',
+        itemSelector: '.post',
+        percentPosition: true
+      });
+    });
+  };  
+};
+postMasonryGrid();
 
 /* My AOS - copied from previous website & the internet */
 const loop = () => {
@@ -316,3 +333,95 @@ function isElementInViewport(el) {
         })
       };
       modalPreview();
+
+
+// ——————————————————————————————————————————————————
+// TextScramble
+// From https://codepen.io/soulwire/pen/mEMPrK?editors=0010
+// ——————————————————————————————————————————————————
+class TextScramble {
+  constructor(el) {
+    this.el = el
+    this.chars = '!<>-_\\/[]{}—=+*^?#________'
+    this.update = this.update.bind(this) // bind borrows method
+  }
+  setText(newText) {
+    const oldText = this.el.innerText
+    const length = Math.max(oldText.length, newText.length)
+    const promise = new Promise((resolve) => this.resolve = resolve)
+    this.queue = []
+    for (let i = 0; i < length; i++) {
+      const from = oldText[i] || ''
+      const to = newText[i] || ''
+      const start = Math.floor(Math.random() * 40)
+      const end = start + Math.floor(Math.random() * 40)
+      this.queue.push({ from, to, start, end })
+    }
+    cancelAnimationFrame(this.frameRequest)
+    this.frame = 0
+    this.update()
+    return promise
+  }
+  update() {
+    let output = ''
+    let complete = 0
+    for (let i = 0, n = this.queue.length; i < n; i++) {
+      let { from, to, start, end, char } = this.queue[i]
+      if (this.frame >= end) {
+        complete++
+        output += to
+      } else if (this.frame >= start) {
+        if (!char || Math.random() < 0.28) {
+          char = this.randomChar()
+          this.queue[i].char = char
+        }
+        output += `<span class="dud">${char}</span>`
+      } else {
+        output += from
+      }
+    }
+    this.el.innerHTML = output
+    if (complete === this.queue.length) {
+      this.resolve()
+    } else {
+      this.frameRequest = requestAnimationFrame(this.update)
+      this.frame++
+    }
+  }
+  randomChar() {
+    return this.chars[Math.floor(Math.random() * this.chars.length)]
+  }
+}
+
+let scrambleText = (phrases, div, timeout=800) => {
+  const el = document.querySelector(div) 
+  const fx = new TextScramble(el)
+
+  setTimeout(function() { // after a delay of .5s
+    
+  }, 500);
+  
+  if(el) {
+    setTimeout(function() {
+      let counter = 0
+      const next = () => {
+        fx.setText(phrases[counter]).then(() => {
+          setTimeout(next, timeout)
+        })
+        counter = (counter + 1) % phrases.length
+      }
+      next()
+  
+    }, timeout)
+    
+  }
+}
+
+// const phrases = ["Hi, I'm Jeehye",
+// "I study mind and brain.",
+// "I shoot 35mm",
+// "For more, read my posts."]
+// scrambleText(phrases, '#typewriter-text')
+// scrambleText(['지혜', 'Jeehye'], '.scramble-text-name', 1200)
+let scramble_phrases = ['Diver 🌊🤿🐙', "Art admirer", 'Doctoral researcher']
+scrambleText(scramble_phrases, '.scramble-text-about', 1300)

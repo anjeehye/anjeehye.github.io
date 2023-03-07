@@ -32,10 +32,19 @@ $dark-mode: false;
 }
 
 // Sizing for different pages
-.page.stories, .page.photos-35mm {
+.page.stories {
     margin-right: 14rem;
     @include media-query($on-tablet) {
         margin-right: 12rem;
+    }
+    @include media-query($on-palm) {
+        margin: 0;
+    }
+}
+.page.photos-35mm {
+    margin: 0 10rem;
+    @include media-query($on-tablet) {
+        margin: 0
     }
     @include media-query($on-palm) {
         margin: 0;

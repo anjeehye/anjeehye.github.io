@@ -50,8 +50,7 @@ ul, ol, dl, figure,
  * `main` element
  */
 main {
-  display: block;
-  /* Default value of `display` of `main` element is 'inline' in IE 11. */
+  display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
 }
 
 /**
@@ -349,10 +348,9 @@ table td {
 
 @media screen and (max-width: 1200px) {
   .footer-col-1,
-.footer-col-2 {
+  .footer-col-2 {
     width: calc(50% - (30px / 2));
   }
-
   .footer-col-3 {
     width: calc(100% - (30px / 2));
   }

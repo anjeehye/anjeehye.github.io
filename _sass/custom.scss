@@ -565,11 +565,11 @@ ul.photo-list {
     margin: 0;
     list-style: none;
     li.photo-item {
-        width: calc(100%/3);
+        width: calc(100%/2);
         height: auto;
         a {
             display: block;
-            margin: .5rem;
+            margin: .6rem;
             cursor: zoom-in;
             text-decoration: none;
         }

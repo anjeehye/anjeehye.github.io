@@ -261,6 +261,7 @@ h2 {
     @include media-query($on-palm) {
         //right: inherit;
         width: inherit;
+        position: initial;
     }
 }
 

@@ -44,7 +44,7 @@ $dark-mode: false;
     --text-color: --color-light;
     --dark-text-color: var(--color-dark);
     --main-margin-top: 7rem;
-    --header-text-shadow: 1px 1px #0000007c;//1px 1px #0000003f, -1px -1px #0000003f, -1px 1px #0000003f, 1px -1px #0000003f;
+    --header-text-shadow: 0 0 3px #00000041;//1px 1px #0000003f, -1px -1px #0000003f, -1px 1px #0000003f, 1px -1px #0000003f;
 }
 
 * {

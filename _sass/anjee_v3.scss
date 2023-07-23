@@ -468,6 +468,7 @@ main {
     border-radius: 1em;
     background-color: rgba(var(--color-light-rgb), .2);
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
     @include media-query($on-palm) {
         width: auto;

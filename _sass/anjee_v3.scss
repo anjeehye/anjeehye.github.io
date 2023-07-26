@@ -38,6 +38,7 @@ $dark-mode: false;
     --color-light: rgb(223, 218, 218);
     --color-extra-light: rgb(242, 240, 240);
     --color-light-rgb: 223, 218, 218;
+    --color-extra-light-rgb: 242, 240, 240;
     --border-color-translucent: rgba(255,255,255,.5);
     --background-color: var(--color-light);
     --color-dark: rgb(65, 65, 65);
@@ -45,6 +46,7 @@ $dark-mode: false;
     --dark-text-color: var(--color-dark);
     --main-margin-top: 7rem;
     --header-text-shadow: 0 0 3px #00000041;//1px 1px #0000003f, -1px -1px #0000003f, -1px 1px #0000003f, 1px -1px #0000003f;
+    --color-red: rgb(202 37 37);
 }
 
 * {
@@ -262,8 +264,9 @@ h2 {
         justify-content: flex-end;
         color: $text-color;
         a {
-            color: var(--color-light);
-            background-color: var(--color-dark);
+            color: var(--color-dark);
+            background-color: var(--color-light);
+            text-shadow: none;
             line-height: 1rem;
             margin: .2rem;
             padding: .1rem .4rem;
@@ -272,13 +275,16 @@ h2 {
             opacity: .8;
             // box-shadow: 0 0 5px white, 0 0 3px $brand-color, 0 0 2px $brand-color, 0 0 1px white;
             &:hover {
+                background-color: var(--color-extra-light);
                 text-decoration: none;
                 // font-style: italic;
                 opacity: 1;
             }
             &.current {
                 color: black;
-                background-color: white;
+                background-color: var(--color-extra-light);
+                box-shadow: 0 0 3px var(--color-light);
+                opacity: 1;
             }
         }
     }
@@ -453,7 +459,6 @@ $colored-buttoms: false;
 /// right-margin: 14 (full), 12 (tablet), 0 (mobile)
 main {
     margin-top: 8rem;
-    border: 2px solid rgba(var(--color-light-rgb), .3);
     // position: fixed;
     // overflow: scroll;
     width: var(--main-width);
@@ -466,10 +471,11 @@ main {
     justify-content: center;
     transition: .3s ease-in-out;
     border-radius: 1em;
-    background-color: rgba(var(--color-light-rgb), .2);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    // background-color: rgba(var(--color-light-rgb), .2);
+    // backdrop-filter: blur(5px);
+    // -webkit-backdrop-filter: blur(5px);
+    // border: 2px solid rgba(var(--color-light-rgb), .3);
+    // box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
     @include media-query($on-palm) {
         width: auto;
         margin: 8rem 1rem 3rem;
@@ -516,6 +522,7 @@ main {
 
 #typewriter-text {
     color: var(--color-extra-light);
+    text-shadow: var(--header-text-shadow);
     font-family: $mono-font-family;
     font-size: 1.5*$base-font-size;
     position: absolute;
@@ -573,7 +580,7 @@ ul.post-list {
         opacity: .8;
         justify-content: space-between;
         text-decoration: none;
-        border: 1.5px solid var(--dark-text-color);
+        // border: 1.5px solid var(--dark-text-color);
         box-shadow: 0 0 1rem $shadow-color;
         // min-height: 200px;
         @include media-query($on-palm) {
@@ -625,10 +632,10 @@ button.go-back {
 }
 .post-meta {
     font-size: $small-font-size;
-    color: $dark-text-color;
+    color: var(--color-dark);
     margin-bottom: 1rem;
     // opacity: .5;
-    border-bottom: 1px solid $dark-text-color;
+    border-bottom: 1px solid var(--color-dark);
 }  
 article.post {
     color: $dark-text-color;
@@ -756,7 +763,7 @@ pre, code {
         }
         span {
             display: inline-block;
-            background-color: var(--color-dark);
+            background-color: var(--color-red);
             color: var(--color-light);
             font-weight: bold;
             padding: 0 5px;
@@ -802,6 +809,7 @@ pre, code {
     }
     .about-text-col {
         width: 60%;
+        color: var(--color-red);
     }
     @include media-query($on-palm) {
         .about-photo-col, .about-text-col {
@@ -941,6 +949,16 @@ ul.video-list {
 ///////////////////////////////////////////
 /// EFFECTS 
 ///////////////////////////////////////////
+.glassmorphism {
+    background-color: rgba(var(--color-light-rgb), .3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 2px solid rgba(var(--color-light-rgb), 0.5);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    &:hover {
+        background-color: rgba(var(--color-extra-light-rgb), .6);
+    }
+}
 .hidden-nav {
     //display: none;
     height: 0;

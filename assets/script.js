@@ -29,17 +29,29 @@ const activeFunctions = () => {
   styleComments();
   disqusForSwup();
   modalPreview();
-  scrambleText(scramble_phrases, '.scramble-text-about', 1200)
+  scrambleText(scramble_phrases, '.scramble-text-about', 1200);
+  toggleNav(w);
 };
 const resizeFunctions = () => {
   photoMasonryGrid();
   postMasonryGrid();
 }
 
-// redo masonry grid when dom is resized
+window.onscroll = function(){
+  var w = document.documentElement.clientWidth;
+  toggleNav(w);
+}
 window.onresize = function() {
+  var w = document.documentElement.clientWidth;
+  toggleNav(w);
   resizeFunctions();
-};
+}
+window.onload = function() {
+  var w = document.documentElement.clientWidth;
+  toggleNav(w);
+  pfMasonryGrid();
+}
+
 
 // Swup
 const swup = new Swup();
@@ -53,7 +65,7 @@ const typewriter_start = () => {
     loop: false,
     delay: 50,
   });
-  
+
   typewriter
   .pauseFor(500)
   .typeString('안녕?')
@@ -430,3 +442,47 @@ let scrambleText = (phrases, div, timeout=800) => {
 // scrambleText(['지혜', 'Jeehye'], '.scramble-text-name', 1200)
 let scramble_phrases = ['Diver 🌊🤿🐙', "Art admirer", 'Doctoral researcher']
 scrambleText(scramble_phrases, '.scramble-text-about', 1300)
+
+
+/* Toggle header visibility on mobile view */
+const toggleHeaderMobile = () => {
+  // If mobile view
+  // If not at tope
+  // If scrolling down
+  // move header position by header height
+  // else if scrolling up 
+  // move header position to default
+  if(window.innerWidth < "767px") { // If mobile view
+  }
+}
+
+/* TOGGLING NAV BAR */
+var prevScrollpos = window.scrollY;
+var w = document.documentElement.clientWidth;
+
+function toggleNav(w) {
+  let currentScrollPos = window.scrollY;
+  let homeNavBar = document.querySelector('.site-header');
+  let secondaryNavBar = document.querySelector('.secondary-navs');
+
+  let headerHeight = homeNavBar.offsetHeight;
+  let secondaryNavHeight = secondaryNavBar.offsetHeight;
+  let heightDiff = headerHeight - secondaryNavHeight;
+  heightDiff = heightDiff - 16 -4; // Padding of 1rem (16 px) plus some extra
+
+  if (w < 768) { // mobile
+    if(window.scrollY <= 50) {
+      homeNavBar.style.top = 0;
+    }
+    else {
+      if (prevScrollpos >= currentScrollPos) {
+        homeNavBar.style.top = "0";
+      } else {
+        homeNavBar.style.top = "-" + heightDiff + "px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+    prevScrollpos = currentScrollPos;
+  }
+}
+

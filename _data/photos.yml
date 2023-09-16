@@ -53,7 +53,7 @@
   sort: 789.4
   tags: ["Berlin", "home"]
   link: "https://lh3.googleusercontent.com/pw/AJFCJaWp49mJ4YyC5CHetYavONW48LARzC89th4zZIbSfPhaz4VkOSvwZzOuKYQdt7xX0DV9d6oc89QYNTJXUlPjmd66HjCEnpH3lU92moA51-njtJLtts-TO9tuJj-uqgnIPlt5tMcg7fWt_HpoP8aEa2Uh=w1303-h1938-s-no?authuser=0"
-  display: false
+  display: true
 
 - title: "Decin retreat - the grand view"
   alt: "Decin retreat - the grand view"
@@ -302,6 +302,92 @@
   link: "https://lh3.googleusercontent.com/pw/AJFCJaVKA_QfpCLwcdjDhWBnQnAYQlEHdaCcotryUVFzIQiePQEAz5dFMcPJw1A3IS5o7VbaipMqbz4e9idgJ2ZZkC33kOavedESi58PmtbV5uWicpTsfhRKsSH2V-jD_EiaA84UMnySnahXyomJANQjyUCO=w2868-h2000-s-no?authuser=0"
   display: true
 
+# Chiangmai 2019
+- title: "Chiangmai, pastel smudge"
+  alt: "Chiangmai, pastel smudge"
+  sort: 1000
+  tags: ["Chiangmai", "getaway"]
+  link: "https://lh3.googleusercontent.com/pw/AIL4fc8Mqf-5blZqdp9FtR2DzzNZZwL4-YsfTpwVBHKddyWes94WibHP78e1CTsaQruk-n8Zn2UEt99gMj5obIWXyBXA5jcDdur7lNuVhahNIyMLB51Ak1Ayc4XDTo9ClTBvrIuQBerhhOo5cG6UcHz9vQRc=w663-h1000-s-no?authuser=0&pageId=112347824035248312220"
+  display: true
+- title: "Chiangmai book coffee"
+  alt: "Chiangmai book coffee"
+  sort: 1001
+  tags: ["Chiangmai", "getaway"]
+  link: "https://lh3.googleusercontent.com/pw/AIL4fc9ZJEieb21nrVfMWgnmGDwZRIO8E2ddk901TL2TdmB-KnwW5qPtPHKZsxeOPvMophCIplAnOtdh1FeCPiQqFyieT9qF9xDmcWI2B6-_b1gV-qMRtmZ3fEY6mNtlOdE0BCmVrpMAKXvOCHMQLB79vlS2=w800-h1000-s-no?authuser=0&pageId=112347824035248312220"
+  display: true
+- title: "hostel rooftop"
+  alt: "hostel rooftop"
+  sort: 1002
+  tags: ["Chiangmai", "getaway"]
+  link: "https://lh3.googleusercontent.com/pw/AIL4fc9FAYb0UpS-H5OD0XG9_8ymWmVUhefK_woT45xJmbjVBZhd5HpA7P2LVcL7D33SyCNGlB-bAGaMI2qix1JVQkncqUBLpCTXRv5f-HltRyNEKMSeB1U5aF8aRMqg8qRcLJhZW7U1tEhr4Rw7TSGN-Phe=w714-h1000-s-no?authuser=0&pageId=112347824035248312220"
+  display: false
+- title: "back of a person in red"
+  alt: "person in red"
+  sort: 1003
+  tags: ["Chiangmai", "getaway"]
+  link: "https://lh3.googleusercontent.com/pw/AIL4fc9WrtWlvhYygrLEqh9f1ARR3wvmc3T2_1Lrma4Zzk0iapL6QyoKABKFjBNncxbQwx-U024T0ubG-cpjfSUB7Sg1xf6gLBYz4_GPFn7rxAQL9IMpr5uYjdh8-IVoqldE_BeieUa046EPsEHQncd6C9W2=w734-h1000-s-no?authuser=0&pageId=112347824035248312220"
+  display: true
+- title: "Mirror selfie in chiangmai"
+  alt: "mirror selfie in chiangmai"
+  sort: 1004
+  tags: ["Chiangmai", "getaway", "Jeehye"]
+  link: "https://lh3.googleusercontent.com/pw/AIL4fc_2QB78YNuET72ui-5EKApRbCTVPxcKEUkE4y52dPJsCYNUQ9F8tzQqRCTfHRSvt-ZSM4r4zE8SApaJvgU6oSlUu6NVWQzns9DGRYqIHY_F_mq7NUAHpPLShT_rVbqlrUUGV91A40o8B_o5a1iMqNPa=w1000-h1000-s-no?authuser=0&pageId=112347824035248312220"
+  display: true
+- title: "sparkle"
+  alt: "sparkle"
+  sort: 1005
+  tags: ["Chiangmai", "getaway", "friends"]
+  link: "https://lh3.googleusercontent.com/pw/AIL4fc8TkOXUDdOZXnUPOb-RBAD2S15R4AFXreBMYrx8-SqjcODaTK0lkSEzp_pCo52DyDeurs7Q1DyM82cS5k70ODd-s5Ya4aTvSg-7oYbWwqIXdmWlwAsHcnT3XlOReAcURa-Yyu_d5OneNaHP6xUukXBw=w1000-h663-s-no?authuser=0&pageId=112347824035248312220"
+  display: true
+- title: "art baby"
+  alt: "art baby"
+  sort: 1006
+  tags: ["Chiangmai", "getaway"]
+  link: "https://lh3.googleusercontent.com/pw/AIL4fc9dZy0TmKbwbPlnL2UQPEQpLDZDQI2Wz3b0hF7sL5MBoHivv4JwjezDu6DpKCfbCMz1VP2F1DCb-mEUPkMdGPRy_FqIfGptgUT8emBFvVlHcPwCGRJU8XIvTe2X3lJ3EmFD5xgN4WpC9Wiy8djnn6Ov=w1000-h667-s-no?authuser=0&pageId=112347824035248312220"
+  display: true
+- title: "art kids"
+  alt: "art kids"
+  sort: 1007
+  tags: ["Chiangmai", "getaway"]
+  link: "https://lh3.googleusercontent.com/pw/AIL4fc8mnHLGMOhGx_ii83xfdBuDJb-egpK6W7MvHVsVuuZ7L-KvUbc0ApOxIQbs45UhE4TrWHjq3YR2vmniusDPQtGgjSOhIV9jU9mLa_u1u7FwvCRYwIdZLI9z6n2PuWDidOftX3xrtEMwU6VBnDqfMDMb=w1000-h714-s-no?authuser=0&pageId=112347824035248312220"
+  display: true
+- title: "Chiangmai cafe"
+  alt: "chiangmai cafe"
+  sort: 1008
+  tags: ["Chiangmai", "getaway"]
+  link: "https://lh3.googleusercontent.com/pw/AIL4fc-CwNy37RT0WXAEJbr-J7to2HvcbaWdWhOIdNnJHOBNkbdGaQf1oKKRXbwFs78O4utAq3PaR_RhTa6NApxUikPy02-YEtJsPCoypRUVo5GQdGz5urcualAJP2s2dnc2eqfBzETbPVjnn3a1P5ch3J8j=w1000-h663-s-no?authuser=0&pageId=112347824035248312220"
+  display: true
+- title: "Chiangmai friends"
+  alt: "chiangmai friends"
+  sort: 1009
+  tags: ["Chiangmai", "getaway", "friends"]
+  link: "https://lh3.googleusercontent.com/pw/AIL4fc-nKkacY65ZwvmwgdIXiXOUccy_1C5827FBhygm-eJ5lHY9M1dzZCmRt6l8DCEkuAIm1DIHMq4WZOVqCtEX7P0cwUw36nAC4QCwyxJwsEI6taQvbXsSM8dhBZYmoi-l7CtCZjbCluo-WYAbtgWW8aZk=w1000-h663-s-no?authuser=0&pageId=112347824035248312220"
+  display: true
+- title: "Chiangmai friends"
+  alt: "chiangmai friends"
+  sort: 1010
+  tags: ["Chiangmai", "getaway", "friends"]
+  link: "https://lh3.googleusercontent.com/pw/AIL4fc8ZluZC4c-wiTEZ9Ji0ykNfK2UgwbjO0LBcVZKgSEYGDlheO_5PbPjgOJdjDKlmLxKdamSqBOEqCanBIvsSSZOvfECxMcbv747s-SmlSnQfHJ6A26qenQDNTyiNx_nIwMxOOP6c55XdJGQkKSc8340p=w1000-h1000-s-no?authuser=0&pageId=112347824035248312220"
+  display: true
+- title: "Chiangmai friends"
+  alt: "chiangmai friends"
+  sort: 1010
+  tags: ["Chiangmai", "getaway", "friends"]
+  link: "https://lh3.googleusercontent.com/pw/AIL4fc8aX0sxRTKz4ayhWnQ175rFVbzSbWu0lJV_ZdA-wyxtauGYx_YLEC_SublZSnWcy4Yrm372gyHuKQBJpDEOgHKwnLCFUU_UXflZ4C_YjViBcCnEsDtKoWzWaz1-g9x5usZzwFgm4dnHY7scaAn6iEoM=w1000-h1000-s-no?authuser=0&pageId=112347824035248312220"
+  display: true
+- title: "doggo trio"
+  alt: "doggo trio"
+  sort: 1011
+  tags: ["Chiangmai", "getaway"]
+  link: "https://lh3.googleusercontent.com/pw/AIL4fc-pFybUcqKrYAPQAgOblF6n1W9kdco3U47YadpShCm3C6_nsB83-DLKIRHXm5an9jvPkQVTjUmO8K-_JyH5XFYWiSo7iO5IX6Ww5zjsnsWatWgq5Rb_4awC6dmBa0wtb7zz0D1SRBRUf378FkOsvh4U=w800-h1000-s-no?authuser=0&pageId=112347824035248312220"
+  display: true
+- title: "Chiangmai friends"
+  alt: "chiangmai friends"
+  sort: 1012
+  tags: ["Chiangmai", "friends"]
+  link: "https://lh3.googleusercontent.com/pw/AIL4fc_fvCGZ0DV_npAnt2KWSWEr3A46V9m_cxJNL3ubpy87GiRSEHty7tH5uhaDstv90WIY0_4b_8r8cLjH2AFWXZW5A4Swn6cID7GVFJRAKf2G6CcPWdZSM-nZqByS_xbO_ANR0u6gD1n_rp0NpH8fsEAA=w663-h920-s-no?authuser=0&pageId=112347824035248312220"
+  display: true
+
 # HongKong
 - title:  "HongKong, vanilla colors"
   alt: "Hong kong buildings, vanilla colors"
@@ -455,11 +541,35 @@
   tags: ["Korea","friends"]
   link: "https://lh3.googleusercontent.com/pw/AM-JKLUg70VUjXKn7cCs1ROglZLCoT8YY5KogTGb2udVuDg08t3dtJCSbyRfTe-lhMJE8FQJeH6OcqZ4dcU3Xhs2846P3T31G90CCYW7idolRIzLe7mNEBp5ZhzBAAc8iK99IO-J-LPwlEuSapdPh8bwyRF7=w1000-h800-no?authuser=0"
   display: true
+- title: "My favorite things, things only"
+  alt: "My favorite things"
+  sort: 2001
+  tags: ["Korea"]
+  link: "https://lh3.googleusercontent.com/pw/AIL4fc_qF9XsvicSIR9ttMNHI4q2POJM1HYCllVVrH9MF6b687gl9yvAxhtMAeRAJkrM8NpGbygNlQq7h6yRldWM61EplnxzrUyG7VlvCehab157TYCaJjT7LQvV6k1RCh1FvYhPoqeBkvf6QFBbSv2Uk88h=w1000-h666-s-no?authuser=0&pageId=112347824035248312220"
+  display: true
 - title:  "Eunil in Euljiro I think"
   alt: "Eunil in Eulrijo I think"
   sort:  2100.1
   tags: ["Korea","friends"]
   link: "https://lh3.googleusercontent.com/pw/AM-JKLX4xrDFKlvVNTEv4YLNaJ9V-O_pp95IegfMDoe8mqm8l8D6sNZPEmoI1Znlz4zgwopjwWDv36UITeCCGRgAOKxhVHRW1ptt7Hrk2zecorttP6nGBtZmgsZWMPHi9q09g1TnMc9NTKxmmG6_lXtZQnSK=w1000-h671-no?authuser=0"
+  display: true
+- title: "Eunil, comic book store"
+  alt: "Eunil, comic book store"
+  sort: 2100.11
+  tags: ["Korea", "friends"]
+  link: "https://lh3.googleusercontent.com/pw/AIL4fc8H3bHKcPP0CLoxWKyATPQAXre-7ABpiqTquQqTvTRidY_mS5sm5gG5Kbq0sjFb2-RlhO-FrkyXZrqOfwFRxbHxadJx523VXm7sn0D-TaF9gCUr7wnSbxTyx2aUWNm4Ly4qHzZ-x12mEp977TfUC_Mn=w1000-h646-s-no?authuser=0&pageId=112347824035248312220"
+  display: true
+- title: "Me, Jeju Island"
+  alt: "Me, Jeju Island"
+  sort: 2100.14
+  tags: ["Korea", "Jeehye"]
+  link: "https://lh3.googleusercontent.com/pw/AIL4fc9N-j3QZD86t5RrC4y6tgnJwvnKaWiums8OhJISXPBP9cWMnyw96GPmjS1wLChd5oP9tn2Yv-G1bYepfPbm0_RZ7AsvJsAUCbdYhs95tmcmU3wdTotZCll6aT6FlznR5ctwbyKZHth-9FCaI0J0m2C2=w1000-h671-s-no?authuser=0&pageId=112347824035248312220"
+  display: true
+- title: "Me, taken by Jessie"
+  alt: "Me, photo taken by Jessie"
+  sort: 2100.15
+  tags: ["Korea", "Jeehye"]
+  link: "https://lh3.googleusercontent.com/pw/AIL4fc_gg0GXF1QbOAM3f9RJgINQYIYjkh4OZMomPH7ZQU0YJsk2Hkvt1V5ko0KKE5PlvN1Bvk-xhObWndqhC9mPRJ75IYPddetVeBo9633rTrLbnOUpCkCsbA7Iemy6AYa2lEaXYXcoB8Jhapeuj70r1Z2x=w1000-h728-s-no?authuser=0&pageId=112347824035248312220"
   display: true
 - title: "Jessie in a cafe bar"
   alt: "Jessie in a cafe-bar"
@@ -483,8 +593,8 @@
   alt: "Jessie and I. My birthday."
   sort: 2201
   tags: ["Korea", "Jeehye"]
-  link: "https://lh3.googleusercontent.com/pw/AM-JKLVjuxULapaS9_dJnaabkdDVxrbo-llDhJqrnzfVxKf86KUEL0boa_q82xu43a4K93xEWuGEXWKufn10jHvlQrGk_18X8vS8QUlwc701MWKAZbvlEVtTKFrYIu5kfgAOHItc8zLa_YJhjoolYfFDK7JM=w1000-h671-no?authuser=0"
-  display: false
+  link: "https://lh3.googleusercontent.com/pw/AIL4fc8t3GmkenTIEOcMwGH48CIugyzGX2-Rcf1lQ0UmCEmXxrGvUg2Vqc5pDPXxpiZJvAj_zysGnpNaz6GVfhlyFSaXMhUrdUBdyeCArAwGpP0mJxuxCtR0sv8i50vnUG_EXbgRQ424K9oe1AQL-VtO-Ig5=w1000-h671-s-no?authuser=0&pageId=112347824035248312220"
+  display: true
 - title: "Jessie and Kylie, my birthday"
   alt: "Jessie and Kylie. My birthday."
   sort: 2202

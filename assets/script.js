@@ -484,34 +484,3 @@ function toggleNav(w) {
     prevScrollpos = currentScrollPos;
   }
 }
-
-
-// TRY: for photo masonry grid, horizontal photos have width of 100/3%, vertical ones 100/4%
-// const customPhotoMasonryGridWidths = () => {
-//   let photoList = document.querySelectorAll('.photo-item');
-  
-//   if(photoList) {
-//     photoList.forEach(photo => {
-//       let height = photo.offsetHeight;
-//       let width = photo.offsetWidth;
-    
-//       // console.log(`Element Height: ${height}px`);
-//       // console.log(`Element Width: ${width}px`);
-
-//       if (height > width) {
-//         console.log("vertical");
-//         // set width to 25%
-//         photo.style.width = "calc(100%/4)";
-//       } else if (width > height) {
-//         console.log("horizontal");
-//         photo.style.width = "calc(100%/2)";
-//         // set width to 33%
-//       } else {
-//         console.log("square");
-//         photo.style.width = "calc(100%/4)";
-//         // set width to 25%
-//       }
-//     });
-//   };
-// }
-// customPhotoMasonryGridWidths();

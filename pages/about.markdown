@@ -2,6 +2,7 @@
 layout: about
 title: About
 permalink: /about/
+display: false
 ---
 
 ## AN JEEHYE

@@ -2,6 +2,8 @@
 layout: 35mm
 title: 35mm
 permalink: /35mm/
+icon-fa: "fa fa-film"
+display: true
 ---
 
 <ul class="photo-list">

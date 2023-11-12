@@ -1,0 +1,27 @@
+.site-footer {
+
+    a {
+        color: var(--color-light);
+        text-decoration: none;
+    }
+    ul {
+        list-style: none;
+        li {
+            display: inline;
+            padding: 0 1rem;
+        }
+    }
+}
+#footer-content {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: smaller;
+    ul, p {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

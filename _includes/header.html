@@ -1,12 +1,16 @@
 <header class="site-header" role="banner">
 
-  <div id="header-wrapper" class="wrapper">
+  <div class="main-nav">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-
+    <div class="nav-left"> 
+      <a class="site-title" id="link-home" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    </div>
+    
+    <div class="nav-middle"> <p id="nav-middle-text">Hello ㋡</p> </div>
+  
     {%- if page_paths -%}
-      <nav class="site-nav">
+      <nav class="nav-right">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -15,23 +19,31 @@
             </svg>
           </span>
         </label>
-
-        <div class="trigger underline-effect white-text-styling">
+  
+        <div class="trigger white-text-styling">
           {%- for path in page_paths -%}
-            {%- assign my_page = site.pages | where: "path", path | first -%}
+            {%- assign my_page = site.pages | where: "path", path | where: "display", true | first -%}
             {%- if my_page.title -%}
-              <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+              <a class="page-link" id="link-{{ my_page.title }}" href="{{ my_page.url | relative_url }}">
+                <!-- {{ my_page.title | escape }} -->
+                {%- if my_page.icon-fa -%}
+                  <i class="{{ my_page.icon-fa }}"></i>
+                  <!-- <img src="{{ my_page.icon.image_path }}" alt="{{ my_page.icon.alt }}"> -->
+                {%- endif -%}
+              </a>
               <!-- {% if my_page.title == "35mm" %}
                 {%- include tag-nav.html -%}
               {% endif %} -->
             {%- endif -%}
           {%- endfor -%}
         </div>
-
-        <div class="secondary-navs">
-          {%- include tag-nav.html -%}
-        </div>
       </nav>
     {%- endif -%}
   </div>
+  <div class="main-nav-back"></div>
+
+  <div class="secondary-nav">
+    {%- include tag-nav.html -%}
+  </div>
+
 </header>

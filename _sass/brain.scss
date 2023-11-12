@@ -1,0 +1,24 @@
+.page.brain {
+    font-size: x-large;
+    .brain-img img{
+        min-width: 30vw;
+        @include media-query($on-palm) {
+            min-width: 70vw;
+        }
+    }
+}
+
+section.publications {
+    ul {
+        list-style: none;
+        margin: 0;
+        li {
+            padding-left: 1rem ;
+            text-indent: -1rem ;
+            margin-bottom: 1rem;;
+        }
+        b {
+            color: var(--color-highlight);
+        }
+    }
+}

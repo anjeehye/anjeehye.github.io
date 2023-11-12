@@ -4,10 +4,10 @@ if (location.hostname == '127.0.0.1') {
 } else {
   URL_DEFAULT = "/"
 } */
-URL_DEFAULT = "/anjeehye/"
+URL_DEFAULT = "/"
 URL_STORIES = URL_DEFAULT + "stories/"
-URL_ABOUT = URL_DEFAULT + "about/"
-URL_PORTFOLIO = URL_DEFAULT + "portfolio/"
+URL_BRAIN = URL_DEFAULT + "brain/"
+URL_35MM = URL_DEFAULT + "35mm/"
 VERTICAL_HEADER = false
 
 document.addEventListener('swup:contentReplaced', (event) => {
@@ -31,10 +31,15 @@ const activeFunctions = () => {
   modalPreview();
   scrambleText(scramble_phrases, '.scramble-text-about', 1200);
   toggleNav(w);
+  navBarMiddleText();
+  backNavBar();
+  // parallaxEffect();
+  animateGlobe();
 };
 const resizeFunctions = () => {
   photoMasonryGrid();
   postMasonryGrid();
+  backNavBar();
 }
 
 window.onscroll = function(){
@@ -136,26 +141,27 @@ copyEmail();
 
 /* HIGHLIGHT CURRENT NAV BAR MENU */
 const navBarHighlight = () => { /* clicked item */
-let loc = window.location.pathname;
-let navBarLinks = document.querySelector('.site-nav').querySelectorAll("a");
+  let loc = window.location.pathname;
+  let navBarLinks = document.querySelector('.site-header').querySelectorAll("a");
 
-navBarLinks.forEach(link => {
-  currLink = link.innerText.replace('#', '');
-  
-  // if current url has it, attach current
-  if(loc != URL_DEFAULT) {
-    let currLoc = loc.toLowerCase();
-    if(currLoc.includes(currLink.toLowerCase())) {
-      link.classList.add('current');
+  navBarLinks.forEach(link => {
+    // get link name from id
+    let currLink = link.id.split('-')[1]
+
+    // if current url has it, attach current
+    if(loc != URL_DEFAULT) {
+      let currLoc = loc.toLowerCase();
+      if(currLoc.includes(currLink.toLowerCase())) {
+        link.classList.add('current');
+      }
+      else {
+        link.classList.remove('current');
+      }
     }
     else {
-      link.classList.remove('current');
-    }
-  }
-  else {
-    navBarLinks.forEach(link => link.classList.remove('current'));
-  };
-});
+      navBarLinks.forEach(link => link.classList.remove('current'));
+    };
+  });
 }
 navBarHighlight();
 
@@ -184,10 +190,10 @@ let photoMasonryGrid = () => {
 photoMasonryGrid();
 
 /* SHOW TAG-NAV ONLY WHEN IN 35MM */
-/* WHEN AT 35MM PAGE, CHANGE .PAGE-CONTENT BACKGROUND COLOR */
+/* WHEN AT 35MM PAGE, CHANGE XX .PAGE-CONTENT BACKGROUND COLOR XX */
 const effectsFor35mm = () => { 
   let loc = window.location.pathname;
-  if(true){ //VERTICAL_HEADER
+  if(true){ 
     tagNav = document.querySelector(".tag-nav");
     if(loc.includes("35mm")) { // if in 35mm page
       tagNav.classList.remove('hidden-nav');
@@ -196,13 +202,13 @@ const effectsFor35mm = () => {
       tagNav.classList.add('hidden-nav');
     }
   }
-  pageWrapper = document.querySelector(".page-content");
-  if(loc.includes("35mm")) { // if in 35mm page
-    pageWrapper.classList.add('translucent-background');
-  }
-  else {
-    pageWrapper.classList.remove('translucent-background');
-  }
+  // pageWrapper = document.querySelector(".page-content");
+  // if(loc.includes("35mm")) { // if in 35mm page
+  //   pageWrapper.classList.add('translucent-background');
+  // }
+  // else {
+  //   pageWrapper.classList.remove('translucent-background');
+  // }
 }
 effectsFor35mm();
 
@@ -442,45 +448,189 @@ let scrambleText = (phrases, div, timeout=800) => {
 let scramble_phrases = ['Diver 🌊🤿🐙', "Art admirer", 'Doctoral researcher']
 scrambleText(scramble_phrases, '.scramble-text-about', 1300)
 
-
-/* Toggle header visibility on mobile view */
-const toggleHeaderMobile = () => {
-  // If mobile view
-  // If not at tope
-  // If scrolling down
-  // move header position by header height
-  // else if scrolling up 
-  // move header position to default
-  if(window.innerWidth < "767px") { // If mobile view
-  }
-}
-
 /* TOGGLING NAV BAR */
 var prevScrollpos = window.scrollY;
 var w = document.documentElement.clientWidth;
 
 function toggleNav(w) {
-  let currentScrollPos = window.scrollY;
-  let homeNavBar = document.querySelector('.site-header');
-  let secondaryNavBar = document.querySelector('.secondary-navs');
+  // let currentScrollPos = window.scrollY;
+  // let homeNavBar = document.querySelector('.site-header');
+  // let secondaryNavBar = document.querySelector('.secondary-navs');
 
-  let headerHeight = homeNavBar.offsetHeight;
-  let secondaryNavHeight = secondaryNavBar.offsetHeight;
-  let heightDiff = headerHeight - secondaryNavHeight;
-  heightDiff = heightDiff - 16 -4; // Padding of 1rem (16 px) plus some extra
+  // let headerHeight = homeNavBar.offsetHeight;
+  // let secondaryNavHeight = secondaryNavBar.offsetHeight;
+  // let heightDiff = headerHeight - secondaryNavHeight;
+  // heightDiff = heightDiff - 16 -4; // Padding of 1rem (16 px) plus some extra
 
-  if (w < 768) { // mobile
-    if(window.scrollY <= 50) {
-      homeNavBar.style.top = 0;
-    }
-    else {
-      if (prevScrollpos >= currentScrollPos) {
-        homeNavBar.style.top = "0";
-      } else {
-        homeNavBar.style.top = "-" + heightDiff + "px";
-      }
-      prevScrollpos = currentScrollPos;
-    }
-    prevScrollpos = currentScrollPos;
+  // if (w < 768) { // mobile
+  //   if(window.scrollY <= 50) {
+  //     homeNavBar.style.top = 0;
+  //   }
+  //   else {
+  //     if (prevScrollpos >= currentScrollPos) {
+  //       homeNavBar.style.top = "0";
+  //     } else {
+  //       homeNavBar.style.top = "-" + heightDiff + "px";
+  //     }
+  //     prevScrollpos = currentScrollPos;
+  //   }
+  //   prevScrollpos = currentScrollPos;
+  // }
+}
+const getMessage = () => {
+  switch(location.pathname.split('/')[1]){
+    case '35mm':
+      return 'Tracking life with 35mm film.';
+    case 'brain':
+      return 'Neuroscience.';
+  case 'stories':
+      return '[...]';
+    default:
+      return 'Hello ㋡';
   }
 }
+
+const navBarMiddleText = () => {
+  let message = getMessage();
+  const navBarMiddle = document.getElementById('nav-middle-text');
+  navBarMiddle.textContent = message;
+}
+navBarMiddleText();
+
+// Match heights of main navbar and navbar back
+const backNavBar = () => {
+  const navbar = document.getElementsByClassName('main-nav')[0];
+  const navbarBack = document.getElementsByClassName('main-nav-back')[0];
+  
+  if (navbar && navbarBack) {
+    const height = navbar.clientHeight;
+    navbarBack.style.height = height + 'px';
+  }
+}
+backNavBar();
+
+// const parallaxEffect = () => {
+//   // If at home page
+//   let loc = window.location.pathname;
+//   if (loc == URL_DEFAULT) {
+//     // Parallax effect with ParallaxMagic.js
+//     const controller = new ScrollMagic.Controller();
+
+//     // BOX1
+//     new ScrollMagic.Scene({
+//       triggerElement: "#home-box1",
+//       triggerHook: 0.9, // show, when scrolled 10% into view
+//       duration: 0, // hide 10% before exiting view (80% + 10% from bottom)
+//       offset: 50, // move trigger to center of element
+//       // reverse: false
+//     })
+//     .setClassToggle("#home-box1", "visible") // add class to reveal
+//     // .addIndicators() // add indicators (requires plugin)
+//     .addTo(controller);
+
+//     // BOX 2
+//     new ScrollMagic.Scene({
+//       triggerElement: "#home-box2", 
+//       duration: 500,
+//     })
+//     .setPin("#home-box2")
+//     .addTo(controller);
+
+//     // image seq
+//     const images = [
+//       "/assets/home/globe1.png",
+//       "/assets/home/globe2.png",
+//       "/assets/home/globe3.png",
+//       "/assets/home/globe4.png",
+//       "/assets/home/globe5.png",
+//       "/assets/home/globe6.png"
+//     ];
+
+//     // TweenMax can tween any property of any object. We use this object to cycle through the array
+//     let obj = {curImg: 0};
+
+//     // create tween
+//     let tween = TweenMax.to(obj, 1,
+//       {
+//         curImg: images.length - 1,	// animate propery curImg to number of images
+//         roundProps: "curImg",				// only integers so it can be used as an array index
+//         repeat: 1,									// repeat 3 times
+//         immediateRender: true,			// load first image automatically
+//         ease: Linear.easeNone,			// show every image the same ammount of time
+//         onUpdate: function () {
+//           document.getElementById("globeImg").src = images[obj.curImg]; // set the image source
+//         }
+//       }
+//     );
+//     new ScrollMagic.Scene({triggerElement: "#home-box2", duration: 500})
+//     .setTween(tween)
+//     // .addIndicators() // add indicators (requires plugin)
+//     .addTo(controller);
+      
+//     // BOX 3 - BRAIN
+//     // new ScrollMagic.Scene({
+//     //   triggerElement: "#home-box3",
+//     //   // triggerHook: 0.9, // show, when scrolled 10% into view
+//     //   duration: 500, // hide 10% before exiting view (80% + 10% from bottom)
+//     //   // offset: 50 // move trigger to center of element
+//     // })
+//     // .setPin("#home-box3")  // .addIndicators() // add indicators (requires plugin)
+//     // .addTo(controller);
+
+//     // No need to add text to tween
+//     // Hmm does it work with setPin
+//     // let tween2 = new TimelineMax()
+//     // .add([
+//     //   TweenMax.to("#home-box3 .home-box-text", 1, {backgroundPosition: "0 -100%", ease: Linear.easeNone}),
+//     //   TweenMax.to("#home-box3 #brainImg", 1, {backgroundPosition: "0 -200%", ease: Linear.easeNone})
+//     // ]);
+
+//     new ScrollMagic.Scene({triggerElement: "#home-box3", duration: 1000})
+//     .setPin("#home-box3")
+//     .addTo(controller);
+
+//     // build scene
+//     new ScrollMagic.Scene({triggerElement: "#home-box3", duration: 1000})
+//     // .setTween(tween2)
+//     .setTween( 
+//       TweenMax.to( '.brain-img', 1, 
+//         {backgroundPosition: "0 -200%", ease: Linear.easeNone, immediateRender: false} )
+//     )
+//     // .addIndicators() // add indicators (requires plugin)
+//     .addTo(controller);
+
+    
+//     // BOX 4 - FILM
+//     new ScrollMagic.Scene({
+//       triggerElement: "#home-box4",
+//       duration: 500,
+//     })
+//     .setPin("#home-box4") // add class to reveal
+//     .addTo(controller);
+
+//     new ScrollMagic.Scene({
+//       triggerElement: "#home-box5",
+//       triggerHook: 0.9, // show, when scrolled 10% into view
+//       duration: "80%", // hide 10% before exiting view (80% + 10% from bottom)
+//       offset: 50 // move trigger to center of element
+//     })
+//     .setClassToggle("#home-box5", "visible") // add class to reveal
+//     // .addIndicators() // add indicators (requires plugin)
+//     .addTo(controller);
+//   };
+// };
+// parallaxEffect();
+
+const animateGlobe = () => {
+  let loc = window.location.pathname;
+  if(loc == URL_DEFAULT) {
+    const frames = document.getElementById("globe-img").children;
+    const frameCount = frames.length;
+    let i = 0;
+    setInterval(function () { 
+        frames[i % frameCount].style.display = "none";
+        frames[++i % frameCount].style.display = "block";
+    }, 200);
+  }
+}
+animateGlobe();

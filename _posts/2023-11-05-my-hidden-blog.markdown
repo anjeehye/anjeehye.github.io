@@ -23,9 +23,9 @@ slug: "my-hidden-blog"
 전에 네이버 블로그 했던 기억이 어렴풋이 있지만, 비공개 포스트 몇 개 있고 별거 없을 거야. 라는 생각으로 네이버 어플을 켯다. <br />
 블로그 탭에 갔는데, 내 블로그를 보고 깜짝 놀랐다. 
 
-![블로그 페이지]({{site.baseurl}}/assets/images/post-2023-11-05-blog1.png){:class="img-responsive img-size-medium"}
+![블로그 페이지]({{site.baseurl}}/assets/images/post-2023-11-05-1oldblog1.png){:class="img-responsive img-size-medium"}
 <figcaption align="center">인기글 중에 내 얼굴ㅋㅋㅋㅋㅋㅋ은 셀프 앞머리 파마 글 ㅋㅋㅋㅋ </figcaption>
-![블로그 글 리스트]({{site.baseurl}}/assets/images/post-2023-11-05-blog2.png){:class="img-responsive img-size-medium"}
+![블로그 글 리스트]({{site.baseurl}}/assets/images/post-2023-11-05-1oldblog2.png){:class="img-responsive img-size-medium"}
 
 
 글이 꽤나 많잖아?! 

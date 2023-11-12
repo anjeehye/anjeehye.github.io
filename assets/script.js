@@ -35,6 +35,7 @@ const activeFunctions = () => {
   backNavBar();
   // parallaxEffect();
   animateGlobe();
+  animateBrain();
 };
 const resizeFunctions = () => {
   photoMasonryGrid();
@@ -634,3 +635,18 @@ const animateGlobe = () => {
   }
 }
 animateGlobe();
+
+const animateBrain = () => {
+  const frameHeight = 10000/24;
+  const frames = 24;
+  const brainImgDiv = document.getElementById("brain-img");
+  if(brainImgDiv) {
+    let frame = 0;
+    setInterval(function () {
+        const frameOffset = (++frame % frames) * -frameHeight;
+        brainImgDiv.style.backgroundPosition = "center " + frameOffset + "px";
+    }, 100);
+  }
+
+}
+animateBrain();

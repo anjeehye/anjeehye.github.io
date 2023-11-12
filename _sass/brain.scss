@@ -1,5 +1,7 @@
 .page.brain {
-    font-size: x-large;
+    .brain-top {
+        font-size: x-large;
+    }
     .brain-img img{
         min-width: 30vw;
         @include media-query($on-palm) {
@@ -21,4 +23,11 @@ section.publications {
             color: var(--color-highlight);
         }
     }
+}
+#brain-img {
+    background: url('../assets/brain/brain_cropped_bitmap_tile.png');
+    background-repeat: no-repeat; 
+    height: calc(10000px/24); 
+    width: auto; 
+    background-position: center top;
 }

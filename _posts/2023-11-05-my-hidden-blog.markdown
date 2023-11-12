@@ -4,7 +4,7 @@ title: "나의 숨겨진 블로그."
 date: 2023-11-05 13:00:00 +0900
 categories: "notes"
 excerpt: "왜 이렇게 다 잊고 사는지 참 모르겠어."
-thumbnail: /assets/images/post-2023-11-05-blog1.png
+thumbnail: /assets/images/post-2023-11-05-1oldblog1.png
 slug: "my-hidden-blog"
 ---
 

@@ -24,4 +24,10 @@
         margin-left: 0;
         margin-right: 0;
     }
+    @include media-query($on-palm) {
+        flex-direction: column;
+        ul, p {
+            margin-bottom: .5rem;
+        }
+    }
 }

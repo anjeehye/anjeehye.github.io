@@ -1,8 +1,10 @@
 .site-footer {
-
     a {
         color: var(--color-light);
         text-decoration: none;
+        &:hover {
+            text-shadow: 0 0 10px var(--color-highlight);
+        }
     }
     ul {
         list-style: none;

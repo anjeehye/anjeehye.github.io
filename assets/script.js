@@ -33,7 +33,7 @@ const activeFunctions = () => {
   toggleNav(w);
   navBarMiddleText();
   backNavBar();
-  // parallaxEffect();
+  parallaxEffect();
   animateGlobe();
   animateBrain();
 };
@@ -41,6 +41,7 @@ const resizeFunctions = () => {
   photoMasonryGrid();
   postMasonryGrid();
   backNavBar();
+  parallaxEffect();
 }
 
 window.onscroll = function(){
@@ -510,117 +511,35 @@ const backNavBar = () => {
 }
 backNavBar();
 
-// const parallaxEffect = () => {
-//   // If at home page
-//   let loc = window.location.pathname;
-//   if (loc == URL_DEFAULT) {
-//     // Parallax effect with ParallaxMagic.js
-//     const controller = new ScrollMagic.Controller();
+const parallaxEffect = () => {
+  let loc = window.location.pathname;
+  if (loc == URL_DEFAULT) { // If at home page
+    // Parallax effect with ParallaxMagic.js
+    const controller = new ScrollMagic.Controller();
 
-//     // BOX1
-//     new ScrollMagic.Scene({
-//       triggerElement: "#home-box1",
-//       triggerHook: 0.9, // show, when scrolled 10% into view
-//       duration: 0, // hide 10% before exiting view (80% + 10% from bottom)
-//       offset: 50, // move trigger to center of element
-//       // reverse: false
-//     })
-//     .setClassToggle("#home-box1", "visible") // add class to reveal
-//     // .addIndicators() // add indicators (requires plugin)
-//     .addTo(controller);
+    // For boxes except Box 1, linger longer 
+    const boxesToLinger = ['#home-box2', '#home-box3', '#home-box4', '#home-box5']
+    const scenes = [];
 
-//     // BOX 2
-//     new ScrollMagic.Scene({
-//       triggerElement: "#home-box2", 
-//       duration: 500,
-//     })
-//     .setPin("#home-box2")
-//     .addTo(controller);
-
-//     // image seq
-//     const images = [
-//       "/assets/home/globe1.png",
-//       "/assets/home/globe2.png",
-//       "/assets/home/globe3.png",
-//       "/assets/home/globe4.png",
-//       "/assets/home/globe5.png",
-//       "/assets/home/globe6.png"
-//     ];
-
-//     // TweenMax can tween any property of any object. We use this object to cycle through the array
-//     let obj = {curImg: 0};
-
-//     // create tween
-//     let tween = TweenMax.to(obj, 1,
-//       {
-//         curImg: images.length - 1,	// animate propery curImg to number of images
-//         roundProps: "curImg",				// only integers so it can be used as an array index
-//         repeat: 1,									// repeat 3 times
-//         immediateRender: true,			// load first image automatically
-//         ease: Linear.easeNone,			// show every image the same ammount of time
-//         onUpdate: function () {
-//           document.getElementById("globeImg").src = images[obj.curImg]; // set the image source
-//         }
-//       }
-//     );
-//     new ScrollMagic.Scene({triggerElement: "#home-box2", duration: 500})
-//     .setTween(tween)
-//     // .addIndicators() // add indicators (requires plugin)
-//     .addTo(controller);
-      
-//     // BOX 3 - BRAIN
-//     // new ScrollMagic.Scene({
-//     //   triggerElement: "#home-box3",
-//     //   // triggerHook: 0.9, // show, when scrolled 10% into view
-//     //   duration: 500, // hide 10% before exiting view (80% + 10% from bottom)
-//     //   // offset: 50 // move trigger to center of element
-//     // })
-//     // .setPin("#home-box3")  // .addIndicators() // add indicators (requires plugin)
-//     // .addTo(controller);
-
-//     // No need to add text to tween
-//     // Hmm does it work with setPin
-//     // let tween2 = new TimelineMax()
-//     // .add([
-//     //   TweenMax.to("#home-box3 .home-box-text", 1, {backgroundPosition: "0 -100%", ease: Linear.easeNone}),
-//     //   TweenMax.to("#home-box3 #brainImg", 1, {backgroundPosition: "0 -200%", ease: Linear.easeNone})
-//     // ]);
-
-//     new ScrollMagic.Scene({triggerElement: "#home-box3", duration: 1000})
-//     .setPin("#home-box3")
-//     .addTo(controller);
-
-//     // build scene
-//     new ScrollMagic.Scene({triggerElement: "#home-box3", duration: 1000})
-//     // .setTween(tween2)
-//     .setTween( 
-//       TweenMax.to( '.brain-img', 1, 
-//         {backgroundPosition: "0 -200%", ease: Linear.easeNone, immediateRender: false} )
-//     )
-//     // .addIndicators() // add indicators (requires plugin)
-//     .addTo(controller);
-
-    
-//     // BOX 4 - FILM
-//     new ScrollMagic.Scene({
-//       triggerElement: "#home-box4",
-//       duration: 500,
-//     })
-//     .setPin("#home-box4") // add class to reveal
-//     .addTo(controller);
-
-//     new ScrollMagic.Scene({
-//       triggerElement: "#home-box5",
-//       triggerHook: 0.9, // show, when scrolled 10% into view
-//       duration: "80%", // hide 10% before exiting view (80% + 10% from bottom)
-//       offset: 50 // move trigger to center of element
-//     })
-//     .setClassToggle("#home-box5", "visible") // add class to reveal
-//     // .addIndicators() // add indicators (requires plugin)
-//     .addTo(controller);
-//   };
-// };
-// parallaxEffect();
+    for ( i=0; i<boxesToLinger.length; i++) {
+      scene = new ScrollMagic.Scene({
+        triggerElement: boxesToLinger[i], 
+        duration: 1000})
+      .setPin( boxesToLinger[i] )
+      .addTo(controller);
+      scenes.push(scene)
+    };
+    // Reset pins when window is resized
+    window.onresize = function() {
+      for (let i = 0; i < scenes.length; i++) {
+        scenes[i].removePin(true);
+        scenes[i].setPin(boxesToLinger[i]);
+        scenes[i].refresh();
+      }
+    }
+  };
+};
+parallaxEffect();
 
 const animateGlobe = () => {
   let loc = window.location.pathname;

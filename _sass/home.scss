@@ -33,30 +33,6 @@
     }
 }
 
-.home-box {
-    transition: .5s ease-in-out;
-}
-// Parallax effect
-// .home-box {
-//     &.scroll-appear {
-//         opacity: .1;
-//         transition: 1s ease-in-out;
-//         &.visible {
-//             opacity: 1;
-//         }
-//     }
-// }
-// #home-box2, #home-box3, #home-box4, #home-box5 {
-//     p, a {
-//         z-index: 2;
-//         background-color: var(--color-dark);
-//         color: var(--color-light);
-//         position: relative;
-//     }
-//     i {
-//         color: var(--color-light);
-//     }
-// }
 #home-box2 {
     #globe-img img {
         display: none;

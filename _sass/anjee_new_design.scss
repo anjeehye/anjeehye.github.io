@@ -149,9 +149,6 @@ h1, h2, h3, h4, h5, h6 {
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight {
     margin-bottom: 1.5rem;
 }
-h2 {
-    text-align: center;
-}
 a i {
     border-bottom: 1px solid var(--text-color);
 }
@@ -526,9 +523,9 @@ html.is-rendering .photo-item {
         width: inherit;
     } 
 }
-.img-small {
-    max-width: 300px;
-}
+// .img-small {
+//     max-width: 300px;
+// }
 .photo-gallery-four {
     display: inline-block;
     width: 23%;
@@ -542,6 +539,14 @@ figcaption {
 }
 .img-size-medium {
     width: 450px;
+}
+.img-size-small {
+    width: 300px;
+}
+.img-responsive {
+    @include media-query($on-palm) {
+        width: 100%;
+    }
 }
 
 

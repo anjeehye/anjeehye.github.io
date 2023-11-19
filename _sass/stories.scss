@@ -91,6 +91,9 @@ article.post {
     a {
         color: var(--text-color);
     }
+    h2 {
+        text-align: center;
+    }
     .post-header {
         text-align: left;
         margin-bottom: 3rem;
@@ -101,6 +104,9 @@ article.post {
             // font-size: $base-font-size * 1.2;
             font-weight: 800;
         }
+    }
+    p:has(img) { // Remove margin for post images wrapped in <p>
+        margin: 0;
     }
     .post-content {
         @include media-query($on-palm) {

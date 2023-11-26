@@ -33,7 +33,7 @@ const activeFunctions = () => {
   toggleNav(w);
   navBarMiddleText();
   backNavBar();
-  parallaxEffect();
+  // parallaxEffect();
   animateGlobe();
   animateBrain();
 };
@@ -41,7 +41,7 @@ const resizeFunctions = () => {
   photoMasonryGrid();
   postMasonryGrid();
   backNavBar();
-  parallaxEffect();
+  // parallaxEffect();
 }
 
 window.onscroll = function(){
@@ -539,7 +539,7 @@ const parallaxEffect = () => {
     }
   };
 };
-parallaxEffect();
+// parallaxEffect();
 
 const animateGlobe = () => {
   let loc = window.location.pathname;

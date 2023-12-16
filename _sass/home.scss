@@ -1,26 +1,61 @@
+// SPACER should make up for space taken up by absolute home-boxes 
+// last home-box will keep footer in place
+:root {
+    --max-content-width-home: 1000px;
+    @include media-query($on-tablet) {
+        --max-content-width-home: 800px;
+    }
+    @include media-query($on-palm) {
+        --max-content-width-home: 100vw;
+    }
+}
+
 .home {
     width: 100%;
     display: flex;
     flex-direction: column;
     font-size: x-large;
     padding-top: 35vh;
+    @include media-query($on-palm) {
+        font-size: large;
+    }
     .home-box {
-        width: 70%;
+        width: 100%;
+        max-width: var(--max-content-width-home);
         margin: 0 auto;
-        // padding: 8rem 0;
         p, h1 {
             display: inline;
         }
         @include media-query($on-palm) {
-            width: 100%;
+            padding: .2rem;
+        }
+    }
+    .home-align-right {
+        // restrict content to 1000 px width
+        right: calc((100vw - var(--max-content-width-home))/2);
+        margin-left: auto;
+        text-align: right;
+        & > * {
+            position: relative;
+        }
+    }
+    .home-align-left {
+        left: calc((100vw - var(--max-content-width-home))/2);
+        margin-right: auto;
+        text-align: left;
+        & > * {
+            position: relative;
+            left: 0;
         }
     }
     .spacer{
-        height: 50vh;
+        height: 55vh;
+        &:last-child {
+            height: 15vh;
+        }
     }
     button#speakerIcon {
         color: var(--text-color);
-        /* font-size: 15px; */
         font-family: inherit;
         background-color: transparent;
         border: none;
@@ -33,39 +68,97 @@
     }
 }
 
-#home-box2 {
-    #globe-img img {
-        display: none;
-        // width: 10vw;
-        margin-left: 2rem;
-        z-index: 1;
-        @include media-query($on-palm) {
-            width: auto;
-        }
-    }
-    #globe-img img:first-child {
-        display: block;
-    }
-    #globeImg {
-        // position: absolute;
-        // left: 10%;
-        // top: -60%;
-        // width: 10vw;
-        margin-left: 2rem;
-        z-index: 1;
-        @include media-query($on-palm) {
-            width: auto;
-        }
-    }
-    // p {
-    //     z-index: 2;
-    //     background-color: var(--color-dark);
-    //     color: var(--color-light);
-    //     position: relative;
-    // }
+//////////////////////
+//       BOXES      //
+//////////////////////
+
+// IMAGES
+#globe-img  {
+    transform: scale(1.5);
+    opacity: .8;
 }
-#home-box3 {
-    #brainImg {
-        margin-right: 2rem;
+#home-brain-img {
+    transform: scale(2.5);
+    transform-origin: right;
+}
+#home-box1 {
+    p, h1 {
+        display: inline;
+        background: linear-gradient(transparent 50%, var(--color-dark) 50%);
+        color: var(--color-light);
+        filter: drop-shadow(-0.2rem 0 0 var(--color-dark)) drop-shadow(0.2rem 0 0 var(--color-dark)) drop-shadow(0 -0.2rem 0 var(--color-dark)) drop-shadow(0 0.2rem 0 var(--color-dark));    
+    }
+    i {
+        color: var(--color-light);
+    }
+    h1 {
+        display: inline;
+    }
+}
+
+#home-box2 { // globe
+    position: absolute;
+    top: 100vh;
+    #globe-img {
+        position: absolute;
+        left: 5vw;
+        // filter: invert(72%) sepia(12%) saturate(746%) hue-rotate(183deg) brightness(93%) contrast(84%); // #c3e1dd
+    }
+}
+
+#home-box3 { // brain
+    position: absolute;
+    top: 170vh;
+    #home-brain-img {
+        opacity: 0.8; 
+        position: absolute;
+        right: -5vw;
+        @include media-query($on-palm) {
+            right: -16vw;
+        }
+    }
+}
+
+#home-box4 {
+    position: absolute;
+    top: 220vh;
+}
+
+#home-box5 {
+    position: static;
+    // position: absolute;
+    // top: 250vh;
+    // margin-right: 0;
+    // text-align: right;
+    #bubble {
+        line-height: 1;
+        font-size: smaller;
+    }
+    .home-text {
+        position: relative;
+        // top: -15rem;
+        // right: 3rem;
+    }
+    #box5-small-text {
+        opacity: 0;
+        transition: .5s ease-in;
+        &.visible {
+            opacity: 1;
+        }
+    }
+} 
+
+.home-text {
+    p {
+        z-index: 2;
+        background-color: var(--color-dark);
+        padding: .25rem;
+        color: var(--color-light);
+        a, a:visited {
+            color: var(--color-light);
+            &:hover {
+                color: var(--color-highlight);
+            }
+        }
     }
 }

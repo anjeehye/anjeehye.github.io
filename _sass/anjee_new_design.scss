@@ -76,7 +76,7 @@ $dark-mode: false;
 :root {
     --color-light: rgb(242, 240, 240);//rgb(223, 218, 218);
     --color-light-rgb: 242, 240, 240;
-    --color-dark: #121619; // rgb(65, 65, 65);
+    --color-dark: #1b1f22; // #121619 rgb(65, 65, 65);
     --text-color: var(--color-dark);
     --color-highlight: #bf8ecd;// rgb(131, 77, 139);
     // Color palette
@@ -112,6 +112,11 @@ body {
     scrollbar-width: none;
     // background-color: var(--color-highlight);
     background: url('../assets/bgImage.jpg');
+    overflow-x: hidden;
+}
+body, header, .main-nav, .main-nav-back {
+    width: 100%;
+    max-width: 100vw;
 }
 // body:before {
 //     content: "";
@@ -199,22 +204,14 @@ a i {
 .page-content {
     color: var(--text-color);
     display: flex;
-    // margin: 0 14rem 0 0;
     padding: 0 0 3rem 0;
     align-items: center;
     transition: .3s ease-in-out;
-    // @include media-query($on-tablet) {
-    //     margin: 0 12rem 0 0;
-    // }
-    // @include media-query($on-palm) {
-    //     width: 100vw;
-    //     margin: 0;
-    //     // margin: 10rem 0 0 0;
-    // }
     .wrapper {
         margin-top: 8rem;
         height: 100%;
         width: 100%;
+        overflow: hidden;
     }
     a {
         color: var(--text-color);

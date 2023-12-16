@@ -2,12 +2,12 @@
     .brain-top {
         font-size: x-large;
     }
-    .brain-img img{
-        min-width: 30vw;
-        @include media-query($on-palm) {
-            min-width: 70vw;
-        }
-    }
+    // #brain-img img{
+    //     min-width: 30vw;
+    //     @include media-query($on-palm) {
+    //         min-width: 70vw;
+    //     }
+    // }
     section {
         max-width: 1200px;
         margin: auto;

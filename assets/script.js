@@ -4,6 +4,7 @@ if (location.hostname == '127.0.0.1') {
 } else {
   URL_DEFAULT = "/"
 } */
+
 URL_DEFAULT = "/"
 URL_STORIES = URL_DEFAULT + "stories/"
 URL_BRAIN = URL_DEFAULT + "brain/"
@@ -33,15 +34,14 @@ const activeFunctions = () => {
   toggleNav(w);
   navBarMiddleText();
   backNavBar();
-  // parallaxEffect();
-  animateGlobe();
+  parallaxEffect();
   animateBrain();
 };
 const resizeFunctions = () => {
   photoMasonryGrid();
   postMasonryGrid();
   backNavBar();
-  // parallaxEffect();
+  parallaxEffect();
 }
 
 window.onscroll = function(){
@@ -515,31 +515,122 @@ const parallaxEffect = () => {
   let loc = window.location.pathname;
   if (loc == URL_DEFAULT) { // If at home page
     // Parallax effect with ParallaxMagic.js
-    const controller = new ScrollMagic.Controller();
+    var controller = new ScrollMagic.Controller();
 
-    // For boxes except Box 1, linger longer 
-    const boxesToLinger = ['#home-box2', '#home-box3', '#home-box4', '#home-box5']
-    const scenes = [];
-
-    for ( i=0; i<boxesToLinger.length; i++) {
-      scene = new ScrollMagic.Scene({
-        triggerElement: boxesToLinger[i], 
-        duration: 1000})
-      .setPin( boxesToLinger[i] )
-      .addTo(controller);
-      scenes.push(scene)
-    };
-    // Reset pins when window is resized
-    window.onresize = function() {
-      for (let i = 0; i < scenes.length; i++) {
-        scenes[i].removePin(true);
-        scenes[i].setPin(boxesToLinger[i]);
-        scenes[i].refresh();
+    ///////////////////
+    // Box 2 (globe) //
+    ///////////////////
+  	const globeImgs = [
+      "../assets/home/globe1.svg",
+      "../assets/home/globe2.svg",
+      "../assets/home/globe3.svg",
+      "../assets/home/globe4.svg",
+      "../assets/home/globe5.svg",
+      "../assets/home/globe6.svg",
+    ];
+    const obj = {curImg: 0};
+  	const tween_spinGlobe = TweenMax.to(obj, 0.5,
+      {
+        curImg: globeImgs.length - 1,	// animate propery curImg to number of images
+        roundProps: "curImg",				// only integers so it can be used as an array index
+        repeat: 2,									// repeat 3 times
+        immediateRender: true,			// load first image automatically
+        ease: Linear.easeNone,			// show every image the same ammount of time
+        onUpdate: function () {
+          if(document.querySelector("#globe-img")) {
+            document.querySelector("#globe-img").src = globeImgs[obj.curImg];
+          } 
+        }
       }
+    );
+    const scene_spinGlobe = new ScrollMagic.Scene({triggerElement: "#home-box2", duration: 500, triggerHook: 0.9})
+    .setTween(tween_spinGlobe)
+    // .addIndicators() // add indicators (requires plugin)
+    .addTo(controller);
+    // build tween
+    const tween_box2 = new TimelineMax ()
+    .add([
+      TweenMax.fromTo("#home-box2 .home-img", 1, {top: "100"}, {top: "-2000", ease: Linear.easeNone}), 
+      TweenMax.fromTo("#home-box2 p", 1, {top: "300"}, {top: "0", ease: Linear.easeNone})
+    ]);
+    // build scene
+    const scene_box2 = new ScrollMagic.Scene({triggerElement: "#home-box2", duration: (document.body.scrollHeight*1.5), triggerHook: 0.9,})
+            .setTween(tween_box2)
+            // .addIndicators() // add indicators (requires plugin)
+            .addTo(controller);
+
+    ///////////////////
+    // Box 3 (brain) //
+    ///////////////////
+    const tween_box3 = new TimelineMax ()
+    .add([
+      TweenMax.fromTo("#home-box3 .home-img", 1, {top: "100"}, {top: "-900", ease: Linear.easeNone}), 
+      TweenMax.fromTo("#home-box3 .home-text", 1, {top: "0"}, {top: "-500", ease: Linear.easeNone}),
+    ]);
+
+    // build scene
+    const scene_box3 = new ScrollMagic.Scene({triggerElement: "#home-box3", duration: (document.body.scrollHeight), triggerHook: 1})
+            .setTween(tween_box3)
+            .addTo(controller);
+
+    ///////////////////
+    // Box 4 (photo) //
+    ///////////////////
+    // Stop for a while and say : (arrow) tap to see my photos
+    const box4RevealText = "˄ tap to see my photos [ ◉¯]"
+    const objText = {curImg: 0};
+  	const tween_photoText = TweenMax.to(objText, 0.5,
+      {
+        curImg: box4RevealText.length,	// animate propery curImg to number of images
+        roundProps: "curImg",				// only integers so it can be used as an array index
+        repeat: 0,									// repeat 3 times
+        immediateRender: true,			// load first image automatically
+        ease: Linear.easeNone,			// show every image the same ammount of time
+        onUpdate: function () {
+          console.log(loc);
+          if(document.querySelector("#photo-link-text")) {
+            document.querySelector("#photo-link-text").innerHTML = box4RevealText.slice(0, objText.curImg);
+          }
+        },
+        onLeave: function () {
+          document.querySelector("#photo-link-text").innerHTML = '';
+        }
+      }
+    );
+    // pause while the text loads (box4RevealText.length events)
+    const scene_photoText = new ScrollMagic.Scene({triggerElement: "#home-box4", duration: 500})
+    .setTween(tween_photoText)
+    .setPin( "#home-box4" )
+    .addTo(controller);
+
+    // reset pin when resized
+    window.onresize = function() {
+      scene_photoText.removePin(true);
+      scene_photoText.setPin("#home-box4");
+      scene_photoText.refresh();
     }
+
+    ///////////////////
+    // Box 5 (posts) //
+    ///////////////////
+    // If parallax effect, add some extra margin for box 5
+    const box5 = document.querySelector('#home-box5');
+    box5.style.marginTop = '25rem';
+
+    // show second line with delay
+    // .is-visible
+    new ScrollMagic.Scene({
+      triggerElement: "#home-box5",
+      triggerHook: 0.9, // show, when scrolled 10% into view
+      duration: "80%", // hide 10% before exiting view (80% + 10% from bottom)
+      offset: 50 // move trigger to center of element
+    })
+    .setClassToggle("#box5-small-text", "visible") // add class to reveal
+    // .addIndicators() // add indicators (requires plugin)
+    .addTo(controller);
   };
 };
-// parallaxEffect();
+parallaxEffect();
 
 const animateGlobe = () => {
   let loc = window.location.pathname;
@@ -553,7 +644,7 @@ const animateGlobe = () => {
     }, 200);
   }
 }
-animateGlobe();
+// animateGlobe();
 
 const animateBrain = () => {
   const frameHeight = 10000/24;
@@ -566,6 +657,5 @@ const animateBrain = () => {
         brainImgDiv.style.backgroundPosition = "center " + frameOffset + "px";
     }, 100);
   }
-
 }
 animateBrain();

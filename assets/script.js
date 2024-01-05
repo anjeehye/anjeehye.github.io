@@ -591,9 +591,6 @@ const parallaxEffect = () => {
           if(document.querySelector("#photo-link-text")) {
             document.querySelector("#photo-link-text").innerHTML = box4RevealText.slice(0, objText.curImg);
           }
-        },
-        onLeave: function () {
-          document.querySelector("#photo-link-text").innerHTML = '';
         }
       }
     );

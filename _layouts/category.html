@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<div class="page stories">
+
+    {%- if site.posts.size > 0 -%}
+    <!--
+      <h2 class="post-list-heading">{{ page.list_title | default: "Stories" }}</h2>
+    -->  
+    {{ content }}
+    <ul class="post-list">
+        
+
+        {%- for post in site.categories[page.category] -%}
+        <li class="post aos-jeehye">
+        {%- assign date_format = site.minima.date_format | default: "%Y-%m-%d" -%}
+        
+        <a class="post-link glassmorphism" href="{{ post.url | relative_url }}">
+            <p class="post-meta">
+            {{ post.date | date: date_format }}
+            <span class="category-list">
+                |
+                {{post.categories | join: ' • '}}
+            </span>
+            </p>
+            <div class="post-link-content">
+            {%- if post.thumbnail -%}
+            <div class="post-thumbnail">
+                <img src={{post.thumbnail}}>
+            </div>
+            {%- endif -%}
+            <h3>
+                {{ post.title | escape }}
+            </h3>
+            <p class="post-excerpt">
+                {%- if site.show_excerpts -%}
+                {{ post.excerpt }}
+                {%- endif -%}
+            </p>
+            </div>
+            <div class="post-link-empty"></div>
+            
+        </a>
+        </li>
+        {%- endfor -%}
+    </ul>
+
+    <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
+    {%- endif -%}
+
+    </div>

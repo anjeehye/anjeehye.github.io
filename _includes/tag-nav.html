@@ -2,7 +2,7 @@
 <nav class="tag-nav">
     {% for tag in site.35mm %}
         {% if tag.tagname != "35mm_video" %}
-            <a href="{{site.baseurl}}{{tag.url}}" id="tag-{{ tag.tagname }}" class="tag-nav">#{{tag.tagname}}</a>
+            <li><a href="{{site.baseurl}}{{tag.url}}" id="tag-{{ tag.tagname }}" class="tag-nav">#{{tag.tagname}}</a></li>
         {% endif %}
     {% endfor %}
 </nav>

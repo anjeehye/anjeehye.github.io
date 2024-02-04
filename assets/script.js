@@ -36,6 +36,7 @@ const activeFunctions = () => {
   backNavBar();
   parallaxEffect();
   animateBrain();
+  effectsForStories();
 };
 const resizeFunctions = () => {
   photoMasonryGrid();
@@ -147,6 +148,7 @@ const navBarHighlight = () => { /* clicked item */
   let navBarLinks = document.querySelector('.site-header').querySelectorAll("a");
 
   navBarLinks.forEach(link => {
+    console.log(link, link.id.split('-'))
     // get link name from id
     let currLink = link.id.split('-')[1]
 
@@ -192,7 +194,6 @@ let photoMasonryGrid = () => {
 photoMasonryGrid();
 
 /* SHOW TAG-NAV ONLY WHEN IN 35MM */
-/* WHEN AT 35MM PAGE, CHANGE XX .PAGE-CONTENT BACKGROUND COLOR XX */
 const effectsFor35mm = () => { 
   let loc = window.location.pathname;
   if(true){ 
@@ -204,6 +205,7 @@ const effectsFor35mm = () => {
       tagNav.classList.add('hidden-nav');
     }
   }
+  /* WHEN AT 35MM PAGE, CHANGE XX .PAGE-CONTENT BACKGROUND COLOR XX */
   // pageWrapper = document.querySelector(".page-content");
   // if(loc.includes("35mm")) { // if in 35mm page
   //   pageWrapper.classList.add('translucent-background');
@@ -213,6 +215,23 @@ const effectsFor35mm = () => {
   // }
 }
 effectsFor35mm();
+
+/* SHOW CATEGORY-NAV ONLY WHEN IN STORIES */
+const effectsForStories = () => { 
+  let loc = window.location.pathname;
+  if(true){ 
+    catNav = document.querySelector(".category-nav");
+    if(loc.includes("stories")) { // if in 35mm page
+      console.log('aaaa stories')
+      catNav.classList.remove('hidden-nav');
+    }
+    else {
+      catNav.classList.add('hidden-nav');
+    }
+  }
+}
+effectsForStories();
+// 
 
 let postMasonryGrid = () => {
   let postList = document.querySelector('.post-list');

@@ -6,6 +6,7 @@ categories: "berlin"
 excerpt: "크리스마스를 기념하지 않는 이들, 베를린에 남은 이들을 위한 크리스마스 디너를 벌렸다."
 thumbnail: /assets/images/post-xmasdinner3.jpeg
 slug: "xmas-dinner-for-those-who-dont-celebrate-it"
+tags: [베를린, 뇌과학, 석사, 유학, 크리스마스]
 ---
 
 지금도 진행중인 ‘진짜 베를리너’ 찾기 게임이 있다. 독일, 유럽, 세계 각지에서 사람들이 몰려드는 베를린. 이 곳에서 태어나 자란 ‘진짜 베를리너’ 찾기는 마치 사라진 퍼즐 조각 찾기와 같다. (나의 첫 ‘진짜 베를리너’ 목격은 한달 반 정도 걸렸다.)

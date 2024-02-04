@@ -5,6 +5,7 @@ date: 2022-11-09 23:00:00 +0100
 categories: "notes"
 excerpt: "딱히 잘 찍은 것 같진 않다. 그치만, 그래서."
 slug: "self-portrait-2022"
+tags: [film photography, 35mm, self-portrait, 필름사진, 베를린]
 ---
 
 ![image](https://lh3.googleusercontent.com/pw/AL9nZEVDDcwdNUtuCNoDHzIMxeOUtCNbpOpvW3ZtI4qU43VuCw9ulJol8CrqLPXSJcmvlEnK9d4xYfvjPjzF-zPYyR1FOZ9EOxFu9q-XsElk8YVC-Zqkaz0QJTw6mYUYqwV0McdOaxPbRvoHZ-BC8p_u_5KN=w1318-h1528-no?authuser=0){:class="img-responsive img-size-medium"}

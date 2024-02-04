@@ -6,6 +6,7 @@ categories: "journal"
 excerpt: 한국 올 때마다 난 바뀌어 있다. 한국도 바뀌어 있다.
 thumbnail: /assets/images/post-2023-11-19-temple-light.jpeg
 slug: "korea-2023"
+tags: [유학생, 퍼스널 컬러 진단, 템플스테이, 건강검진]
 ---
 
 한국 올 때마다 난 바뀌어 있다. 한국도 바뀌어 있다. \

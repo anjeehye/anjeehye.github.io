@@ -6,6 +6,7 @@ categories: "berlin"
 excerpt: "한달 벌어 한달 사는 대학원생도 행복한 여름날"
 thumbnail: /assets/images/post-berlinSummer1.jpeg
 slug: "berlin-summer"
+tags: [베를린, 뇌과학, 석사, 유학]
 ---
 
 여기 베를린 사람들은 여름날에 뭐하냐면요,

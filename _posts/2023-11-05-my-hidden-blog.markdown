@@ -6,6 +6,7 @@ categories: "journal"
 excerpt: "왜 이렇게 다 잊고 사는지 참 모르겠어."
 thumbnail: /assets/images/post-2023-11-05-1oldblog1.png
 slug: "my-hidden-blog"
+tags: [일기]
 ---
 
 한국이다. <br />

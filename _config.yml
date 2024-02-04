@@ -23,13 +23,12 @@ email: anjeehye1@gmail.com
 author: "Jeehye An"
 description: >- # this means to ignore newlines until "baseurl:"
   Hi, I'm Jeehye. I'm a neuroscientist and 취미부자.
-keywords: Jeehye An, An Jeehye, Jee Hye An, 안지혜, An Jee Hye, anjeehye, jeehyean, 35mm
+keywords: Jeehye An, An Jeehye, Jee Hye An, 안지혜, An Jee Hye, anjeehye, jeehyean, 35mm, neuroscientist, computational neuroscience, 베를린, 박사과정
 # baseurl: "/anjeehye" # the subpath of your site, e.g. /blog
 url: "http://anjeehye.xyz" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: 
 github_username:  anjeehye
 instagram_username: _g_hey_
-
 
 # Build settings
 # Removed minima theme as it is now a regular theme
@@ -37,6 +36,7 @@ instagram_username: _g_hey_
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -62,6 +62,9 @@ collections:
   35mm:
     output: true
     permalink: /35mm/:path
+  category:
+    output: true
+    permalink: /stories/categories/:path
 
 show_excerpts: true
 

@@ -1,0 +1,8 @@
+
+<nav class="category-nav">
+    <!-- ★♥️.Categories.♥️★ -->
+    <li><a href="{{site.baseurl}}/stories" class="current" id="cat-all">All posts</a></li>
+    {% for cat in site.category %}
+        <li><a href="{{site.baseurl}}/stories/categories/{{cat.name}}" id="cat-{{cat.name}}">{{cat.name}}</a></li>
+    {% endfor %}
+</nav>

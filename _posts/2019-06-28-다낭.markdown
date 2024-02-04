@@ -6,6 +6,7 @@ categories: "globetrotting"
 excerpt: "나 어디를 갔다 온거지??"
 thumbnail: /assets/images/post-danangkylie2.jpeg
 slug: "danang"
+tags: [다낭, 여행]
 ---
 
 다낭 3일 – 호이안 3일.

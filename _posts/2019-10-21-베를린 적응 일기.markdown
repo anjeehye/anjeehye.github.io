@@ -5,6 +5,7 @@ date:   2019-09-06 13:17 +0100
 categories: "berlin"
 excerpt: "동네 바, 불빛축제, 홈파티, 바질. "
 slug: "jeehye-settling-in-berlin"
+tags: [베를린, 뇌과학, 석사, 유학]
 ---
 
 본격 수업 시작 첫 주가 지났다.

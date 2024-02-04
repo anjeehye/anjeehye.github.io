@@ -5,7 +5,7 @@ date: 2024-01-05 20:00:00 +0900
 categories: "journal"
 excerpt: "I moved into my dream apartment."
 slug: "2023-stories"
-tags: [2023 reflection, 35mm]
+tags: [2023 reflection, 35mm, Berlin, 베를린 생활]
 ---
 
 <iframe 

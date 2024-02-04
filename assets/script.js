@@ -148,7 +148,6 @@ const navBarHighlight = () => { /* clicked item */
   let navBarLinks = document.querySelector('.site-header').querySelectorAll("a");
 
   navBarLinks.forEach(link => {
-    console.log(link, link.id.split('-'))
     // get link name from id
     let currLink = link.id.split('-')[1]
 
@@ -222,7 +221,6 @@ const effectsForStories = () => {
   if(true){ 
     catNav = document.querySelector(".category-nav");
     if(loc.includes("stories")) { // if in 35mm page
-      console.log('aaaa stories')
       catNav.classList.remove('hidden-nav');
     }
     else {
@@ -355,13 +353,11 @@ function isElementInViewport(el) {
           trigger.addEventListener("click", (e) => {
             let image = trigger.getElementsByTagName('img')[0];
             let tags = trigger.getElementsByTagName('p')[0];
-            console.log("1",tags);
             
             // Modal image
             let modalImage = new Image;
             modalImage.src = image.src;
             let modalTags = tags.cloneNode(true);
-            console.log(modalTags);
             
             // Overlay
             modalOverlay.classList.remove('hidden');
@@ -606,7 +602,6 @@ const parallaxEffect = () => {
         immediateRender: true,			// load first image automatically
         ease: Linear.easeNone,			// show every image the same ammount of time
         onUpdate: function () {
-          console.log(loc);
           if(document.querySelector("#photo-link-text")) {
             document.querySelector("#photo-link-text").innerHTML = box4RevealText.slice(0, objText.curImg);
           }

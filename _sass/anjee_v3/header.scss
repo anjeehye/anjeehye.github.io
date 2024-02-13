@@ -52,6 +52,7 @@ nav {
   }
   .nav-home{
     z-index: 100;
+    order: 3;
     font-size: x-large;
     display: flex;
     align-items: center;
@@ -270,3 +271,21 @@ nav {
       display: none;
     }
   }
+
+
+//////// HEADER ////////
+.main-nav { 
+  // flex-direction: column; 
+  .nav-home { 
+      order: 3; 
+  }
+  .nav-text { 
+      order: 1; 
+  }
+  .nav-menu { 
+      order: 2; 
+      position: fixed;
+      width: 100%;
+      align-items: center;
+  }
+}

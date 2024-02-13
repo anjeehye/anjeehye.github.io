@@ -70,11 +70,9 @@ $on-laptop:        1200px;//800px !default;
 @import "footer";
 
 
-
 $shadow-color: rgba(0,0,0,0.4);
 $red-highlight: #c9413d;
 $blue-highlight: #5d7096;
-$background-image: url("https://lh3.googleusercontent.com/pw/ACtC-3fMCx_68JZw-9nMunNZekgYepXIvxq2IGT3cLIzlSuabf-vmIk4vT2olhc63HRV5gMXKgHel9kSQjqkur4tvcJc2ycZ8ecXPbI_ZuASK3_spCAlwE_xlM8khCLq0S83_bGNOcaD93ynxWANCHFou6HL=w1058-h628-no") no-repeat center right; //repulse bay
 
 $font-family-accent: 'Black Han Sans', sans-serif;
 
@@ -85,7 +83,7 @@ $dark-mode: false;
     --color-light-rgb: 242, 240, 240;
     --color-dark: #1b1f22; // #121619 rgb(65, 65, 65);
     --text-color: var(--color-dark);
-    --color-highlight: #bf8ecd;// rgb(131, 77, 139);
+    --color-highlight: #5d7096; //#bf8ecd;// rgb(131, 77, 139);
     --color-highlight-light: ##f0ecfb;
     // Color palette
     // --pastel-grey: #efefef;
@@ -119,7 +117,11 @@ body {
     font-family: $mono-font-family;
     scrollbar-width: none;
     // background-color: var(--color-highlight);
-    background: url('../assets/bgImage.jpg');
+    background: url("https://lh3.googleusercontent.com/pw/ACtC-3fMCx_68JZw-9nMunNZekgYepXIvxq2IGT3cLIzlSuabf-vmIk4vT2olhc63HRV5gMXKgHel9kSQjqkur4tvcJc2ycZ8ecXPbI_ZuASK3_spCAlwE_xlM8khCLq0S83_bGNOcaD93ynxWANCHFou6HL=w1058-h628-no") no-repeat center center fixed; //repulse bay;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     overflow-x: hidden;
 }
 body, header, .main-nav, .main-nav-back {
@@ -539,13 +541,6 @@ html.is-rendering .photo-item {
         width: inherit;
     }   
 }
-.photo-gallery-three {
-    display: inline-block;
-    width: 32%;
-    @include media-query($on-palm) {
-        width: inherit;
-    }   
-}
 figcaption {
     margin-bottom: 1rem;
     color: var(--color-highlight);
@@ -566,4 +561,41 @@ figcaption {
 /* COMMENTS */
 #comment-policy {
     display: none;
+}
+
+
+
+//////// HEADER ////////
+.main-nav { 
+    background-color: unset;
+    mix-blend-mode: unset;
+    .nav-home { 
+        order: 3; 
+        width: 15%;
+        justify-content: flex-end;
+    }
+    .nav-text { 
+        order: 1; 
+        width: 15%;
+        justify-content: flex-start;
+        // color: var(--color-highlight);    
+    }
+    .nav-menu { 
+        order: 2; 
+        // position: fixed;
+        width: 70%;
+        align-items: center;
+        a {
+            margin: 0;
+            padding: .5rem 1rem;
+            border: 1px solid white;
+            border-radius: 1.3rem;
+        }
+    }
+    .fa {
+        border: none;
+    }
+}
+.main-nav-back {
+    background-color: unset;
 }

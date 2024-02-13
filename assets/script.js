@@ -217,16 +217,16 @@ effectsFor35mm();
 
 /* SHOW CATEGORY-NAV ONLY WHEN IN STORIES */
 const effectsForStories = () => { 
-  let loc = window.location.pathname;
-  if(true){ 
-    catNav = document.querySelector(".category-nav");
-    if(loc.includes("stories")) { // if in 35mm page
-      catNav.classList.remove('hidden-nav');
-    }
-    else {
-      catNav.classList.add('hidden-nav');
-    }
-  }
+  // let loc = window.location.pathname;
+  // if(true){ 
+  //   catNav = document.querySelector(".category-nav");
+  //   if(loc.includes("stories")) { // if in 35mm page
+  //     catNav.classList.remove('hidden-nav');
+  //   }
+  //   else {
+  //     catNav.classList.add('hidden-nav');
+  //   }
+  // }
 }
 effectsForStories();
 // 

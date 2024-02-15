@@ -95,14 +95,17 @@ nav {
   right: 0;
   z-index: 1000;
   padding: 1rem;
+  max-width: 100%;
+  box-sizing: border-box;
   .tag-nav{
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     a {
       background: var(--color-highlight);
       color: var(--color-light);
       padding: 0 .2rem;
-      margin: 0 .3rem;
+      margin: .1rem .3rem;
       border: 1px solid var(--color-light);
       font-size: 1rem;
       &:hover {
@@ -142,14 +145,14 @@ nav {
 
 @include media-query($on-palm) {
   .secondary-nav {
-      // position: initial;
-      // left: 0;
-      // height: auto;
-      top: 4rem;
-      // margin-left: 5%;
-      // .tag-nav {
-      //     justify-content: start;
-      // }
+    // position: initial;
+    // left: 0;
+    // height: auto;
+    top: 4rem;
+    // margin-left: 5%;
+    // .tag-nav {
+    //     justify-content: start;
+    // }
   }
 }
 

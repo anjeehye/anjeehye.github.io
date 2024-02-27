@@ -532,6 +532,13 @@ html.is-rendering .photo-item {
         width: inherit;
     }   
 }
+.photo-gallery-three {
+    display: inline-block;
+    width: 32%;
+    @include media-query($on-palm) {
+        width: inherit;
+    }   
+}
 figcaption {
     margin-bottom: 1rem;
     color: var(--color-highlight);

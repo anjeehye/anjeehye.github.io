@@ -62,12 +62,12 @@ $on-laptop:        1200px;//800px !default;
 
 // Import partials.
 @import "anjee/base";
-@import "header";
+@import "anjee_v3/header";
 @import "home";
 @import "brain";
 @import "35mm";
-@import "stories";
-@import "footer";
+@import "anjee_v3/stories";
+@import "anjee_v3/footer";
 
 
 $shadow-color: rgba(0,0,0,0.4);
@@ -84,6 +84,7 @@ $dark-mode: false;
     --color-dark: #1b1f22; // #121619 rgb(65, 65, 65);
     --text-color: var(--color-dark);
     --color-highlight: #5d7096; //#bf8ecd;// rgb(131, 77, 139);
+    --color-highlight-rgb: 94, 113, 150; //#bf8ecd;// rgb(131, 77, 139);
     --color-highlight-light: ##f0ecfb;
     // Color palette
     // --pastel-grey: #efefef;
@@ -561,41 +562,4 @@ figcaption {
 /* COMMENTS */
 #comment-policy {
     display: none;
-}
-
-
-
-//////// HEADER ////////
-.main-nav { 
-    background-color: unset;
-    mix-blend-mode: unset;
-    .nav-home { 
-        order: 3; 
-        width: 15%;
-        justify-content: flex-end;
-    }
-    .nav-text { 
-        order: 1; 
-        width: 15%;
-        justify-content: flex-start;
-        // color: var(--color-highlight);    
-    }
-    .nav-menu { 
-        order: 2; 
-        // position: fixed;
-        width: 70%;
-        align-items: center;
-        a {
-            margin: 0;
-            padding: .5rem 1rem;
-            border: 1px solid white;
-            border-radius: 1.3rem;
-        }
-    }
-    .fa {
-        border: none;
-    }
-}
-.main-nav-back {
-    background-color: unset;
 }

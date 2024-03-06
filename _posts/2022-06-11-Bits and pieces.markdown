@@ -2,7 +2,7 @@
 layout: post
 title: "Bits and pieces"
 date: 2022-06-11 20:37:04 +0100
-categories: "notes"
+categories: ["notes", "bits and pieces"]
 excerpt: "things I love and don't know whether I do"
 thumbnail: /assets/images/post-anxietyfreedom.jpg
 slug: "bits-and-pieces-06-2022"

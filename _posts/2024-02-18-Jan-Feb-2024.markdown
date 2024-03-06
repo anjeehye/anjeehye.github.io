@@ -66,7 +66,7 @@ I was part of the amazing lovely organization team for The Ágape, a Finissage f
 ### Kylie in Berlin 
 ![kylie and i, subway sation]({{site.baseurl}}/assets/images/post-2024-02-28-kylie1.jpg){:class="img-responsive photo-gallery-three img-center"}
 ![card game]({{site.baseurl}}/assets/images/post-2024-02-28-kylie2.jpg){:class="img-responsive photo-gallery-three img-center"}
-![kylie and i, reflection on a lamp]({{site.baseurl}}/assets/images/post-2024-02-28-kylie3.jpg){:class="img-responsive photo-gallery-three img-center"}
+![kylie and i, reflection on a lamp]({{site.baseurl}}/assets/images/post-2024-02-28-kylie3.JPG){:class="img-responsive photo-gallery-three img-center"}
 
 너의 첫 베를린. 음식, 맥주, 빈티지 쇼핑, 전시회, 클럽. 즐거웠길 바래! 
 

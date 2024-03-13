@@ -29,6 +29,7 @@ url: "http://anjeehye.xyz" # the base hostname & protocol for your site, e.g. ht
 # twitter_username: 
 github_username:  anjeehye
 instagram_username: _g_hey_
+theme_version: 3
 
 # Build settings
 # Removed minima theme as it is now a regular theme

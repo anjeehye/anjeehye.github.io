@@ -11,11 +11,11 @@ URL_BRAIN = URL_DEFAULT + "brain/"
 URL_35MM = URL_DEFAULT + "35mm/"
 VERTICAL_HEADER = false
 
-document.addEventListener('swup:contentReplaced', (event) => {
-  mainBox = document.querySelector('.page-content');
-  mainBox.scrollTo(0,0);
-  window.scrollTo(0,0);
-});
+// document.addEventListener('swup:contentReplaced', (event) => {
+//   mainBox = document.querySelector('.page-content');
+//   mainBox.scrollTo(0,0);
+//   window.scrollTo(0,0);
+// });
 
 // IDNEITFY FUNCTIONS THAT NEEDS TO BE RUN EVERY TIME A PAGE IS CLICKED
 const activeFunctions = () => {
@@ -34,7 +34,7 @@ const activeFunctions = () => {
   toggleNav(w);
   navBarMiddleText();
   backNavBar();
-  parallaxEffect();
+  // parallaxEffect();
   animateBrain();
   effectsForStories();
 };
@@ -42,7 +42,7 @@ const resizeFunctions = () => {
   photoMasonryGrid();
   postMasonryGrid();
   backNavBar();
-  parallaxEffect();
+  // parallaxEffect();
 }
 
 window.onscroll = function(){
@@ -62,9 +62,382 @@ window.onload = function() {
 
 // Swup
 const swup = new Swup();
-swup.on('contentReplaced', activeFunctions);
+swup.hooks.on('content:replace', activeFunctions);
+// swup.hooks.on('page:load', (visit) => {
+//   console.log('New page: ', visit.to.url);
+// });
+swup.hooks.on('content:replace', (visit) => {
+  loc_to = visit.to.url
+  loc_from = visit.from.url;
+  if (loc_to == URL_DEFAULT) {
+    homeTypewriter2.typeTexts(loc=loc_to);
+  } else if (loc_from == URL_DEFAULT) {
+    homeTypewriter2.typeTextsStop();
+  }
+}) 
+
+
+
+const sayJeehye = () => {
+  let audio = new Audio();
+  audio.src = '/assets/jeehye.mp3';
+  audio.play();
+}
 
 // Home text typewriter effect
+const home_typewriter = (isNavigatingAway=false) => {
+  // If at home page
+  if (isNavigatingAway == true) {
+    return;
+  }
+  let loc = window.location.pathname;
+  // if (loc == URL_DEFAULT) {
+  //   isNavigatingAway = false;
+  // }
+  // let isNavigatingAway = false; // checking if user navigates to a different page
+  // console.log(isNavigatingAway);
+  
+  if (loc == URL_DEFAULT) {
+    /// Promises
+    const typeText1 = () => {
+      return new Promise((res, rej) => {
+        loc = window.location.pathname;
+        if ((loc != URL_DEFAULT) | (isNavigatingAway)) {
+          rej(new Error("Moved out of home page (1)."));
+        } else {
+          const text1 = document.querySelector('#home-typewriter-1');
+          const typewriter1 = new Typewriter(text1, {
+            loop: false,
+            delay: 50,
+          });
+          const jeehyeAudio = ' <button id="speakerIcon" onclick="sayJeehye()""><i class="fa-solid fa-volume-high"></i></button> <audio class="jeehyeAudio"><source src="../assets/jeehye.mp3"></source></audio>'
+          
+
+          typewriter1
+          .pauseFor(500)
+          .typeString('안녕?')
+          .pauseFor(400)
+          .typeString('<br>Hey,')
+          .pauseFor(100)
+          .typeString(" I'm Jeehye.")
+          .pauseFor(300)
+          .typeString(jeehyeAudio)
+          .pauseFor(1000)
+          .start();
+          // fade away
+          setTimeout(() => {
+            text1.style.transition = "opacity 2s";
+            text1.style.opacity = ".2";
+          }, 4500);
+          res("Successfully typed and faded text 1");              
+        }
+      })
+    };
+    /// TEXT 2 ///
+    const typeText2 = () => {
+      return new Promise((res, rej) => {
+        loc = window.location.pathname;
+        if ((loc != URL_DEFAULT) | (isNavigatingAway)) {
+          rej(new Error("Moved out of home page (2)."));
+        } else {
+          setTimeout(() => {
+              const text2 = document.querySelector('#home-typewriter-2');
+              const typewriter2 = new Typewriter(text2, {
+                loop: false,
+                delay: 50,
+              });
+              typewriter2
+              .pauseFor(1000)
+              .typeString("I've moved around a bit,")
+              .pauseFor(400)
+              .typeString("<br>but right now, I'm based in Berlin.")
+              .start();
+              // fade away
+              setTimeout(() => {
+                text2.style.transition = "opacity 2s";
+                text2.style.opacity = ".2";
+              }, 7000);
+              res("Successfully typed and faded text 2");  
+          }, 3500);
+        }
+      })
+    }
+    /// Text 3 ///
+    const typeText3 = () => {
+      return new Promise((res, rej) => {
+        loc = window.location.pathname;
+        if ((loc != URL_DEFAULT) | (isNavigatingAway)) {
+          rej(new Error("Moved out of home page (3)."));
+        } else {
+          setTimeout(() => {
+            const text3 = document.querySelector('#home-typewriter-3');
+            const typewriter3 = new Typewriter(text3, {
+              loop:false,
+              delay:50
+            });
+            typewriter3
+            .pauseFor(1000)
+            .typeString("I am a <a href='/brain/'>computational neuroscientist <i class='fa fa-brain' aria-hidden='true'></i></a>.")
+            .start();
+            res("Successfully typed and faded text 3");
+            // fade away
+            setTimeout(() => {
+              text3.style.transition = "opacity 2s";
+              text3.style.opacity = ".2";
+            }, 6000);
+          }, 6000)
+        }
+      })
+    }
+    const typeText4 = () => {
+      return new Promise((res, rej) => {
+        loc = window.location.pathname;
+        if ((loc != URL_DEFAULT) | (isNavigatingAway)) {
+          rej(new Error("Moved out of home page (4)."));
+        } else {
+          setTimeout(() => {
+            const text4 = document.querySelector('#home-typewriter-4');
+            const typewriter4 = new Typewriter(text4, {
+              loop:false,
+              delay:50
+            });
+            typewriter4
+            .pauseFor(1000)
+            .typeString("I also have a deep affection for <a href='./35mm'>analog photography <i class='fa fa-film' aria-hidden='true'></i></a>.")
+            .pauseFor(500)
+            .typeString("<br>Or I design websites")
+            .pauseFor(80)
+            .typeString(" (like this one).")
+            .start();
+            // fade away
+            setTimeout(() => {
+              text4.style.transition = "opacity 2s";
+              text4.style.opacity = ".2";
+            }, 8000);
+            res("Successfully typed and faded text 4");
+          }, 4500)
+  
+        }
+      })
+    }
+    const typeText5 = () => {
+      return new Promise((res, rej) => {
+        loc = window.location.pathname;
+        if ((loc != URL_DEFAULT) | (isNavigatingAway)) {
+          rej(new Error("Moved out of home page (5)."));
+        } else {
+          setTimeout(() => {
+            const text5 = document.querySelector('#home-typewriter-5');
+            const typewriter5 = new Typewriter(text5, {
+              loop:false,
+              delay:50
+            });
+            typewriter5
+            .pauseFor(1000)
+            .typeString("Feel free to take a look around.")
+            .start();
+            res("Successfully typed text 5");  
+          }, 8000)  
+        }
+      });
+    }
+
+
+
+    const homeTexts = [typeText1, typeText2, typeText3, typeText4, typeText5];
+    // Execute promises
+    async function typeTexts() {
+      let i =1;
+      for (let text of homeTexts) {
+        try {
+          console.log(i);
+          const res = await text();
+          console.log(res);
+          i=i+1;
+        } catch(error) {
+          console.error(error.message);
+          return;
+        }
+      }
+    }
+    // typeTexts();
+  }
+}
+// let loc = window.location.pathname;
+// home_typewriter(loc=loc);
+
+////////////////////////////
+// HOME TYPEWRITER EFFECT //
+////////////////////////////
+
+/// Promises
+const typeText1 = () => {
+  return new Promise((res) => {
+    const text1 = document.querySelector('#home-typewriter-1');
+    if (text1) {
+      text1.style.opacity = "1";
+    }
+    const typewriter1 = new Typewriter(text1, {
+      loop: false,
+      delay: 40,
+    });
+    const jeehyeAudio = ' <button id="speakerIcon" onclick="sayJeehye()""><i class="fa-solid fa-volume-high"></i></button> <audio class="jeehyeAudio"><source src="../assets/jeehye.mp3"></source></audio>'
+    typewriter1
+    .pauseFor(500)
+    .typeString('안녕?')
+    .pauseFor(400)
+    .typeString('<br>Hey,')
+    .pauseFor(100)
+    .typeString(" I'm Jeehye.")
+    .pauseFor(300)
+    .typeString(jeehyeAudio)
+    .pauseFor(1000)
+    .start();
+    // fade away
+    setTimeout(() => {
+      if (text1) {
+        text1.removeAttribute("style");
+      }
+      // text1.removeAttribute("style");
+    }, 4500);
+    res("Successfully typed and faded text 1");              
+  })
+};
+/// TEXT 2 ///
+const typeText2 = () => {
+  return new Promise((res) => {
+    setTimeout(() => {
+        const text2 = document.querySelector('#home-typewriter-2');
+        if (text2) {
+          text2.style.opacity = "1";
+        }
+        const typewriter2 = new Typewriter(text2, {
+        loop: false,
+        delay: 50,
+        });
+        typewriter2
+        .pauseFor(1000)
+        .typeString("I've moved around a bit,")
+        .pauseFor(400)
+        .typeString("<br>but right now, I'm based in Berlin.")
+        .start();
+        // fade away
+        setTimeout(() => {
+          if (text2) {
+            text2.removeAttribute("style");
+          }
+          // text2.removeAttribute("style");
+        }, 7000);
+        res("Successfully typed and faded text 2");  
+    }, 3500);
+  })
+}
+/// Text 3 ///
+const typeText3 = () => {
+  return new Promise((res) => {
+      setTimeout(() => {
+      const text3 = document.querySelector('#home-typewriter-3');
+      if (text3) {
+        text3.style.opacity = "1";
+      }
+      const typewriter3 = new Typewriter(text3, {
+          loop:false,
+          delay:40
+      });
+      typewriter3
+      .pauseFor(1000)
+      .typeString("I am a <a href='/brain/'>computational neuroscientist <i class='fa fa-brain' aria-hidden='true'></i></a>.")
+      .start();
+      res("Successfully typed and faded text 3");
+      // fade away
+      // text3.removeAttribute("style");
+      setTimeout(() => {
+        if (text3) {
+          text3.removeAttribute("style");
+        }
+        // text3.removeAttribute("style");
+      }, 6000);
+      }, 6000)
+  })
+}
+const typeText4 = () => {
+  return new Promise((res) => {
+      setTimeout(() => {
+      const text4 = document.querySelector('#home-typewriter-4');
+      if (text4) {
+        text4.style.opacity = "1";
+      }
+      const typewriter4 = new Typewriter(text4, {
+          loop:false,
+          delay:40
+      });
+      typewriter4
+      .pauseFor(1000)
+      .typeString("I also have a deep affection for <a href='./35mm'>analog photography <i class='fa fa-film' aria-hidden='true'></i></a>.")
+      .pauseFor(500)
+      .typeString("<br>Or I design websites")
+      .pauseFor(80)
+      .typeString(" (like this one).")
+      .start();
+      // fade away
+      setTimeout(() => {
+      if (text4) {
+        text4.removeAttribute("style");
+      }
+        // text4.removeAttribute("style");
+      }, 8000);
+      res("Successfully typed and faded text 4");
+      }, 4500)
+  })
+}
+const typeText5 = () => {
+  return new Promise((res) => {
+      setTimeout(() => {
+      const text5 = document.querySelector('#home-typewriter-5');
+      if (text5) {
+        text5.style.opacity = "1";
+      }
+      const typewriter5 = new Typewriter(text5, {
+          loop:false,
+          delay:40
+      });
+      typewriter5
+      .pauseFor(1000)
+      .typeString("Feel free to take a look around.")
+      .start();
+      res("Successfully typed text 5");  
+      }, 8000)  
+  });
+}  
+const homeTexts = [typeText1, typeText2, typeText3, typeText4, typeText5];
+
+const homeTypewriter2 = {
+  // inspired by https://stackoverflow.com/questions/68614344/how-can-i-stop-async-function-on-click-event-javascript
+  typeTexts(loc) {
+    const homeTexts = [typeText1, typeText2, typeText3, typeText4, typeText5];
+    
+    if (loc == URL_DEFAULT) {
+      async function typeTexts(self) {
+        for (let text of homeTexts) {
+          if (self.abort) {
+              self.abort = false;
+              return;
+          }
+          const res = await text();
+          // console.log(res);
+        }
+      }
+      typeTexts(this);
+    }
+  },
+
+  typeTextsStop() {
+    this.abort = true;
+  }
+};
+let loc = window.location.pathname;
+homeTypewriter2.typeTexts(loc);
+
 const typewriter_start = () => {
   const home_text = document.querySelector('#typewriter-text');
   
@@ -104,7 +477,7 @@ const typewriter_start = () => {
   //.pauseFor(1000)
   .start();
 };
-typewriter_start();
+// typewriter_start();
 
 /* Copy email function for about page */
 let copyEmail = () => {
@@ -261,6 +634,24 @@ const loop = () => {
   scroll(loop);
 }
 loop();
+
+const homeTypewriterTexts = () => {
+  let scroll = window.requestAnimationFrame ||
+  // IE Fallback
+  function(callback){ window.setTimeout(callback, 1000/60)};
+  let homeTexts = document.querySelectorAll('.home-typewriter');
+  homeTexts.forEach(function(e) {
+    if(isElementInViewport(e)) {
+      // get id name and call the function ??
+      e.classList.add('is-visible');
+    } else {
+      e.classList.remove('is-visible');
+    }
+  });
+  scroll(homeTypewriterTexts);
+}
+// homeTypewriterTexts();
+
 // Helper function from: http://stackoverflow.com/a/7557433/274826
 function isElementInViewport(el) {
   let rect = el.getBoundingClientRect();
@@ -508,9 +899,11 @@ const getMessage = () => {
 }
 
 const navBarMiddleText = () => {
-  let message = getMessage();
-  const navBarMiddle = document.getElementById('nav-middle-text');
-  navBarMiddle.textContent = message;
+  if(document.getElementById('nav-middle-text')) {
+    let message = getMessage();
+    const navBarMiddle = document.getElementById('nav-middle-text');
+    navBarMiddle.textContent = message;  
+  }
 }
 navBarMiddleText();
 
@@ -641,7 +1034,7 @@ const parallaxEffect = () => {
     .addTo(controller);
   };
 };
-parallaxEffect();
+// parallaxEffect();
 
 const animateGlobe = () => {
   let loc = window.location.pathname;

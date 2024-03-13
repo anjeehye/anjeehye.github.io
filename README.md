@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-This is my website design v2 - Pastel retro theme. 
+This is my website design v3 - Dreamy glowy beach theme.
 
 <!--
 **anjeehye/anjeehye** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.

@@ -7,7 +7,16 @@
       <a class="site-title" id="link-home" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
     </div>
     
-    <div class="nav-text"> <p id="nav-middle-text">Hello ㋡</p> </div>
+    <div class="nav-text">       
+      {%- if site.theme_version == 3 -%}
+      <div class="secondary-nav">
+        {%- include tag-nav.html -%}
+      </div>
+      {% else %}
+      <p id="nav-middle-text">Hello ㋡</p> 
+      {%- endif -%}
+
+    </div>
   
     {%- if page_paths -%}
       <nav class="nav-menu">
@@ -42,8 +51,10 @@
   </div>
   <div class="main-nav-back"></div>
 
+  {%- if site.theme_version != 3 -%}
   <div class="secondary-nav">
     {%- include tag-nav.html -%}
   </div>
+  {%- endif -%}
 
 </header>

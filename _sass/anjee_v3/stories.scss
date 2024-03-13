@@ -23,13 +23,21 @@ ul.post-list {
         height: 100%;
         padding: 1rem 1rem 2rem 1rem;
         transition: .2s ease-in-out;
-        background: rgba(var(--color-light-rgb),.2);// rgba(255,255,255,.8);
         justify-content: space-between;
         text-decoration: none;
-
-        // With glassmorphism
         border-radius: 1rem;
-        border: 1.5px solid var(--color-light);
+        // border: 1.5px solid var(--color-light);
+
+        // GLASSMORPHISM
+        // background: rgba(var(--color-light-rgb), .3);// rgba(255,255,255,.8);
+        // box-shadow: 0 8px 14px 0 rgba(104, 106, 137, 0.37);
+        // backdrop-filter: blur( 3px );
+        // -webkit-backdrop-filter: blur( 3px );
+
+        // DREAMY
+        border: 1.5px solid rgba(var(--color-light-rgb),.7);
+        box-shadow: 0 0 10px rgba(var(--color-light-rgb),.6);
+        background: rgba(var(--color-light-rgb), .5);
 
         @include media-query($on-palm) {
             margin: 0;
@@ -71,6 +79,7 @@ article.post {
     color: var(--text-color);
     // background-color: white;
     background: rgba(var(--color-light-rgb),.5);// rgba(255,255,255,.8);
+    box-shadow: 0 0 10px rgba(var(--color-light-rgb),.6);
     border-radius: 1rem;
     border: 1.5px solid var(--color-light);
 
@@ -78,7 +87,7 @@ article.post {
     font-size: $reading-font-size;
     // border: 1.5px solid var(--text-color); // glassmorphism
     // border-radius: 1rem;
-    max-width: 800px;
+    max-width: 760px;
     margin: auto;
     @include media-query($on-palm) {
         padding: 1rem;

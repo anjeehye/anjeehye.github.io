@@ -1,0 +1,45 @@
+.page.brain {
+    .brain-top {
+        font-size: x-large;
+    }
+    // #brain-img img{
+    //     min-width: 30vw;
+    //     @include media-query($on-palm) {
+    //         min-width: 70vw;
+    //     }
+    // }
+    section {
+        max-width: 1200px;
+        margin: auto;
+    }    
+}
+
+section.publications {
+    background: rgba(var(--color-light-rgb),.5);
+    box-shadow: 0 0 10px rgba(var(--color-light-rgb),.6);
+    border-radius: 1rem;
+    // border: 1.5px solid var(--color-light);
+    padding: 1rem 3rem;
+    @include media-query($on-palm) {
+        padding: 1rem;
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        li {
+            padding-left: 1rem ;
+            text-indent: -1rem ;
+            margin-bottom: 1rem;;
+        }
+        b {
+            color: var(--color-highlight);
+        }
+    }
+}
+#brain-img {
+    background: url('../assets/brain/brain_cropped_bitmap_tile.png');
+    background-repeat: no-repeat; 
+    height: calc(10000px/24); 
+    width: auto; 
+    background-position: center top;
+}

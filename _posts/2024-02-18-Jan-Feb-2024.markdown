@@ -9,6 +9,15 @@ thumbnail: /assets/images/post-2024-02-28-kylie2.jpg
 tags: ["베를린 생활"]
 ---
 
+### Self-portrait
+
+![Self-portrait. Jan 19, 2023]({{site.baseurl}}/assets/images/post-2024-02-28-self-portrait.jpg){:class="img-responsive img-size-small"}
+<figcaption class="align-left"> Nikon FE2 / Kodak Colorplus 200 </figcaption>
+
+Me in my apartment with my roomies. 
+
+<br/>
+
 ### Tarot for 2024
 
 I got a free tarot reading for the 'Theme of the Year' (thank you). I got *Page of Pentacles*

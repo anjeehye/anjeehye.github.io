@@ -278,12 +278,13 @@ nav {
         border: 1px solid white;
         border-radius: 1.3rem;
         box-shadow: 0 0 5px rgba(var(--color-light-rgb),.7) inset; // inner glow
+        text-shadow: 0 0 2px #a8a8a8;
         &:hover {
-          text-shadow: 0 0 3px #a8a8a8;
+          text-shadow: 0 0 6px #a8a8a8;
         }
         &.current {
           background-color: rgba(var(--color-highlight-rgb), .15);
-          text-shadow: 0 0 6px #a8a8a8, 0 0 2px var(--color-light);
+          text-shadow: 0 0 8px #a8a8a8, 0 0 2px var(--color-light);
         }
     }
   }

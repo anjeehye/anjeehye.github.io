@@ -78,17 +78,16 @@ ul.post-list {
 article.post {
     color: var(--text-color);
     // background-color: white;
-    background: rgba(var(--color-light-rgb),.5);// rgba(255,255,255,.8);
-    box-shadow: 0 0 10px rgba(var(--color-light-rgb),.6);
+    background: rgba(var(--color-light-rgb),.8);// rgba(255,255,255,.8);
+    box-shadow: 0 0 10px rgba(var(--color-light-rgb),.6), 0 0 6px rgba(var(--color-light-rgb),.6);
     border-radius: 1rem;
     border: 1.5px solid var(--color-light);
-
     padding: 1rem 3rem;
     font-size: $reading-font-size;
     // border: 1.5px solid var(--text-color); // glassmorphism
     // border-radius: 1rem;
     max-width: 760px;
-    margin: auto;
+    margin: 1rem auto;
     @include media-query($on-palm) {
         padding: 1rem;
     }

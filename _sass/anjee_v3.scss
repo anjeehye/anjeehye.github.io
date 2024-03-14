@@ -126,13 +126,27 @@ body {
     display: flex;
     justify-content: space-between;
     // background-color: var(--color-highlight);
-    background: url("../assets/bg.jpg") no-repeat top center fixed;
-    // background: url("https://lh3.googleusercontent.com/pw/ACtC-3fMCx_68JZw-9nMunNZekgYepXIvxq2IGT3cLIzlSuabf-vmIk4vT2olhc63HRV5gMXKgHel9kSQjqkur4tvcJc2ycZ8ecXPbI_ZuASK3_spCAlwE_xlM8khCLq0S83_bGNOcaD93ynxWANCHFou6HL=w1058-h628-no") no-repeat center center fixed; //repulse bay;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    // background: url("../assets/bg.jpg") no-repeat top center fixed;
+    // -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // -o-background-size: cover;
+    // background-size: cover;
     overflow-x: hidden;
+    &:before { // add bg here to avoid problems in mobile devices
+        content: "";
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        background: url("../assets/bg.jpg") no-repeat top center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
 }
 body, header, .main-nav, .main-nav-back {
     width: 100%;

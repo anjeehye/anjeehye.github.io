@@ -28,34 +28,34 @@ Ripples. 물결. 내가 가장 좋아하는 것들 중 하나.
 태국 와서 물을 실컷 쳐다본다. 일렁이는 물결은 하루 종일도 볼 수 있을 것 같아. <br />
 
 
-<video autoplay loop muted src="../assets/videos/post-2024-03-23-ripples1.mov" controls="controls" style="max-width: 730px;" class="photo-gallery-three img-responsive">
+<video autoplay loop muted webkit-playsinline playsinline src="../assets/videos/post-2024-03-23-ripples1.mov" controls="controls" style="max-width: 730px;" class="photo-gallery-three img-responsive">
 </video>
-<video autoplay loop muted src="../assets/videos/post-2024-03-23-ripples2.mov" controls="controls" style="max-width: 730px;" class="photo-gallery-three img-responsive">
+<video autoplay loop muted webkit-playsinline playsinline src="../assets/videos/post-2024-03-23-ripples2.mov" controls="controls" style="max-width: 730px;" class="photo-gallery-three img-responsive">
 </video>
-<video autoplay loop muted src="../assets/videos/post-2024-03-23-ripples3.mov" controls="controls" style="max-width: 730px;" class="photo-gallery-three img-responsive">
+<video autoplay loop muted webkit-playsinline playsinline src="../assets/videos/post-2024-03-23-ripples3.mov" controls="controls" style="max-width: 730px;" class="photo-gallery-three img-responsive">
 </video>
 <!-- <video autoplay loop muted src="../assets/videos/post-2024-03-23-ripples4.mov" controls="controls" style="max-width: 730px;" class="photo-gallery-three img-responsive">
 </video> -->
 <!-- <video autoplay loop muted src="../assets/videos/post-2024-03-23-ripples5.mov" controls="controls" style="max-width: 730px;" class="photo-gallery-three img-responsive">
 </video> -->
-<video autoplay loop muted src="../assets/videos/post-2024-03-23-ripples9.mov" controls="controls" style="max-width: 730px;" class="photo-gallery-three img-responsive">
+<video autoplay loop muted webkit-playsinline playsinline src="../assets/videos/post-2024-03-23-ripples9.mov" controls="controls" style="max-width: 730px;" class="photo-gallery-three img-responsive">
 </video>
-<video autoplay loop muted src="../assets/videos/post-2024-03-23-ripples6.mov" controls="controls" style="max-width: 730px;" class="photo-gallery-three img-responsive">
+<video autoplay loop muted webkit-playsinline playsinline src="../assets/videos/post-2024-03-23-ripples6.mov" controls="controls" style="max-width: 730px;" class="photo-gallery-three img-responsive">
 </video>
-<video autoplay loop muted src="../assets/videos/post-2024-03-23-ripples7.mov" controls="controls" style="max-width: 730px;" class="photo-gallery-three img-responsive">
+<video autoplay loop muted webkit-playsinline playsinline src="../assets/videos/post-2024-03-23-ripples7.mov" controls="controls" style="max-width: 730px;" class="photo-gallery-three img-responsive">
 </video>
-<video autoplay loop muted src="../assets/videos/post-2024-03-23-ripples8.mov" controls="controls" style="max-width: 730px;" class="photo-gallery-three img-responsive">
+<video autoplay loop muted webkit-playsinline playsinline src="../assets/videos/post-2024-03-23-ripples8.mov" controls="controls" style="max-width: 730px;" class="photo-gallery-three img-responsive">
 </video>
 
-<video autoplay loop muted src="../assets/videos/post-2024-03-23-ripples10.mov" controls="controls" style="max-width: 730px;" class="photo-gallery-three img-responsive">
+<video autoplay loop muted webkit-playsinline playsinline src="../assets/videos/post-2024-03-23-ripples10.mov" controls="controls" style="max-width: 730px;" class="photo-gallery-three img-responsive">
 </video>
-<video autoplay loop muted src="../assets/videos/post-2024-03-23-ripples11.mov" controls="controls" style="max-width: 730px;" class="photo-gallery-three img-responsive">
+<video autoplay loop muted webkit-playsinline playsinline src="../assets/videos/post-2024-03-23-ripples11.mov" controls="controls" style="max-width: 730px;" class="photo-gallery-three img-responsive">
 </video>
-<video autoplay loop muted src="../assets/videos/post-2024-03-23-ripples12.mov" controls="controls" style="max-width: 730px;" class="photo-gallery-three img-responsive">
+<video autoplay loop muted webkit-playsinline playsinline src="../assets/videos/post-2024-03-23-ripples12.mov" controls="controls" style="max-width: 730px;" class="photo-gallery-three img-responsive">
 </video>
-<video autoplay loop muted src="../assets/videos/post-2024-03-23-ripples13.mov" controls="controls" style="max-width: 730px;" class="photo-gallery-three img-responsive">
+<video autoplay loop muted webkit-playsinline playsinline src="../assets/videos/post-2024-03-23-ripples13.mov" controls="controls" style="max-width: 730px;" class="photo-gallery-three img-responsive">
 </video>
-<video autoplay loop muted src="../assets/videos/post-2024-03-23-ripples14.mov" controls="controls" style="max-width: 730px;" class="photo-gallery-three img-responsive">
+<video autoplay loop muted webkit-playsinline playsinline src="../assets/videos/post-2024-03-23-ripples14.mov" controls="controls" style="max-width: 730px;" class="photo-gallery-three img-responsive">
 </video>
 
 <br />

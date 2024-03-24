@@ -30,7 +30,7 @@ const activeFunctions = () => {
   styleComments();
   disqusForSwup();
   modalPreview();
-  scrambleText(scramble_phrases, '.scramble-text-about', 1200);
+  // scrambleText(scramble_phrases, '.scramble-text-about', 1200);
   toggleNav(w);
   navBarMiddleText();
   backNavBar();
@@ -70,12 +70,11 @@ swup.hooks.on('content:replace', (visit) => {
   loc_to = visit.to.url
   loc_from = visit.from.url;
   if (loc_to == URL_DEFAULT) {
-    homeTypewriter2.typeTexts(loc=loc_to);
+    homeTypewriter.typeTexts(loc=loc_to);
   } else if (loc_from == URL_DEFAULT) {
-    homeTypewriter2.typeTextsStop();
+    homeTypewriter.typeTextsStop();
   }
 }) 
-
 
 
 const sayJeehye = () => {
@@ -84,187 +83,7 @@ const sayJeehye = () => {
   audio.play();
 }
 
-// Home text typewriter effect
-const home_typewriter = (isNavigatingAway=false) => {
-  // If at home page
-  if (isNavigatingAway == true) {
-    return;
-  }
-  let loc = window.location.pathname;
-  // if (loc == URL_DEFAULT) {
-  //   isNavigatingAway = false;
-  // }
-  // let isNavigatingAway = false; // checking if user navigates to a different page
-  // console.log(isNavigatingAway);
-  
-  if (loc == URL_DEFAULT) {
-    /// Promises
-    const typeText1 = () => {
-      return new Promise((res, rej) => {
-        loc = window.location.pathname;
-        if ((loc != URL_DEFAULT) | (isNavigatingAway)) {
-          rej(new Error("Moved out of home page (1)."));
-        } else {
-          const text1 = document.querySelector('#home-typewriter-1');
-          const typewriter1 = new Typewriter(text1, {
-            loop: false,
-            delay: 50,
-          });
-          const jeehyeAudio = ' <button id="speakerIcon" onclick="sayJeehye()""><i class="fa-solid fa-volume-high"></i></button> <audio class="jeehyeAudio"><source src="../assets/jeehye.mp3"></source></audio>'
-          
 
-          typewriter1
-          .pauseFor(500)
-          .typeString('안녕?')
-          .pauseFor(400)
-          .typeString('<br>Hey,')
-          .pauseFor(100)
-          .typeString(" I'm Jeehye.")
-          .pauseFor(300)
-          .typeString(jeehyeAudio)
-          .pauseFor(1000)
-          .start();
-          // fade away
-          setTimeout(() => {
-            text1.style.transition = "opacity 2s";
-            text1.style.opacity = ".2";
-          }, 4500);
-          res("Successfully typed and faded text 1");              
-        }
-      })
-    };
-    /// TEXT 2 ///
-    const typeText2 = () => {
-      return new Promise((res, rej) => {
-        loc = window.location.pathname;
-        if ((loc != URL_DEFAULT) | (isNavigatingAway)) {
-          rej(new Error("Moved out of home page (2)."));
-        } else {
-          setTimeout(() => {
-              const text2 = document.querySelector('#home-typewriter-2');
-              const typewriter2 = new Typewriter(text2, {
-                loop: false,
-                delay: 50,
-              });
-              typewriter2
-              .pauseFor(1000)
-              .typeString("I've moved around a bit,")
-              .pauseFor(400)
-              .typeString("<br>but right now, I'm based in Berlin.")
-              .start();
-              // fade away
-              setTimeout(() => {
-                text2.style.transition = "opacity 2s";
-                text2.style.opacity = ".2";
-              }, 7000);
-              res("Successfully typed and faded text 2");  
-          }, 3500);
-        }
-      })
-    }
-    /// Text 3 ///
-    const typeText3 = () => {
-      return new Promise((res, rej) => {
-        loc = window.location.pathname;
-        if ((loc != URL_DEFAULT) | (isNavigatingAway)) {
-          rej(new Error("Moved out of home page (3)."));
-        } else {
-          setTimeout(() => {
-            const text3 = document.querySelector('#home-typewriter-3');
-            const typewriter3 = new Typewriter(text3, {
-              loop:false,
-              delay:50
-            });
-            typewriter3
-            .pauseFor(1000)
-            .typeString("I am a <a href='/brain/'>computational neuroscientist <i class='fa fa-brain' aria-hidden='true'></i></a>.")
-            .start();
-            res("Successfully typed and faded text 3");
-            // fade away
-            setTimeout(() => {
-              text3.style.transition = "opacity 2s";
-              text3.style.opacity = ".2";
-            }, 6000);
-          }, 6000)
-        }
-      })
-    }
-    const typeText4 = () => {
-      return new Promise((res, rej) => {
-        loc = window.location.pathname;
-        if ((loc != URL_DEFAULT) | (isNavigatingAway)) {
-          rej(new Error("Moved out of home page (4)."));
-        } else {
-          setTimeout(() => {
-            const text4 = document.querySelector('#home-typewriter-4');
-            const typewriter4 = new Typewriter(text4, {
-              loop:false,
-              delay:50
-            });
-            typewriter4
-            .pauseFor(1000)
-            .typeString("I also have a deep affection for <a href='./35mm'>analog photography <i class='fa fa-film' aria-hidden='true'></i></a>.")
-            .pauseFor(500)
-            .typeString("<br>Or I design websites")
-            .pauseFor(80)
-            .typeString(" (like this one).")
-            .start();
-            // fade away
-            setTimeout(() => {
-              text4.style.transition = "opacity 2s";
-              text4.style.opacity = ".2";
-            }, 8000);
-            res("Successfully typed and faded text 4");
-          }, 4500)
-  
-        }
-      })
-    }
-    const typeText5 = () => {
-      return new Promise((res, rej) => {
-        loc = window.location.pathname;
-        if ((loc != URL_DEFAULT) | (isNavigatingAway)) {
-          rej(new Error("Moved out of home page (5)."));
-        } else {
-          setTimeout(() => {
-            const text5 = document.querySelector('#home-typewriter-5');
-            const typewriter5 = new Typewriter(text5, {
-              loop:false,
-              delay:50
-            });
-            typewriter5
-            .pauseFor(1000)
-            .typeString("Feel free to take a look around.")
-            .start();
-            res("Successfully typed text 5");  
-          }, 8000)  
-        }
-      });
-    }
-
-
-
-    const homeTexts = [typeText1, typeText2, typeText3, typeText4, typeText5];
-    // Execute promises
-    async function typeTexts() {
-      let i =1;
-      for (let text of homeTexts) {
-        try {
-          console.log(i);
-          const res = await text();
-          console.log(res);
-          i=i+1;
-        } catch(error) {
-          console.error(error.message);
-          return;
-        }
-      }
-    }
-    // typeTexts();
-  }
-}
-// let loc = window.location.pathname;
-// home_typewriter(loc=loc);
 
 ////////////////////////////
 // HOME TYPEWRITER EFFECT //
@@ -411,7 +230,7 @@ const typeText5 = () => {
 }  
 const homeTexts = [typeText1, typeText2, typeText3, typeText4, typeText5];
 
-const homeTypewriter2 = {
+const homeTypewriter = {
   // inspired by https://stackoverflow.com/questions/68614344/how-can-i-stop-async-function-on-click-event-javascript
   typeTexts(loc) {
     const homeTexts = [typeText1, typeText2, typeText3, typeText4, typeText5];
@@ -436,7 +255,7 @@ const homeTypewriter2 = {
   }
 };
 let loc = window.location.pathname;
-homeTypewriter2.typeTexts(loc);
+homeTypewriter.typeTexts(loc);
 
 const typewriter_start = () => {
   const home_text = document.querySelector('#typewriter-text');
@@ -854,7 +673,7 @@ let scrambleText = (phrases, div, timeout=800) => {
 // scrambleText(phrases, '#typewriter-text')
 // scrambleText(['지혜', 'Jeehye'], '.scramble-text-name', 1200)
 let scramble_phrases = ['Diver 🌊🤿🐙', "Art admirer", 'Doctoral researcher']
-scrambleText(scramble_phrases, '.scramble-text-about', 1300)
+// scrambleText(scramble_phrases, '.scramble-text-about', 1300)
 
 /* TOGGLING NAV BAR */
 var prevScrollpos = window.scrollY;

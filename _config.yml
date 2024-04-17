@@ -27,8 +27,8 @@ keywords: Jeehye An, An Jeehye, Jee Hye An, 안지혜, An Jee Hye, anjeehye, jee
 # baseurl: "/anjeehye" # the subpath of your site, e.g. /blog
 url: "http://anjeehye.xyz" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: 
-github_username:  anjeehye
-instagram_username: _g_hey_
+# github_username:  anjeehye
+# instagram_username: _g_hey_
 theme_version: 3
 
 # Build settings

@@ -3,6 +3,8 @@ layout: about
 title: About
 permalink: /about/
 display: false
+order: 0
+label: "about"
 ---
 
 ## AN JEEHYE

@@ -42,6 +42,18 @@ nav {
     &:hover {
       text-shadow: 0 0 3px var(--color-light);
     }
+    &:hover .page-label {
+      opacity: 1;
+    }
+  }
+  .page-label {
+    position: absolute;
+    transform: translate(-1rem, 2rem);
+    text-align: center;
+    font-size: medium;
+    width: 56px;
+    opacity: 0;
+    transition: opacity .2s ease-out;
   }
   .nav-home{
     z-index: 100;
@@ -296,7 +308,7 @@ nav {
 @include media-query($on-palm) {
   .main-nav {
     .nav-home { 
-      width: auto;
+      width: min-content; //auto
     }
     .nav-text {
       display: none;

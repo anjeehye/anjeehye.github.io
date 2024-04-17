@@ -31,7 +31,11 @@
   
         <div class="trigger white-text-styling">
           {%- for path in page_paths -%}
-            {%- assign my_page = site.pages | where: "path", path | where: "display", true | first -%}
+            {%- assign my_page = site.pages 
+              | where: "path", path 
+              | where: "display", true 
+              | first 
+            -%}
             {%- if my_page.title -%}
               <a class="page-link" id="link-{{ my_page.title }}" href="{{ my_page.url | relative_url }}">
                 <!-- {{ my_page.title | escape }} -->
@@ -39,6 +43,7 @@
                   <i class="{{ my_page.icon-fa }}"></i>
                   <!-- <img src="{{ my_page.icon.image_path }}" alt="{{ my_page.icon.alt }}"> -->
                 {%- endif -%}
+                <span class="page-label">{{my_page.label}}</span>
               </a>
               <!-- {% if my_page.title == "35mm" %}
                 {%- include tag-nav.html -%}

@@ -4,6 +4,8 @@ title: 35mm
 permalink: /35mm/
 icon-fa: "fa fa-film"
 display: true
+order: 5
+label: "35mm"
 ---
 
 <ul class="photo-list">

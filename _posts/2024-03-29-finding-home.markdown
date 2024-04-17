@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Finding home."
-date: 2024-03-29 12:00:00 +0900
+date: 2024-03-29 15:46:00 +0900
 categories: ["journal"]
 excerpt: "Ahh, I'm home 😌."
 slug: "finding-home"

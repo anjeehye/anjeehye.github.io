@@ -1,5 +1,8 @@
 .page.photos-35mm {
     margin: 0 5rem;
+    @include media-query($on-palm) {
+        margin: 0;
+    }
 }
 ul.photo-list {
     margin: 0;

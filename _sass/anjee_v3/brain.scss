@@ -9,17 +9,19 @@
     //     }
     // }
     section {
-        max-width: 1200px;
+        max-width: 1000px;
         margin: auto;
     }    
 }
 
 section.publications {
-    background: rgba(var(--color-light-rgb),.5);
-    box-shadow: 0 0 10px rgba(var(--color-light-rgb),.6);
+    background: rgba(var(--color-light-rgb),.8);
+    box-shadow: 0 0 10px rgba(var(--color-light-rgb),.6), 0 0 5px rgba(var(--color-light-rgb),.6);
     border-radius: 1rem;
     // border: 1.5px solid var(--color-light);
     padding: 1rem 3rem;
+    font-size: medium;
+    margin: 3rem 0;
     @include media-query($on-palm) {
         padding: 1rem;
     }

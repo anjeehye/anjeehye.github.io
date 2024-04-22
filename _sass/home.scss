@@ -20,6 +20,16 @@
     @include media-query($on-palm) {
         font-size: large;
     }
+    #typewriter-text {
+        position: fixed;
+        left: 15%;
+        top: 30%;
+        span, button, a, i {
+            color: var(--color-light);
+            text-shadow: 0 0 3px #838181, 0 0 2px #444444,0 0 1px #444444;
+            border-bottom: none;
+        }
+    }
     .home-typewriter {
         color: var(--text-color);
         opacity: 0.2;

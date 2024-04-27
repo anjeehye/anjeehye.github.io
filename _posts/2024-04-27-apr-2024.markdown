@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Apr 2024: Longing/Perfect Days/Ordinary days"
-date: 2024-04-10 13:00:00 +0900
+date: 2024-04-27 13:00:00 +0900
 categories: ["bits and pieces"]
 excerpt: "Again, I'm switching between English and 한국어. 식물과 감자와 아무말."
 slug: "bits-and-pieces-apr-2024"

@@ -5,31 +5,31 @@
   alt: "Bamberg solo travel. Light and shadow. House"
   sort: 700
   tags: ["getaway", "Bamberg"]
-  link: "../35mm_files/film79_NikonFE2-KodakPortra800_202301-09/film79-7.jpg"
+  link: "../assets/35mm_files/film79_NikonFE2-KodakPortra800_202301-09/film79-7.jpg"
   display: True
 - title: "Bamberg solo travel. Light and shadow"
   alt: "Bamberg solo travel. Light and shadow"
   sort: 700
   tags: ["getaway", "Bamberg"]
-  link: "../35mm_files/film79_NikonFE2-KodakPortra800_202301-09/film79-6.jpg"
+  link: "../assets/35mm_files/film79_NikonFE2-KodakPortra800_202301-09/film79-6.jpg"
   display: True
 - title: "Bamberg solo travel. Shadow"
   alt: "Bamberg solo travel. Shadow"
   sort: 700
   tags: ["getaway", "Bamberg", "Jeehye"]
-  link: "../35mm_files/film79_NikonFE2-KodakPortra800_202301-09/film79-5.jpg"
+  link: "../assets/35mm_files/film79_NikonFE2-KodakPortra800_202301-09/film79-5.jpg"
   display: True
 - title: "Bamberg solo travel. A girl"
   alt: "Bamberg solo travel. A girl"
   sort: 700
   tags: ["getaway", "Bamberg"]
-  link: "../35mm_files/film79_NikonFE2-KodakPortra800_202301-09/film79-4.jpg"
+  link: "../assets/35mm_files/film79_NikonFE2-KodakPortra800_202301-09/film79-4.jpg"
   display: True
 - title: "Bamberg solo travel"
   alt: "Bamberg solo travel"
   sort: 700
   tags: ["getaway", "Bamberg"]
-  link: "../35mm_files/film79_NikonFE2-KodakPortra800_202301-09/film79-3.jpg"
+  link: "../assets/35mm_files/film79_NikonFE2-KodakPortra800_202301-09/film79-3.jpg"
   display: True
 
 # Testing local storage
@@ -38,19 +38,19 @@
   alt: "Sister"
   sort: 750
   tags: ["Berlin", "friends"]
-  link: "../35mm_files/film78_KonikaBigMini-KodakGold200_202301-05/film78-04.jpg"
+  link: "../assets/35mm_files/film78_KonikaBigMini-KodakGold200_202301-05/film78-04.jpg"
   display: True
 - title: "Home after my 29th bday party"
   alt: "After my 29th bday party"
   sort: 750
   tags: ["Berlin", "home"]
-  link: "../35mm_files/film78_KonikaBigMini-KodakGold200_202301-05/film78-02.jpg"
+  link: "../assets/35mm_files/film78_KonikaBigMini-KodakGold200_202301-05/film78-02.jpg"
   display: True
 - title: "Berlin street posters"
   alt: "Berlin street posters"
   sort: 760
   tags: ["Berlin"]
-  link: "../35mm_files/film78_KonikaBigMini-KodakGold200_202301-05/film78-03.jpg"
+  link: "../assets/35mm_files/film78_KonikaBigMini-KodakGold200_202301-05/film78-03.jpg"
   display: True
 
 

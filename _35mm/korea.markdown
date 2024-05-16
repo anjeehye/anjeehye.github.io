@@ -6,7 +6,7 @@ tagurl: korea
 
 <!-- <h2>#Korea</h2> -->
 <ul class="photo-list korea">
-    {% assign photos = site.data.photos
+    {% assign photos = site.data.photos_v2
         | where: "tags", "Korea"
         | where: "display", true
     %}

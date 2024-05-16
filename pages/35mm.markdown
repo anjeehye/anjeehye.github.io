@@ -9,10 +9,11 @@ label: "35mm"
 ---
 
 <ul class="photo-list">
-  {% assign photos = site.data.photos 
-    | sort: "sort" 
+  {% assign photos = site.data.photos_v2 
+    | sort: "film_no" 
     | where: "display", true
-  %}
+    | reverse
+  %} 
   {% for photo in photos %}
     <li class="photo-item aos-jeehye">
       <a class="modal-link">

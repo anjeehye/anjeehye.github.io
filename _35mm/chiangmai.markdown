@@ -6,7 +6,7 @@ tagurl: chiangmai
 
 <!-- <h2>#Berlin</h2> -->
 <ul class="photo-list berlin">
-    {% assign photos = site.data.photos
+    {% assign photos = site.data.photos_v2
         | where: "tags", "Chiangmai"
         | where: "display", true
     %}

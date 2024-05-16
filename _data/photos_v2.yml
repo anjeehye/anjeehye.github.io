@@ -1,0 +1,1432 @@
+# Film 79
+- title: "Bamberg solo travel. Light and shadow. House"
+  alt: "Bamberg solo travel. Light and shadow. House"
+  film_no: 79
+  year: 2023
+  tags: ["getaway", "Bamberg"]
+  link: "../assets/35mm_files/film79_NikonFE2-KodakPortra800_202301-09/film79-7.jpg"
+  display: True
+- title: "Bamberg solo travel. Light and shadow"
+  alt: "Bamberg solo travel. Light and shadow"
+  film_no: 79
+  year: 2023
+  tags: ["getaway", "Bamberg"]
+  link: "../assets/35mm_files/film79_NikonFE2-KodakPortra800_202301-09/film79-6.jpg"
+  display: True
+- title: "Bamberg solo travel. Shadow"
+  alt: "Bamberg solo travel. Shadow"
+  film_no: 79
+  year: 2023
+  tags: ["getaway", "Bamberg", "Jeehye"]
+  link: "../assets/35mm_files/film79_NikonFE2-KodakPortra800_202301-09/film79-5.jpg"
+  display: True
+- title: "Bamberg solo travel. A girl"
+  alt: "Bamberg solo travel. A girl"
+  film_no: 79
+  year: 2023
+  tags: ["getaway", "Bamberg"]
+  link: "../assets/35mm_files/film79_NikonFE2-KodakPortra800_202301-09/film79-4.jpg"
+  display: True
+- title: "Bamberg solo travel"
+  alt: "Bamberg solo travel"
+  film_no: 79
+  year: 2023
+  tags: ["getaway", "Bamberg"]
+  link: "../assets/35mm_files/film79_NikonFE2-KodakPortra800_202301-09/film79-3.jpg"
+  display: True
+
+# Testing local storage
+# Film 78
+- title: "Sister"
+  alt: "Sister"
+  film_no: 78
+  year: 2023
+  tags: ["Berlin", "friends"]
+  link: "../assets/35mm_files/film78_KonikaBigMini-KodakGold200_202301-05/film78-04.jpg"
+  display: True
+- title: "Home after my 29th bday party"
+  alt: "After my 29th bday party"
+  film_no: 78
+  year: 2023
+  tags: ["Berlin", "home"]
+  link: "../assets/35mm_files/film78_KonikaBigMini-KodakGold200_202301-05/film78-02.jpg"
+  display: True
+- title: "Berlin street posters"
+  alt: "Berlin street posters"
+  film_no: 78
+  year: 2023
+  tags: ["Berlin"]
+  link: "../assets/35mm_files/film78_KonikaBigMini-KodakGold200_202301-05/film78-03.jpg"
+  display: True
+
+# FILM 77
+- title: "Müggelsee, I think."
+  alt: "Müggelsee, I think."
+  film_no: 77
+  year: 2022
+  camera: "Konica Big Mini"
+  film: "Kodak Gold 200"
+  tags: ["Berlin"]
+  link: "../assets/35mm_files/film77_KonikaBigMini-KodakGold200_2022-202301/film77-06.jpg"
+  display: true
+- title: "Korea, Christmas."
+  alt: "Korea, Christmas."
+  film_no: 77
+  year: 2022
+  camera: "Konica Big Mini"
+  film: "Kodak Gold 200"
+  tags: ["Korea", "Jeehye"]
+  link: "../assets/35mm_files/film77_KonikaBigMini-KodakGold200_2022-202301/film77-02.jpg"
+  display: false
+- title: "Dormitory at Wedding."
+  alt: "Dormitory at Wedding."
+  film_no: 77
+  year: 2022
+  camera: "Konica Big Mini"
+  film: "Kodak Gold 200"
+  tags: ["Berlin", "home"]
+  link: "../assets/35mm_files/film77_KonikaBigMini-KodakGold200_2022-202301/film77-05.jpg"
+  display: true
+
+
+# FILM 76
+- title: "Self-portrait 2022."
+  alt: "Self-portrait 2022."
+  film_no: 76
+  year: 2022
+  camera: "Nikon FE2"
+  film: "Kodak Gold 200"
+  tags: ["Berlin", "Jeehye", "self-portrait", "home"]
+  link: "../assets/35mm_files/film76_NikonFE2-KodakGold200_202210/film76-2.jpg"
+  display: true
+
+
+# FILM 75 
+- title: "SAVVY Contemporary 2."
+  alt: "SAVVY Contemporary 2."
+  film_no: 75
+  year: 2022
+  camera: "Nikon FE2"
+  film: "Kodak Gold 200"
+  tags: ["Berlin"]
+  link: "../assets/35mm_files/film75_NikonFE2-KodakGold200_202209-10/film75-8.jpg"
+  display: true
+- title: "SAVVY Contemporary 1."
+  alt: "SAVVY Contemporary 1."
+  film_no: 75
+  year: 2022
+  camera: "Nikon FE2"
+  film: "Kodak Gold 200"
+  tags: ["Berlin"]
+  link: "../assets/35mm_files/film75_NikonFE2-KodakGold200_202209-10/film75-7.jpg"
+  display: true
+- title: "Retreat. Woods."
+  alt: "Retreat. Woods."
+  film_no: 75
+  year: 2022
+  camera: "Nikon FE2"
+  film: "Kodak Gold 200"
+  tags: ["Berlin", "getaway"]
+  link: "../assets/35mm_files/film75_NikonFE2-KodakGold200_202209-10/film75-3.jpg"
+  display: true
+- title: "Retreat. Ferns."
+  alt: "Retreat. Ferns."
+  film_no: 75
+  year: 2022
+  camera: "Nikon FE2"
+  film: "Kodak Gold 200"
+  tags: ["Berlin", "getaway"]
+  link: "../assets/35mm_files/film75_NikonFE2-KodakGold200_202209-10/film75-4.jpg"
+  display: true
+- title: "Retreat. Me."
+  alt: "Retreat. Me."
+  film_no: 75
+  year: 2022
+  camera: "Nikon FE2"
+  film: "Kodak Gold 200"
+  tags: ["Berlin", "getaway", "Jeehye"]
+  link: "../assets/35mm_files/film75_NikonFE2-KodakGold200_202209-10/film75-5.jpg"
+  display: true
+
+
+# FILM 74
+- title: "The Koreans ㅋㅋㅋㅋ"
+  alt: "The Koreans ㅋㅋㅋㅋ."
+  film_no: 74
+  year: 2022
+  camera: "Konica Big Mini"
+  film: "Kodak Colorplus 200"
+  tags: ["Berlin", "friends"]
+  link: "../assets/35mm_files/film74_KonicaBigMini-KodakColorplus200_202206-07/film74-07.jpg"
+  display: true
+- title: "Demi's bday picnic. Hannah."
+  alt: "Demi's bday picnic. Hannah."
+  film_no: 74
+  year: 2022
+  camera: "Konica Big Mini"
+  film: "Kodak Colorplus 200"
+  tags: ["Berlin", "friends"]
+  link: "../assets/35mm_files/film74_KonicaBigMini-KodakColorplus200_202206-07/film74-05.jpg"
+  display: true
+- title: "Demi's bday picnic."
+  alt: "Demi's bday picnic."
+  film_no: 74
+  year: 2022
+  camera: "Konica Big Mini"
+  film: "Kodak Colorplus 200"
+  tags: ["Berlin", "friends"]
+  link: "../assets/35mm_files/film74_KonicaBigMini-KodakColorplus200_202206-07/film74-03.jpg"
+  display: true
+
+# FILM 73
+- title: "How he took photos of me."
+  alt: "How he took photos of me."
+  film_no: 73
+  year: 2022
+  camera: "Konica Big Mini"
+  film: "Kodak Colorplus 200"
+  tags: ["Mexico", "Jeehye"]
+  link: "../assets/35mm_files/film73_KonicaBigMini-KodakColorplus200_202204_Mexico/film73-7.jpg"
+  display: true
+- title: "Pedro and Lorena."
+  alt: "Pedro and Lorena."
+  film_no: 73
+  year: 2022
+  camera: "Konica Big Mini"
+  film: "Kodak Colorplus 200"
+  tags: ["Mexico", "friends"]
+  link: "../assets/35mm_files/film73_KonicaBigMini-KodakColorplus200_202204_Mexico/film73-6.jpg"
+  display: true
+
+# FILM 72
+- title: "Marvin taking photo of me taking photo of him."
+  alt: "Marvin taking photo of me taking photo of him."
+  film_no: 72
+  year: 2022
+  camera: "Konica Big Mini"
+  film: "Kodak Colorplus 200"
+  tags: ["Mexico", "Jeehye"]
+  link: "../assets/35mm_files/film72_KonicaBigMini-KodakColorplus200_202204_Mexiko/film72-1.jpg"
+  display: false
+- title: "Me with cowboy hat."
+  alt: "Me with cowboy hat."
+  film_no: 72
+  year: 2022
+  camera: "Konica Big Mini"
+  film: "Kodak Colorplus 200"
+  tags: ["Mexico", "Jeehye"]
+  link: "../assets/35mm_files/film72_KonicaBigMini-KodakColorplus200_202204_Mexiko/film72-4.jpg"
+  display: true
+
+
+# FILM 71
+- title: "Art exhibit."
+  alt: "Art exhibit."
+  film_no: 71
+  year: 2022
+  camera: "Konica Big Mini"
+  film: "Kodak Colorplus 200"
+  tags: ["Berlin"]
+  link: "../assets/35mm_files/film71_KonicaBigMini-KodakColorplus200_202204/film71-5.jpg"
+  display: true
+
+
+# FILM 70
+- title: "Wedding. Neighborhood."
+  alt: "Wedding. Neighborhood."
+  film_no: 70
+  year: 2021
+  camera: "Konica Big Mini"
+  film: "Kodak Colorplus 200"
+  tags: ["Berlin"]
+  link: "../assets/35mm_files/film70_KonicaBigMini-KodakColorplus200_202112/film70-8.jpg"
+  display: true
+- title: "Paris, me eating baguette by the Seine."
+  alt: "Paris, me eating baguette by the Seine."
+  film_no: 70
+  year: 2021
+  camera: "Konica Big Mini"
+  film: "Kodak Colorplus 200"
+  tags: ["getaway", "Jeehye"]
+  link: "../assets/35mm_files/film70_KonicaBigMini-KodakColorplus200_202112/film70-6.jpg"
+  display: true
+
+
+# FILM 69
+- title: "Alina's birthday."
+  alt: "Alina's birthday."
+  film_no: 69
+  year: 2021
+  camera: "Konica Big Mini"
+  film: "Kodak Gold 200"
+  tags: ["Berlin", "friends"]
+  link: "../assets/35mm_files/film69_KonicaBigMini-202111/film69-2.jpg"
+  display: true
+- title: "Me in the shadows."
+  alt: "Me in the shadows."
+  film_no: 69
+  year: 2021
+  camera: "Konica Big Mini"
+  film: "Kodak Gold 200"
+  tags: ["Berlin", "Jeehye", "self-portrait"]
+  link: "../assets/35mm_files/film69_KonicaBigMini-202111/film69-5.jpg"
+  display: true
+
+
+# FILM 63
+- title: "Schlachtensee. A portall."
+  alt: "Schlachtensee. A portal."
+  film_no: 63
+  year: 2021
+  camera: "Konica Big Mini"
+  film: "Kodak Gold 200"
+  tags: ["Berlin"]
+  link: "../assets/35mm_files/film63_KonicaBigMini-KodakGold200_202106-202107/film63-2.jpg"
+  display: true
+- title: "Schlachtensee. Friends."
+  alt: "Schlachtensee. Friends."
+  film_no: 63
+  year: 2022
+  camera: "Konica Big Mini"
+  film: "Kodak Gold 200"
+  tags: ["Berlin", "friends"]
+  link: "../assets/35mm_files/film63_KonicaBigMini-KodakGold200_202106-202107/film63-4.jpg"
+  display: true
+
+
+# FILM 61
+- title: "Pandemic, Plötzensee. 2"
+  alt: "Pandemic, Plötzensee. 2"
+  film_no: 61
+  year: 2020
+  camera: "Nikon FE2"
+  film: "Fomapan 100"
+  tags: ["Berlin"]
+  link: "../assets/35mm_files/film61_NikonFE2-Fomapan100_202008-202103/film61-09.jpg"
+  display: true
+- title: "Pandemic, Plötzensee. 1"
+  alt: "Pandemic, Plötzensee. 1"
+  film_no: 61
+  year: 2020
+  camera: "Nikon FE2"
+  film: "Fomapan 100"
+  tags: ["Berlin"]
+  link: "../assets/35mm_files/film61_NikonFE2-Fomapan100_202008-202103/film61-07.jpg"
+  display: true
+- title: "Dresden. "
+  alt: "Dresden."
+  film_no: 61
+  year: 2020
+  camera: "Nikon FE2"
+  film: "Fomapan 100"
+  tags: ["Berlin", "friends"]
+  link: "../assets/35mm_files/film61_NikonFE2-Fomapan100_202008-202103/film61-06.jpg"
+  display: true
+- title: "Dresden. "
+  alt: "Dresden."
+  film_no: 61
+  year: 2020
+  camera: "Nikon FE2"
+  film: "Fomapan 100"
+  tags: ["Berlin", "friends"]
+  link: "../assets/35mm_files/film61_NikonFE2-Fomapan100_202008-202103/film61-01.jpg"
+  display: true
+
+# FILM 60
+- title: "Memorial to Murdered Jews 3."
+  alt: "Memorial to Murdered Jews 3."
+  film_no: 60
+  year: 2020
+  camera: "Nikon FE2"
+  film: "Fomapan 100"
+  tags: ["Berlin"]
+  link: "../assets/35mm_files/film60_NikonFE2-FOMAPAN_202008/film60-15.jpg"
+  display: true
+- title: "Memorial to Murdered Jews 2."
+  alt: "Memorial to Murdered Jews 2."
+  film_no: 60
+  year: 2020
+  camera: "Nikon FE2"
+  film: "Fomapan 400"
+  tags: ["Berlin"]
+  link: "../assets/35mm_files/film60_NikonFE2-FOMAPAN_202008/film60-14.jpg"
+  display: true
+- title: "Memorial to Murdered Jews 1."
+  alt: "Memorial to Murdered Jews 1."
+  film_no: 60
+  year: 2020
+  camera: "Nikon FE2"
+  film: "Fomapan 400"
+  tags: ["Berlin"]
+  link: "../assets/35mm_files/film60_NikonFE2-FOMAPAN_202008/film60-10.jpg"
+  display: true
+- title: "Me, mirror, home."
+  alt: "Me, mirror, home."
+  film_no: 60
+  year: 2020
+  camera: "Nikon FE2"
+  film: "Fomapan 400"
+  tags: ["Berlin", "home", "Jeehye", "self-portrait"]
+  link: "../assets/35mm_files/film60_NikonFE2-FOMAPAN_202008/film60-06.jpg"
+  display: true
+- title: "Olga, photographer. Me, mirror."
+  alt: "Olga, photographer. Me, mirror."
+  film_no: 60
+  year: 2020
+  camera: "Nikon FE2"
+  film: "Fomapan 400"
+  tags: ["Berlin", "friends", "Jeehye"]
+  link: "../assets/35mm_files/film60_NikonFE2-FOMAPAN_202008/film60-05.jpg"
+  display: true
+- title: "Olga, photographer."
+  alt: "Olga, photographer."
+  film_no: 60
+  year: 2020
+  camera: "Nikon FE2"
+  film: "Fomapan 400"
+  tags: ["Berlin", "friends"]
+  link: "../assets/35mm_files/film60_NikonFE2-FOMAPAN_202008/film60-04.jpg"
+  display: true
+- title: "Potsdam. Aysenur."
+  alt: "Potsdam. Aysenur."
+  film_no: 60
+  year: 2020
+  camera: "Nikon FE2"
+  film: "Fomapan 400"
+  tags: ["Berlin", "friends"]
+  link: "../assets/35mm_files/film60_NikonFE2-FOMAPAN_202008/film60-03.jpg"
+  display: true
+
+# FILM 56
+- title: "Home, start of lockdown. Bed."
+  alt: "Home, start of lockdown. Bed."
+  film_no: 56
+  year: 2020
+  camera: "Nikon FE2"
+  film: "Fomapan 400"
+  tags: ["Berlin", "home"]
+  link: "../assets/35mm_files/film56_NikonFE2-Fomapan400_202003/film56-1.jpg"
+  display: true
+- title: "Home, start of lockdown. Window."
+  alt: "Home, start of lockdown. Window."
+  film_no: 56
+  year: 2020
+  camera: "Nikon FE2"
+  film: "Fomapan 400"
+  tags: ["Berlin", "home"]
+  link: "../assets/35mm_files/film56_NikonFE2-Fomapan400_202003/film56-2.jpg"
+  display: true
+- title: "International Women's Day. Nina."
+  alt: "International Women's Day. Nina."
+  film_no: 56
+  year: 2020
+  camera: "Nikon FE2"
+  film: "Fomapan 400"
+  tags: ["Berlin", "friends"]
+  link: "../assets/35mm_files/film56_NikonFE2-Fomapan400_202003/film56-3.jpg"
+  display: true
+- title: "International Women's Day. Nina and Valeria."
+  alt: "International Women's Day. Nina and Valeria."
+  film_no: 56
+  year: 2020
+  camera: "Nikon FE2"
+  film: "Fomapan 400"
+  tags: ["Berlin", "friends"]
+  link: "../assets/35mm_files/film56_NikonFE2-Fomapan400_202003/film56-5.jpg"
+  display: true
+
+# FILM 55
+- title: "Berlin, my house party 2020."
+  alt: "Berlin, my house party 2020."
+  film_no: 55
+  year: 2020
+  camera: "Nikon FE2"
+  film: "Ilford HP5 plus"
+  tags: ["Berlin"]
+  link: "../assets/35mm_files/film55_NikonFE2-ILFORDHP5Plus_202001-202003/film55-01.jpg"
+  display: true
+
+
+- title: "Berlin, my house party 2020."
+  alt: "Berlin, my house party 2020."
+  film_no: 55
+  year: 2020
+  camera: "Nikon FE2"
+  film: "Ilford HP5 plus"
+  tags: ["Berlin"]
+  link: "../assets/35mm_files/film55_NikonFE2-ILFORDHP5Plus_202001-202003/film55-01.jpg"
+  display: true
+- title: "Berlin, Alexanderplatz."
+  alt: "Berlin, Alexanderplatz."
+  film_no: 55
+  year: 2020
+  camera: "Nikon FE2"
+  film: "Ilford HP5 plus"
+  tags: ["Berlin"]
+  link: "../assets/35mm_files/film55_NikonFE2-ILFORDHP5Plus_202001-202003/film55-03.jpg"
+  display: true
+- title: "Berlin, Gallery - KINDL?."
+  alt: "Berlin, Gallery - KINDL?."
+  film_no: 55
+  year: 2020
+  camera: "Nikon FE2"
+  film: "Ilford HP5 plus"
+  tags: ["Berlin"]
+  link: "../assets/35mm_files/film55_NikonFE2-ILFORDHP5Plus_202001-202003/film55-04.jpg"
+  display: true
+- title: "Berlin, thrifting people."
+  alt: "Berlin, thrifting people."
+  film_no: 55
+  year: 2020
+  camera: "Nikon FE2"
+  film: "Ilford HP5 plus"
+  tags: ["Berlin"]
+  link: "../assets/35mm_files/film55_NikonFE2-ILFORDHP5Plus_202001-202003/film55-05.jpg"
+  display: true
+- title: "Berlin, Acud Macht Neu."
+  alt: "Berlin, Acud Macht Neu."
+  film_no: 55
+  year: 2020
+  camera: "Nikon FE2"
+  film: "Ilford HP5 plus"
+  tags: ["Berlin"]
+  link: "../assets/35mm_files/film55_NikonFE2-ILFORDHP5Plus_202001-202003/film55-06.jpg"
+  display: true
+- title: "Berlin, Acud Macht Neu. Silvia."
+  alt: "Berlin, Acud Macht Neu. Silvia."
+  film_no: 55
+  year: 2020
+  camera: "Nikon FE2"
+  film: "Ilford HP5 plus"
+  tags: ["Berlin", "friends"]
+  link: "../assets/35mm_files/film55_NikonFE2-ILFORDHP5Plus_202001-202003/film55-08.jpg"
+  display: true
+
+
+
+# FILM 53
+- title: "Berlin, first christmas party. Table only."
+  alt: "Berlin, first christmas party."
+  film_no: 53
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["Berlin"]
+  link: "../assets/35mm_files/film53_NikonFE2-Ultramax400_201909-201912/film80-102.jpg"
+  display: true
+- title: "Berlin, first christmas party."
+  alt: "Berlin, first christmas party."
+  film_no: 53
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["Berlin", "friends"]
+  link: "../assets/35mm_files/film53_NikonFE2-Ultramax400_201909-201912/film80-103.jpg"
+  display: true
+
+
+
+# FILM 50
+- title: "Hong Kong. Sheung Wan Market, grandpa."
+  alt: "Hong Kong. Sheung Wan Market, grandpa."
+  film_no: 50
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["HongKong"]
+  link: "../assets/35mm_files/film50_NikonFE2-KodakColorplus200_190620-25/film80-90.jpg"
+  display: true
+- title: "Hong Kong. Cha Chaan Teng."
+  alt: "Hong Kong. Cha Chaan Teng."
+  film_no: 50
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["HongKong"]
+  link: "../assets/35mm_files/film50_NikonFE2-KodakColorplus200_190620-25/film80-88.jpg"
+  display: true
+- title: "Hong Kong. Me in yellow frame."
+  alt: "Hong Kong. Me in yellow frame."
+  film_no: 50
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["HongKong", "Jeehye"]
+  link: "../assets/35mm_files/film50_NikonFE2-KodakColorplus200_190620-25/film80-87.jpg"
+  display: true
+
+# FILM 49
+- title: "Hong Kong. Star Ferry. Woman and boy."
+  alt: "Hong Kong. Star Ferry. Woman and boy."
+  film_no: 49
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["HongKong"]
+  link: "../assets/35mm_files/film49_NikonFE2-KodakColorplus200_201906/film80-63.jpg"
+  display: true
+- title: "Hong Kong. Star Ferry. People."
+  alt: "Hong Kong. Star Ferry. People."
+  film_no: 49
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["HongKong"]
+  link: "../assets/35mm_files/film49_NikonFE2-KodakColorplus200_201906/film80-64.jpg"
+  display: true
+- title: "Hong Kong. Star Ferry. Man, video call."
+  alt: "Hong Kong. Star Ferry. Man, video call."
+  film_no: 49
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["HongKong"]
+  link: "../assets/35mm_files/film49_NikonFE2-KodakColorplus200_201906/film80-66.jpg"
+  display: true
+- title: "Hong Kong. Star Ferry, buildings."
+  alt: "Hong Kong. Star Ferry, buildings."
+  film_no: 49
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["HongKong"]
+  link: "../assets/35mm_files/film49_NikonFE2-KodakColorplus200_201906/film80-69.jpg"
+  display: true
+- title: "Hong Kong. Star Ferry, tree."
+  alt: "Hong Kong. Star Ferry, tree."
+  film_no: 49
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["HongKong"]
+  link: "../assets/35mm_files/film49_NikonFE2-KodakColorplus200_201906/film80-72.jpg"
+  display: true
+- title: "Hong Kong. Star Ferry, street."
+  alt: "Hong Kong. Star Ferry, street."
+  film_no: 49
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["HongKong"]
+  link: "../assets/35mm_files/film49_NikonFE2-KodakColorplus200_201906/film80-73.jpg"
+  display: true
+- title: "Hong Kong. Me, Virginia Wolf."
+  alt: "Hong Kong. Me, Virginia Wolf."
+  film_no: 49
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["HongKong", "Jeehye", "home"]
+  link: "../assets/35mm_files/film49_NikonFE2-KodakColorplus200_201906/film80-74.jpg"
+  display: true
+- title: "Hong Kong. Sai Ying Pun. Jogger."
+  alt: "Hong Kong. Sai Ying Pun. Jogger."
+  film_no: 49
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["HongKong"]
+  link: "../assets/35mm_files/film49_NikonFE2-KodakColorplus200_201906/film80-76.jpg"
+  display: true
+- title: "Hong Kong. Neighborhood."
+  alt: "Hong Kong. Neighborhood."
+  film_no: 49
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["HongKong"]
+  link: "../assets/35mm_files/film49_NikonFE2-KodakColorplus200_201906/film80-77.jpg"
+  display: true
+- title: "Hong Kong. Star Ferry. Boat."
+  alt: "Hong Kong. Star Ferry. Boat 1."
+  film_no: 49
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["HongKong"]
+  link: "../assets/35mm_files/film49_NikonFE2-KodakColorplus200_201906/film80-79.jpg"
+  display: true
+- title: "Hong Kong. Star Ferry. Boat."
+  alt: "Hong Kong. Star Ferry. Boat 2."
+  film_no: 49
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["HongKong"]
+  link: "../assets/35mm_files/film49_NikonFE2-KodakColorplus200_201906/film80-80.jpg"
+  display: false
+- title: "Hong Kong. Star Ferry. Boat."
+  alt: "Hong Kong. Star Ferry. Boat 3."
+  film_no: 49
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["HongKong"]
+  link: "../assets/35mm_files/film49_NikonFE2-KodakColorplus200_201906/film80-85.jpg"
+  display: false
+- title: "Hong Kong. Star Ferry. Man, Woman."
+  alt: "Hong Kong. Star Ferry. Man, Woman."
+  film_no: 49
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["HongKong"]
+  link: "../assets/35mm_files/film49_NikonFE2-KodakColorplus200_201906/film80-83.jpg"
+  display: false
+
+
+# FILM 45
+- title: "Hong Kong. B&W. 환경미화원 아저씨."
+  alt: "Hong Kong. B&W. 환경미화원 아저씨."
+  film_no: 45
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Fomapan 100"
+  tags: ["HongKong"]
+  link: "../assets/35mm_files/film45_NikonFE2-FOMAPAN100_190405/film80-35.jpg"
+  display: true
+- title: "Hong Kong. B&W. Two 동네아저씨."
+  alt: "Hong Kong. B&W. Two 동네아저씨."
+  film_no: 45
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Fomapan 100"
+  tags: ["HongKong"]
+  link: "../assets/35mm_files/film45_NikonFE2-FOMAPAN100_190405/film80-41.jpg"
+  display: true
+- title: "Hong Kong. B&W. Alley."
+  alt: "Hong Kong. B&W. Alley."
+  film_no: 45
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Fomapan 100"
+  tags: ["HongKong"]
+  link: "../assets/35mm_files/film45_NikonFE2-FOMAPAN100_190405/film80-42.jpg"
+  display: true
+- title: "Hong Kong. B&W. Buildings 1."
+  alt: "Hong Kong. B&W. Buildings 1."
+  film_no: 45
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Fomapan 100"
+  tags: ["HongKong"]
+  link: "../assets/35mm_files/film45_NikonFE2-FOMAPAN100_190405/film80-45.jpg"
+  display: true
+- title: "Hong Kong. B&W. Buildings 2."
+  alt: "Hong Kong. B&W. Buildings 2."
+  film_no: 45
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Fomapan 100"
+  tags: ["HongKong"]
+  link: "../assets/35mm_files/film45_NikonFE2-FOMAPAN100_190405/film80-46.jpg"
+  display: true
+- title: "Hong Kong. B&W. Buildings 3."
+  alt: "Hong Kong. B&W. Buildings 3."
+  film_no: 45
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Fomapan 100"
+  tags: ["HongKong"]
+  link: "../assets/35mm_files/film45_NikonFE2-FOMAPAN100_190405/film80-47.jpg"
+  display: true
+- title: "Hong Kong. B&W. Home."
+  alt: "Hong Kong. B&W. Home."
+  film_no: 45
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Fomapan 100"
+  tags: ["HongKong", "home"]
+  link: "../assets/35mm_files/film45_NikonFE2-FOMAPAN100_190405/film80-57.jpg"
+  display: true
+- title: "Hong Kong. B&W. Home."
+  alt: "Hong Kong. B&W. Home."
+  film_no: 45
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Fomapan 100"
+  tags: ["HongKong", "home"]
+  link: "../assets/35mm_files/film45_NikonFE2-FOMAPAN100_190405/film80-54.jpg"
+  display: true
+
+# FILM 44
+- title: "Chiangmai. Cute friends."
+  alt: "Chiangmai. Cute friends 2."
+  film_no: 44
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["Chiangmai", "friends"]
+  link: "../assets/35mm_files/film44_NikonFE2-KodakColorplus200_1901-1903/film80-30.jpg"
+  display: true
+- title: "Chiangmai. Cute friends."
+  alt: "Chiangmai. Cute friends 1."
+  film_no: 44
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["Chiangmai", "friends"]
+  link: "../assets/35mm_files/film44_NikonFE2-KodakColorplus200_1901-1903/film80-29.jpg"
+  display: true
+- title: "Chiangmai. Hill, friends, back."
+  alt: "Chiangmai. Hill, friends, back."
+  film_no: 44
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["Chiangmai", "friends"]
+  link: "../assets/35mm_files/film44_NikonFE2-KodakColorplus200_1901-1903/film80-24.jpg"
+  display: true
+
+# FILM 43
+- title: "Chiangmai. Dan, light."
+  alt: "Chiangmai. Dan, light."
+  film_no: 43
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Kodak Ultramax 400"
+  tags: ["Chiangmai", "friends"]
+  link: "../assets/35mm_files/film43_NikonFE2-KodakUltramax400_190103-190104/film43-09.jpg"
+  display: true
+- title: "Chiangmai. Restaurant with friends."
+  alt: "Chiangmai. Restaurant with friends."
+  film_no: 43
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Kodak Ultramax 400"
+  tags: ["Chiangmai"]
+  link: "../assets/35mm_files/film43_NikonFE2-KodakUltramax400_190103-190104/film43-07.jpg"
+  display: true
+- title: "Chiangmai. Cafe with friends."
+  alt: "Chiangmai. Cafe with friends."
+  film_no: 43
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Kodak Ultramax 400"
+  tags: ["Chiangmai"]
+  link: "../assets/35mm_files/film43_NikonFE2-KodakUltramax400_190103-190104/film43-10.jpg"
+  display: true
+- title: "Chiangmai. Friends, back."
+  alt: "Chiangmai. Friends, back."
+  film_no: 43
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Kodak Ultramax 400"
+  tags: ["Chiangmai", "friends"]
+  link: "../assets/35mm_files/film43_NikonFE2-KodakUltramax400_190103-190104/film43-03.jpg"
+  display: true
+
+# FILM 42
+- title: "Chiangmai. Art kiddo."
+  alt: "Chiangmai. Art kiddo."
+  film_no: 42
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Kodak Ultramax 400"
+  tags: ["Chiangmai"]
+  link: "../assets/35mm_files/film42_NikonFE2-KodakUltramax400_190102-190102/film42-01.jpg"
+  display: true
+- title: "Chiangmai. Kiddo."
+  alt: "Chiangmai. Kiddo."
+  film_no: 42
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Kodak Ultramax 400"
+  tags: ["Chiangmai"]
+  link: "../assets/35mm_files/film42_NikonFE2-KodakUltramax400_190102-190102/film42-02.jpg"
+  display: true
+- title: "Chiangmai. Family."
+  alt: "Chiangmai. Family."
+  film_no: 42
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Kodak Ultramax 400"
+  tags: ["Chiangmai"]
+  link: "../assets/35mm_files/film42_NikonFE2-KodakUltramax400_190102-190102/film42-03.jpg"
+  display: true
+- title: "Chiangmai. Mirror selfie at this artist village."
+  alt: "Chiangmai. Mirror selfie at this artist village."
+  film_no: 42
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Kodak Ultramax 400"
+  tags: ["Chiangmai", "Jeehye", "self-portrait"]
+  link: "../assets/35mm_files/film42_NikonFE2-KodakUltramax400_190102-190102/film42-05.jpg"
+  display: true
+- title: "Chiangmai. Book cafe, coffee, phone, book."
+  alt: "Chiangmai. Book cafe, coffee, phone, book."
+  film_no: 42
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Kodak Ultramax 400"
+  tags: ["Chiangmai"]
+  link: "../assets/35mm_files/film42_NikonFE2-KodakUltramax400_190102-190102/film42-06.jpg"
+  display: true
+- title: "Chiangmai. Book cafe, sky."
+  alt: "Chiangmai. Book cafe, sky."
+  film_no: 42
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Kodak Ultramax 400"
+  tags: ["Chiangmai"]
+  link: "../assets/35mm_files/film42_NikonFE2-KodakUltramax400_190102-190102/film42-07.jpg"
+  display: true
+- title: "Chiangmai. Lady in red dress."
+  alt: "Chiangmai. Lady in red dress."
+  film_no: 42
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Kodak Ultramax 400"
+  tags: ["Chiangmai"]
+  link: "../assets/35mm_files/film42_NikonFE2-KodakUltramax400_190102-190102/film42-08.jpg"
+  display: true
+- title: "찹쌀떡 하늘 in Chiangmai."
+  alt: "찹쌀떡 하늘 in Chiangmai."
+  film_no: 42
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Kodak Ultramax 400"
+  tags: ["Chiangmai"]
+  link: "../assets/35mm_files/film42_NikonFE2-KodakUltramax400_190102-190102/film42-09.jpg"
+  display: true
+- title: "Chiangmai. A couple."
+  alt: "Chiangmai. A couple."
+  film_no: 42
+  year: 2019
+  camera: "Nikon FE2"
+  film: "Kodak Ultramax 400"
+  tags: ["Chiangmai"]
+  link: "../assets/35mm_files/film42_NikonFE2-KodakUltramax400_190102-190102/film42-11.jpg"
+  display: true
+
+# FILM 41
+- title: "Chiangmai. Doggo."
+  alt: "Chiangmai. Doggo."
+  film_no: 41
+  year: 2018
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["Chiangmai"]
+  link: "../assets/35mm_files/film41_NikonFE2-KodakColorplus200_181229/film41-1.jpg"
+  display: true
+- title: "Chiangmai. Mirror selfie 1."
+  alt: "Chiangmai. Mirror selfie 1."
+  film_no: 41
+  year: 2018
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["Chiangmai", "Jeehye", "self-portrait"]
+  link: "../assets/35mm_files/film41_NikonFE2-KodakColorplus200_181229/film41-2.jpg"
+  display: true
+- title: "Chiangmai. Mirror selfie 2."
+  alt: "Chiangmai. Mirror selfie 2."
+  film_no: 41
+  year: 2018
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["Chiangmai", "Jeehye", "self-portrait"]
+  link: "../assets/35mm_files/film41_NikonFE2-KodakColorplus200_181229/film41-3.jpg"
+  display: true
+- title: "Chiangmai. Mirror selfie 3."
+  alt: "Chiangmai. Mirror selfie 3."
+  film_no: 41
+  year: 2018
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["Chiangmai", "Jeehye", "self-portrait"]
+  link: "../assets/35mm_files/film41_NikonFE2-KodakColorplus200_181229/film41-4.jpg"
+  display: false
+- title: "Chiangmai. Mirror selfie 4."
+  alt: "Chiangmai. Mirror selfie 4."
+  film_no: 41
+  year: 2018
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["Chiangmai", "Jeehye", "self-portrait"]
+  link: "../assets/35mm_files/film41_NikonFE2-KodakColorplus200_181229/film41-5.jpg"
+  display: true
+
+
+# FILM 40
+- title: "Chiangmai. Waterfall."
+  alt: "Chiangmai. Waterfall."
+  film_no: 40
+  year: 2018
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["Chiangmai"]
+  link: "../assets/35mm_files/film40_NikonFE2-KodakColorplus200_181227-181229/film40-1.jpg"
+  display: true
+- title: "Chiangmai. 2019 first sunrise."
+  alt: "Chiangmai. 2019 first sunrise."
+  film_no: 40
+  year: 2018
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["Chiangmai"]
+  link: "../assets/35mm_files/film40_NikonFE2-KodakColorplus200_181227-181229/film40-2.jpg"
+  display: true
+
+# FILM 39
+- title: "Chiangmai. Old woman and man."
+  alt: "Chiangmai. Temple. Old woman and man."
+  film_no: 39
+  year: 2018
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["Chiangmai"]
+  link: "../assets/35mm_files/film39_NikonFE2-KodakColorplus200_181224-181227/film39-3.jpg"
+  display: false
+- title: "Chiangmai. Street, night."
+  alt: "Chiangmai. Street, night. Birds-eye view."
+  film_no: 39
+  year: 2018
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["Chiangmai"]
+  link: "../assets/35mm_files/film39_NikonFE2-KodakColorplus200_181224-181227/film39-9.jpg"
+  display: true
+
+# FILM 38
+- title: "Chiangmai. Me, mirror."
+  alt: "Chiangmai. Me, mirror."
+  film_no: 38
+  year: 2018
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["Chiangmai", "Jeehye", "self-portrait"]
+  link: "../assets/35mm_files/film38_NikonFE2-KodakColorplus400_181222/film38-1.jpg"
+  display: true
+- title: "Chiangmai. Street, night."
+  alt: "Chiangmai. Street, night."
+  film_no: 38
+  year: 2018
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["Chiangmai"]
+  link: "../assets/35mm_files/film38_NikonFE2-KodakColorplus400_181222/film38-3.jpg"
+  display: true
+
+# FILM 37
+- title: "Chiangmai. Me, restaurant."
+  alt: "Chiangmai. 혼밥하는 나."
+  film_no: 37
+  year: 2018
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["Chiangmai", "Jeehye", "self-portrait"]
+  link: "../assets/35mm_files/film37_NikonFE2-KodakColorplus200_181221-181224/film37-6.jpg"
+  display: false
+- title: "Chiangmai. Some bridge."
+  alt: "Chiangmai. Some bridge."
+  film_no: 37
+  year: 2018
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["Chiangmai"]
+  link: "../assets/35mm_files/film37_NikonFE2-KodakColorplus200_181221-181224/film37-7.jpg"
+  display: false
+
+# FILM 36
+- title: "Vacation"
+  alt: "Vacation. Boats."
+  film_no: 36
+  year: 2018
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["HongKong"]
+  link: "../assets/35mm_files/film36_NikonFE2-KodakColorplus200_181117-181221/film36-02.jpg"
+  display: true
+- title: "Vacation"
+  alt: "Vacation. Boats."
+  film_no: 36
+  year: 2018
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["HongKong"]
+  link: "../assets/35mm_files/film36_NikonFE2-KodakColorplus200_181117-181221/film36-06.jpg"
+  display: true
+- title: "chiangmai, day1, rooftop"
+  alt: "chiangmai, day1, rooftop."
+  film_no: 36
+  year: 2018
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["Chiangmai"]
+  link: "../assets/35mm_files/film36_NikonFE2-KodakColorplus200_181117-181221/film36-10.jpg"
+  display: false
+
+
+# FILM 35
+- title: "Me in HK vintage shop"
+  alt: "Me in HK vintage shop"
+  film_no: 35
+  year: 2018
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["HongKong", "self-portrait", "Jeehye"]
+  link: "../assets/35mm_files/film35_NikonFE2-KodakColorplus200_181116/film35-1.jpg"
+  display: true
+
+# FILM 34
+- title: "My neighborhood"
+  alt: "My neighborhood"
+  film_no: 34
+  year: 2018
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["HongKong"]
+  link: "../assets/35mm_files/film34_NikonFE2-KodakColorplus200_181004-181017/film34-1.jpg"
+  display: true
+- title: "Harry potter 유정"
+  alt: "Harry potter 유정, for Face camp project!"
+  film_no: 34
+  year: 2018
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["HongKong", "friends"]
+  link: "../assets/35mm_files/film34_NikonFE2-KodakColorplus200_181004-181017/film34-2.jpg"
+  display: true
+- title: "Harry potter crew"
+  alt: "Harry potter crew, for Face camp project!"
+  film_no: 34
+  year: 2018
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["HongKong", "friends"]
+  link: "../assets/35mm_files/film34_NikonFE2-KodakColorplus200_181004-181017/film34-3.jpg"
+  display: true
+
+# FILM 33
+- title: "My neighborhood"
+  alt: "My neighborhood"
+  film_no: 33
+  year: 2018
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["HongKong", "home"]
+  link: "../assets/35mm_files/film33_NikonFE2-KodakColorplus200_1809-1810/film33-1.jpg"
+  display: true
+- title: "Hong Kong vanilla mood"
+  alt: "Hong Kong vanilla mood"
+  film_no: 33
+  year: 2018
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["HongKong"]
+  link: "../assets/35mm_files/film33_NikonFE2-KodakColorplus200_1809-1810/film33-2.jpg"
+  display: true
+- title: "Hong Kong home candle"
+  alt: "Hong Kong home candle"
+  film_no: 33
+  year: 2018
+  camera: "Nikon FE2"
+  film: "Kodak Colorplus 200"
+  tags: ["HongKong", "home"]
+  link: "../assets/35mm_files/film33_NikonFE2-KodakColorplus200_1809-1810/film33-3.jpg"
+  display: true
+
+# FILM 32
+- title: "Repulse bay, tree"
+  alt: "Repulse bay, tree"
+  film_no: 32
+  year: 2018
+  camera: "Nikon L35AF"
+  film: "Kodak Colorplus 200"
+  tags: ["HongKong"]
+  link: "../assets/35mm_files/film32_YashicaElectro35-KodakColorplus200_180601-180714/film32-4.jpg"
+  display: true
+- title: "Repulse bay, kid"
+  alt: "Repulse bay, kid"
+  film_no: 32
+  year: 2018
+  camera: "Nikon L35AF"
+  film: "Kodak Colorplus 200"
+  tags: ["HongKong"]
+  link: "../assets/35mm_files/film32_YashicaElectro35-KodakColorplus200_180601-180714/film32-5.jpg"
+  display: true
+
+# FILM 31
+- title: "Me, Korea"
+  alt: "Me, Korea"
+  film_no: 31
+  year: 2018
+  camera: "Nikon L35AF"
+  film: "Kodak Colorplus 200"
+  tags: ["Korea", "Jeehye"]
+  link: "../assets/35mm_files/film31_Nikon35AF/film31-1.jpg"
+  display: true
+- title: "Me, dorm, selfie"
+  alt: "Me, dorm, selfie"
+  film_no: 31
+  year: 2018
+  camera: "Nikon L35AF"
+  film: "Kodak Colorplus 200"
+  tags: ["HongKong", "home", "self-portrait", "Jeehye"]
+  link: "../assets/35mm_files/film31_Nikon35AF/film31-2.jpg"
+  display: true
+
+
+# FILM 27
+- title: "Kylie and I, christmas"
+  alt: "Kylie and I, christmas"
+  film_no: 26
+  year: 2017
+  camera: "Nikon L35AF"
+  film: "Kodak Colorplus 200"
+  tags: ["Korea", "friends", "portrait", "Jeehye"]
+  link: "../assets/35mm_files/film27_NikonL35AF-KodakColorplus200_171208-180111/film27-1.jpg"
+  display: true
+- title: "Kylie 찡긋"
+  alt: "Kylie"
+  film_no: 26
+  year: 2017
+  camera: "Nikon L35AF"
+  film: "Kodak Colorplus 200"
+  tags: ["Korea", "friends", "portrait"]
+  link: "../assets/35mm_files/film27_NikonL35AF-KodakColorplus200_171208-180111/film27-2.jpg"
+  display: true
+- title: "Kylie 언니"
+  alt: "friends"
+  film_no: 26
+  year: 2017
+  camera: "Nikon L35AF"
+  film: "Kodak Colorplus 200"
+  tags: ["Korea", "friends", "portrait"]
+  link: "../assets/35mm_files/film27_NikonL35AF-KodakColorplus200_171208-180111/film27-3.jpg"
+  display: true
+- title: "홍콩 찹쌀떡 하늘"
+  alt: "홍콩 찹쌀떡 하늘"
+  film_no: 26
+  year: 2017
+  camera: "Nikon L35AF"
+  film: "Kodak Colorplus 200"
+  tags: ["HongKong"]
+  link: "../assets/35mm_files/film27_NikonL35AF-KodakColorplus200_171208-180111/film27-4.jpg"
+  display: true
+- title: "Kylie and I"
+  alt: "Kylie and I"
+  film_no: 26
+  year: 2017
+  camera: "Nikon L35AF"
+  film: "Kodak Colorplus 200"
+  tags: ["Korea", "friends", "portrait", "Jeehye"]
+  link: "../assets/35mm_files/film27_NikonL35AF-KodakColorplus200_171208-180111/film27-5.jpg"
+  display: true
+
+# FILM 26
+- title: "HK taxis"
+  alt: "HK taxis, night"
+  film_no: 26
+  year: 2017
+  camera: "Yashica Electro 35"
+  film: "Kodak Colorplus 200"
+  tags: ["HongKong"]
+  link: "../assets/35mm_files/film26_YashicaElectro35-KodakColorplus200_201711/film26-1.jpg"
+  display: true
+
+# FILM 25
+- title: "HK dorm selfie"
+  alt: "HK dorm selfie"
+  film_no: 25
+  year: 2017
+  camera: "Nikon L35AF"
+  film: "Kodak Colorplus 200"
+  tags: ["HongKong", "self-portrait", "home"]
+  link: "../assets/35mm_files/film25_NikonL35AF-Colorplus200_170908-171028/film25-1.jpg"
+  display: true
+- title: "Yoojung"
+  alt: "유정 케네디타운 부둣가"
+  film_no: 25
+  year: 2017
+  camera: "Nikon L35AF"
+  film: "Kodak Colorplus 200"
+  tags: ["HongKong", "friends"]
+  link: "../assets/35mm_files/film25_NikonL35AF-Colorplus200_170908-171028/film25-2.jpg"
+  display: true
+- title: "Yoojung Kiyoung"
+  alt: "유정 기영 케네디타운 부둣가"
+  film_no: 25
+  year: 2017
+  camera: "Nikon L35AF"
+  film: "Kodak Colorplus 200"
+  tags: ["HongKong", "friends"]
+  link: "../assets/35mm_files/film25_NikonL35AF-Colorplus200_170908-171028/film25-3.jpg"
+  display: true
+
+# FILM 24 
+- title: "HK Pier"
+  alt: "HK Pier, dark purple sky"
+  film_no: 24
+  year: 2017
+  camera: "Yasica Electro 35"
+  film: "Kodak Colorplus 200"
+  tags: ["HongKong"]
+  link: "../assets/35mm_files/film24_YashicaElectro35-Colorplus200_170909-171029/film24-1.jpg"
+  display: true
+- title: "HK Pier"
+  alt: "HK Pier, blue sky"
+  film_no: 24
+  year: 2017
+  camera: "Yasica Electro 35"
+  film: "Kodak Colorplus 200"
+  tags: ["HongKong"]
+  link: "../assets/35mm_files/film24_YashicaElectro35-Colorplus200_170909-171029/film24-3.jpg"
+  display: true
+
+# FILM 23
+- title: "거울에 비친 나를 카메라 뷰파인더로 보고 있는 나의 얼굴 반쪽을 찍는 내가 담긴 사진"
+  alt: "거울에 비친 나를 카메라 뷰파인더로 보고 있는 나의 얼굴 반쪽을 찍는 내가 담긴 사진"
+  film_no: 23
+  year: 2017
+  camera: "Yasica Electro 35"
+  film: "Fujicolor C200"
+  tags: ["Korea", "Jeehye", "self-portrait", "portrait"]
+  link: "../assets/35mm_files/film23_YashicaElectro35-FujicolorC200_1707-170909/film23-3.jpg"
+  display: true
+
+# FILM 22
+- title: "순재 경윤 전투적인 소시지"
+  alt: "순재 경윤 전투적인 소시지"
+  film_no: 22
+  year: 2017
+  camera: "Kodak FunSaver"
+  film: "-"
+  tags: ["Korea", "friends", "portrait"]
+  link: "../assets/35mm_files/film22_FunSaver_170714-15/film22-3.jpg"
+  display: true
+- title: "순재 울라울라"
+  alt: "순재 울라울라"
+  film_no: 22
+  year: 2017
+  camera: "Kodak FunSaver"
+  film: "-"
+  tags: ["Korea", "friends", "portrait"]
+  link: "../assets/35mm_files/film22_FunSaver_170714-15/film22-2.jpg"
+  display: true
+- title: "순재 경윤 지혜"
+  alt: "순재 경윤 지혜, 골목 LP펍에서"
+  film_no: 22
+  year: 2017
+  camera: "Kodak FunSaver"
+  film: "-"
+  tags: ["Korea", "friends", "portrait", "Jeehye"]
+  link: "../assets/35mm_files/film22_FunSaver_170714-15/film22-5.jpg"
+  display: true
+- title: "순재 경윤 뉴욕"
+  alt: "순재 경윤 뉴욕"
+  film_no: 22
+  year: 2017
+  camera: "Kodak FunSaver"
+  film: "-"
+  tags: ["Korea", "friends", "portrait"]
+  link: "../assets/35mm_files/film22_FunSaver_170714-15/film22-6.jpg"
+  display: true
+- title: "순재 지혜"
+  alt: "순재 지혜"
+  film_no: 22
+  year: 2017
+  camera: "Kodak FunSaver"
+  film: "-"
+  tags: ["Korea", "friends", "portrait", "Jeehye"]
+  link: "../assets/35mm_files/film22_FunSaver_170714-15/film22-8.jpg"
+  display: true
+
+# FILM 21
+- title: "은일이"
+  alt: "은일"
+  film_no: 21
+  year: 2017
+  camera: "Yasica Electro 35"
+  film: "Fujicolor C200"
+  tags: ["Korea", "friends", "portrait"]
+  link: "../assets/35mm_files/film21_YashicaElectro35-FujicolorC200_170529-170616/film21-2.jpg"
+  display: true
+
+- title: "은일이, 책방"
+  alt: "은일이, 책방"
+  film_no: 21
+  year: 2017
+  camera: "Yasica Electro 35"
+  film: "Fujicolor C200"
+  tags: ["Korea", "friends", "portrait"]
+  link: "../assets/35mm_files/film21_YashicaElectro35-FujicolorC200_170529-170616/film21-4.jpg"
+  display: true
+
+- title: "나"
+  alt: "나"
+  film_no: 21
+  year: 2017
+  camera: "Yasica Electro 35"
+  film: "Fujicolor C200"
+  tags: ["Korea", "Jeehye", "portrait"]
+  link: "../assets/35mm_files/film21_YashicaElectro35-FujicolorC200_170529-170616/film21-3.jpg"
+  display: true
+
+
+# 20andbelow ...
+- title: "엄마"
+  alt: "엄마"
+  film_no: 0
+  year: 2016
+  tags: ["HongKong", "엄마"]
+  link: "../assets/35mm_files/20andbelow/HK_mom.jpg"
+  display: true
+
+- title: "아빠"
+  alt: "아빠"
+  film_no: 1
+  year: 2016
+  tags: ["HongKong", "아빠"]
+  link: "../assets/35mm_files/20andbelow/HK_dad-noodles.jpg"
+  display: true
+
+- title: "아빠 책"
+  alt: "아빠 책들"
+  film_no: 1
+  year: 2016
+  tags: ["Korea"]
+  link: "../assets/35mm_files/20andbelow/KR_dad-books.jpg"
+  display: true
+
+- title: "나"
+  alt: "나 제주도"
+  film_no: 1
+  year: 2016
+  tags: ["Korea", "Jeehye", "portrait"]
+  link: "../assets/35mm_files/20andbelow/Portrait_Jeehye_2017.jpg"
+  display: true
+
+- title: "맘에딱드는 순재"
+  alt: "순재"
+  film_no: 1
+  year: 2017
+  tags: ["Korea", "friends", "portrait"]
+  link: "../assets/35mm_files/20andbelow/Portrait_SJ_2018-1.jpg"
+  display: true
+
+- title: "Me by SJ"
+  alt: "Me by 순재"
+  film_no: 1
+  year: 2017
+  tags: ["Korea", "Jeehye", "portrait"]
+  link: "../assets/35mm_files/20andbelow/Portrait_Jeehye_2018.jpg"
+  display: true
+
+- title: "한강 경윤"
+  alt: "순재"
+  film_no: 1
+  year: 2017
+  tags: ["Korea", "friends", "portrait"]
+  link: "../assets/35mm_files/20andbelow/KR_HanRiver_KY.jpg"
+  display: true
+
+
+- title: "My favorite things"
+  alt: "My favorite things"
+  film_no: 1
+  year: 2017
+  tags: ["Korea", "friends"]
+  link: "../assets/35mm_files/20andbelow/KR_HanRiver_myFavThings.jpg"
+  display: true
+

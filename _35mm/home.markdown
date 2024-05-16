@@ -6,7 +6,7 @@ tagurl: home
 
 <!-- <h2>#Home</h2> -->
 <ul class="photo-list home">
-    {% assign photos = site.data.photos
+    {% assign photos = site.data.photos_v2
         | where: "tags", "home"
         | where: "display", true
     %}

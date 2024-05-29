@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<!-- <h3 class="35mm-tag-archive-title">page.tagname</h3> -->
+
+<div class="page photos-35mm tag-archive">
+    <ul class="photo-list berlin">
+        {% assign photos = site.data.photos_v2
+            | where: "tags", page.tagname
+            | where: "display", true
+        %}
+        {% for photo in photos %}
+        <li class="photo-item aos-jeehye">
+            <a class="modal-link">
+                <img alt="{{ photo.alt }}" src="{{ photo.link }}">
+                <p>#{{photo.tags | join: ' #'}}</p>
+                {% for tag in photo.tags %}
+                    <p>{{tag}}</p>
+                    <!-- if tag within photo_tags, link to page -->
+                {% endfor %}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+
+</div>

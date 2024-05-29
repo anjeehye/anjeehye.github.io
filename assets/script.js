@@ -390,17 +390,20 @@ function isElementInViewport(el) {
         modalTrigger.forEach(trigger => {
           trigger.addEventListener("click", (e) => {
             let image = trigger.getElementsByTagName('img')[0];
-            let tags = trigger.getElementsByTagName('p')[0];
+            let tags = trigger.getElementsByClassName('35mm-tags')[0];
+            let metadata = trigger.getElementsByClassName('metadata')[0];
             
             // Modal image
             let modalImage = new Image;
             modalImage.src = image.src;
             let modalTags = tags.cloneNode(true);
+            let modalMetadata = metadata.cloneNode(true);
             
             // Overlay
             modalOverlay.classList.remove('hidden');
             modalOverlay.appendChild(modalImage);
             modalOverlay.appendChild(modalTags);
+            modalOverlay.appendChild(modalMetadata);
             
             modalOverlay.addEventListener("click", (e) => {
               modalOverlay.innerHTML = "";

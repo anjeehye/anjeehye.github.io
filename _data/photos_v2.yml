@@ -1,8 +1,113 @@
+# Film 81
+- title: "Ostsee."
+  alt: "Ostsee."
+  film_no: 81
+  year: 2023
+  camera: "Nikon FE2"
+  film: "Kodak Gold 200"
+  tags: ["getaway"]
+  link: "../assets/35mm_files/film81_NikonFE2-KodakGold200_202309-202401/film81-8.jpg"
+  display: True
+- title: "Bauhaus museum cafe."
+  alt: "Bauhaus museum cafe."
+  film_no: 81
+  year: 2023
+  camera: "Nikon FE2"
+  film: "Kodak Gold 200"
+  tags: ["getaway"]
+  link: "../assets/35mm_files/film81_NikonFE2-KodakGold200_202309-202401/film81-6.jpg"
+  display: True
+- title: "Haus am Horn."
+  alt: "Haus am Horn."
+  film_no: 81
+  year: 2023
+  camera: "Nikon FE2"
+  film: "Kodak Gold 200"
+  tags: ["getaway"]
+  link: "../assets/35mm_files/film81_NikonFE2-KodakGold200_202309-202401/film81-3.jpg"
+  display: True
+- title: "Me, mirror, shaky."
+  alt: "Me, mirror, shaky."
+  film_no: 81
+  year: 2023
+  camera: "Nikon FE2"
+  film: "Kodak Gold 200"
+  tags: ["Jeehye", "getaway", "self-portrait"]
+  link: "../assets/35mm_files/film81_NikonFE2-KodakGold200_202309-202401/film81-1.jpg"
+  display: True
+
+# Film 80
+- title: "Music fest, kid."
+  alt: "Music fest, kid."
+  film_no: 80
+  year: 2023
+  camera: "Konika Big Mini"
+  film: "Kodak Gold 200"
+  tags: ["Berlin"]
+  link: "../assets/35mm_files/film80_KonikaBigMini-KodakGold200_202305-09/film80-18.jpg"
+  display: False
+- title: "29th bday party. YiWei."
+  alt: "29th bday party. YiWei."
+  film_no: 80
+  year: 2023
+  camera: "Konika Big Mini"
+  film: "Kodak Gold 200"
+  tags: ["friends", "home", "Berlin"]
+  link: "../assets/35mm_files/film80_KonikaBigMini-KodakGold200_202305-09/film80-04.jpg"
+  display: False
+- title: "29th bday party. Aysenur."
+  alt: "29th bday party. Aysenur."
+  film_no: 80
+  year: 2023
+  camera: "Konika Big Mini"
+  film: "Kodak Gold 200"
+  tags: ["friends", "home", "Berlin"]
+  link: "../assets/35mm_files/film80_KonikaBigMini-KodakGold200_202305-09/film80-05.jpg"
+  display: True
+- title: "Rave the Planet. Heesun unni."
+  alt: "Rave the Planet. Heesun unni."
+  film_no: 80
+  year: 2023
+  camera: "Konika Big Mini"
+  film: "Kodak Gold 200"
+  tags: ["friends", "Berlin"]
+  link: "../assets/35mm_files/film80_KonikaBigMini-KodakGold200_202305-09/film80-10.jpg"
+  display: True
+- title: "Demi's bday. Chips and manicure."
+  alt: "Demi's bday. Chips and manicure."
+  film_no: 80
+  year: 2023
+  camera: "Konika Big Mini"
+  film: "Kodak Gold 200"
+  tags: ["friends", "Berlin"]
+  link: "../assets/35mm_files/film80_KonikaBigMini-KodakGold200_202305-09/film80-14.jpg"
+  display: True
+- title: "Demi's bday. Demi and friend."
+  alt: "Demi's bday. Demi and friend."
+  film_no: 80
+  year: 2023
+  camera: "Konika Big Mini"
+  film: "Kodak Gold 200"
+  tags: ["friends", "Berlin"]
+  link: "../assets/35mm_files/film80_KonikaBigMini-KodakGold200_202305-09/film80-15.jpg"
+  display: True
+- title: "A nun walking by the sea. Baltic sea."
+  alt: "A nun walking by the sea. Baltic sea."
+  film_no: 80
+  year: 2023
+  camera: "Konika Big Mini"
+  film: "Kodak Gold 200"
+  tags: ["getaway", "BalticSea"]
+  link: "../assets/35mm_files/film80_KonikaBigMini-KodakGold200_202305-09/film80-03.jpg"
+  display: True
+
 # Film 79
 - title: "Bamberg solo travel. Light and shadow. House"
   alt: "Bamberg solo travel. Light and shadow. House"
   film_no: 79
   year: 2023
+  camera: "Nikon FE2"
+  film: "Kodak Portra 800"
   tags: ["getaway", "Bamberg"]
   link: "../assets/35mm_files/film79_NikonFE2-KodakPortra800_202301-09/film79-7.jpg"
   display: True
@@ -10,6 +115,8 @@
   alt: "Bamberg solo travel. Light and shadow"
   film_no: 79
   year: 2023
+  camera: "Nikon FE2"
+  film: "Kodak Portra 800"
   tags: ["getaway", "Bamberg"]
   link: "../assets/35mm_files/film79_NikonFE2-KodakPortra800_202301-09/film79-6.jpg"
   display: True
@@ -17,6 +124,8 @@
   alt: "Bamberg solo travel. Shadow"
   film_no: 79
   year: 2023
+  camera: "Nikon FE2"
+  film: "Kodak Portra 800"
   tags: ["getaway", "Bamberg", "Jeehye"]
   link: "../assets/35mm_files/film79_NikonFE2-KodakPortra800_202301-09/film79-5.jpg"
   display: True
@@ -24,6 +133,8 @@
   alt: "Bamberg solo travel. A girl"
   film_no: 79
   year: 2023
+  camera: "Nikon FE2"
+  film: "Kodak Portra 800"
   tags: ["getaway", "Bamberg"]
   link: "../assets/35mm_files/film79_NikonFE2-KodakPortra800_202301-09/film79-4.jpg"
   display: True
@@ -31,16 +142,19 @@
   alt: "Bamberg solo travel"
   film_no: 79
   year: 2023
+  camera: "Nikon FE2"
+  film: "Kodak Portra 800"
   tags: ["getaway", "Bamberg"]
   link: "../assets/35mm_files/film79_NikonFE2-KodakPortra800_202301-09/film79-3.jpg"
   display: True
 
-# Testing local storage
 # Film 78
 - title: "Sister"
   alt: "Sister"
   film_no: 78
   year: 2023
+  camera: "Konica Big Mini"
+  film: "Kodak Gold 200"
   tags: ["Berlin", "friends"]
   link: "../assets/35mm_files/film78_KonikaBigMini-KodakGold200_202301-05/film78-04.jpg"
   display: True
@@ -48,6 +162,8 @@
   alt: "After my 29th bday party"
   film_no: 78
   year: 2023
+  camera: "Konica Big Mini"
+  film: "Kodak Gold 200"
   tags: ["Berlin", "home"]
   link: "../assets/35mm_files/film78_KonikaBigMini-KodakGold200_202301-05/film78-02.jpg"
   display: True
@@ -55,6 +171,8 @@
   alt: "Berlin street posters"
   film_no: 78
   year: 2023
+  camera: "Konica Big Mini"
+  film: "Kodak Gold 200"
   tags: ["Berlin"]
   link: "../assets/35mm_files/film78_KonikaBigMini-KodakGold200_202301-05/film78-03.jpg"
   display: True
@@ -436,17 +554,6 @@
   display: true
 
 # FILM 55
-- title: "Berlin, my house party 2020."
-  alt: "Berlin, my house party 2020."
-  film_no: 55
-  year: 2020
-  camera: "Nikon FE2"
-  film: "Ilford HP5 plus"
-  tags: ["Berlin"]
-  link: "../assets/35mm_files/film55_NikonFE2-ILFORDHP5Plus_202001-202003/film55-01.jpg"
-  display: true
-
-
 - title: "Berlin, my house party 2020."
   alt: "Berlin, my house party 2020."
   film_no: 55
@@ -1414,7 +1521,7 @@
   display: true
 
 - title: "한강 경윤"
-  alt: "순재"
+  alt: "한강 경윤"
   film_no: 1
   year: 2017
   tags: ["Korea", "friends", "portrait"]

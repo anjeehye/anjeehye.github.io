@@ -2,7 +2,7 @@
 layout: post
 title:  "Post-congregation emotionalism"
 date:   2018-12-15 20:32 +0100
-categories: "Milepost"
+categories: "milepost"
 excerpt: "Is it the beer, or is it me."
 thumbnail: /assets/images/thumbnail-congregation.jpeg
 ---

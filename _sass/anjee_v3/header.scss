@@ -305,6 +305,9 @@ nav {
   .main-nav {
     .nav-home { 
       width: min-content; //auto
+      h1 {
+        font-size: 1.2em;
+      }
     }
     .nav-text {
       display: none;

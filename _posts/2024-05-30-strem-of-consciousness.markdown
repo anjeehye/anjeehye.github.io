@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "의식의 흐름"
-date: 2024-05-01 23:02:00 +0900
+date: 2024-05-30 23:02:00 +0900
 categories: ["amoomal"]
 excerpt: "아무말"
 slug: "stream-of-consciousness"

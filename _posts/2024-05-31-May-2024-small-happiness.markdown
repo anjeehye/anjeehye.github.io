@@ -20,8 +20,10 @@ and it's big!
 
 <br /><br /> 
 
-![Xnipek]({{site.baseurl}}/assets/images/post-2024-05-31-dog1.jpg){:class="img-responsive img-size-small"}
+![Xnipek]({{site.baseurl}}/assets/images/post-2024-05-31-dog-before.jpg){:class="img-responsive photo-gallery-three"}
+![Xnipek]({{site.baseurl}}/assets/images/post-2024-05-31-dog-after.jpg){:class="img-responsive photo-gallery-three"}
 
+<figcaption>Before / After</figcaption>
 Shy dog opens his heart to me<br />
 That dog leans on me for the first time<br /> 
 
@@ -33,6 +35,11 @@ Meeting ends with a feeling of mini breakthrough
 
 <br /><br /> 
 
+Biking home after a strenous, sweaty workout, feeling the cool breeze gently brush against my face.
+
+<br /><br /> 
+
+
 ![Xnipek]({{site.baseurl}}/assets/images/post-2024-05-31-old-photo2.jpg){:class="img-responsive img-size-small"}
 
 Stumbling upon old photos
@@ -40,9 +47,9 @@ Stumbling upon old photos
 <br /><br /> 
 
 
-Bought a new 0.05 mm fineliner.<br /> 
-Put screens to sleep, listening to the sound of a new pen scribbling on paper.<br />
-Pouring out thoughts, feeling relief, catharsis.
+Buying a new fineliner,<br /> 
+putting screens to sleep, <br /> 
+listening to the satisfying sound of a new pen scribbling on paper.<br />
 <!-- The satisfying sound of a new pen scribbling on a fresh notebook -->
 
 <br /><br /> 

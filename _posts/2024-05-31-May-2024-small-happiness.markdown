@@ -39,8 +39,15 @@ Biking home after a strenous, sweaty workout, feeling the cool breeze gently bru
 
 <br /><br /> 
 
+![duet]({{site.baseurl}}/assets/images/post-2024-05-31-duet.jpg){:class="img-responsive img-size-small"}
 
-![Xnipek]({{site.baseurl}}/assets/images/post-2024-05-31-old-photo2.jpg){:class="img-responsive img-size-small"}
+Witnessing a duet of a guitarist and a dog at Monbijoupark. 
+
+
+<br /><br /> 
+
+
+![old photo]({{site.baseurl}}/assets/images/post-2024-05-31-old-photo2.jpg){:class="img-responsive img-size-small"}
 
 Stumbling upon old photos
 

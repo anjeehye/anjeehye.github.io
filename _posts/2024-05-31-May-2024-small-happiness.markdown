@@ -35,7 +35,7 @@ Meeting ends with a feeling of mini breakthrough
 
 <br /><br /> 
 
-Biking home after a strenous, sweaty workout, feeling the cool breeze gently brush against my face.
+Biking home after a strenuous, sweaty workout, feeling the cool breeze gently brush against my face.
 
 <br /><br /> 
 
